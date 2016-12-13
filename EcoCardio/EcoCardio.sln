@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoCardio.WinApp", "EcoCardio.WinApp\EcoCardio.WinApp.csproj", "{DB68CF1E-3874-4BCC-BC65-EE3614D608D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoCardio.Domain", "EcoCardio.Domain\EcoCardio.Domain.csproj", "{59BE5F1F-0E56-45B9-B0C3-C840F1A034A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoCardio.Repository", "EcoCardio.Repository\EcoCardio.Repository.csproj", "{4F5CAFDC-B045-4352-B2F9-7210C7965CAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB68CF1E-3874-4BCC-BC65-EE3614D608D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB68CF1E-3874-4BCC-BC65-EE3614D608D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB68CF1E-3874-4BCC-BC65-EE3614D608D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB68CF1E-3874-4BCC-BC65-EE3614D608D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59BE5F1F-0E56-45B9-B0C3-C840F1A034A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59BE5F1F-0E56-45B9-B0C3-C840F1A034A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59BE5F1F-0E56-45B9-B0C3-C840F1A034A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59BE5F1F-0E56-45B9-B0C3-C840F1A034A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F5CAFDC-B045-4352-B2F9-7210C7965CAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F5CAFDC-B045-4352-B2F9-7210C7965CAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F5CAFDC-B045-4352-B2F9-7210C7965CAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F5CAFDC-B045-4352-B2F9-7210C7965CAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
