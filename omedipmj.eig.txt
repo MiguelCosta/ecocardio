@@ -1,0 +1,32 @@
+﻿Add init forms
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch gui
+# Your branch is up-to-date with 'origin/gui'.
+#
+# Changes to be committed:
+#	modified:   EcoCardio/EcoCardio.WinApp/EcoCardio.WinApp.csproj
+#	new file:   EcoCardio/EcoCardio.WinApp/FrmInit.Designer.cs
+#	new file:   EcoCardio/EcoCardio.WinApp/FrmInit.cs
+#	new file:   EcoCardio/EcoCardio.WinApp/FrmInit.resx
+#	modified:   EcoCardio/EcoCardio.WinApp/FrmMain.Designer.cs
+#	modified:   EcoCardio/EcoCardio.WinApp/FrmMain.cs
+#	modified:   EcoCardio/EcoCardio.WinApp/FrmMain.resx
+#	new file:   EcoCardio/EcoCardio.WinApp/FrmNew.Designer.cs
+#	new file:   EcoCardio/EcoCardio.WinApp/FrmNew.cs
+#	new file:   EcoCardio/EcoCardio.WinApp/FrmNew.resx
+#	modified:   EcoCardio/EcoCardio.WinApp/FrmSplashScreen.Designer.cs
+#	modified:   EcoCardio/EcoCardio.WinApp/FrmSplashScreen.cs
+#	modified:   EcoCardio/EcoCardio.WinApp/FrmSplashScreen.resx
+#	modified:   EcoCardio/EcoCardio.WinApp/ImgCustom.Designer.cs
+#	modified:   EcoCardio/EcoCardio.WinApp/ImgCustom.resx
+#	new file:   EcoCardio/EcoCardio.WinApp/Properties/DataSources/EcoCardio.Repository.EcoCardioContext.datasource
+#	new file:   EcoCardio/EcoCardio.WinApp/Properties/DataSources/EcoCardio.Repository.Migrations.AddServico.datasource
+#	new file:   EcoCardio/EcoCardio.WinApp/Resources/ImgCustom/editIcon.png
+#	new file:   EcoCardio/EcoCardio.WinApp/Resources/ImgCustom/login-image.png
+#	new file:   EcoCardio/EcoCardio.WinApp/Resources/ImgCustom/newIcon.png
+#	new file:   EcoCardio/EcoCardio.WinApp/Resources/ImgCustom/realecoSmall.png
+#	deleted:    EcoCardio/EcoCardio.WinApp/Resources/ImgCustom/remover.png
+#	new file:   EcoCardio/EcoCardio.WinApp/Resources/ImgCustom/searchIcon.png
+#
+

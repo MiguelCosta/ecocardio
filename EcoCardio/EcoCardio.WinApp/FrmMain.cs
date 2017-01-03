@@ -27,6 +27,11 @@ namespace EcoCardio.WinApp
             var splash = new FrmSplashScreen();
             splash.ShowDialog();
 
+            // se login OK
+            var frm = new FrmInit();
+            frm.MdiParent = this;
+            frm.Show();
+
             // Query de teste dos serviços
 
             // todos os servicos
@@ -43,6 +48,36 @@ namespace EcoCardio.WinApp
             // templates por um tipo
             var templateCavidadesCardiacas = GerallApp.AppRepository.Templates
                 .GetBy(x => x.Type == Domain.Enums.TemplateType.CavidadesCardiacas);
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void addServicoBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void grbPesquisas_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

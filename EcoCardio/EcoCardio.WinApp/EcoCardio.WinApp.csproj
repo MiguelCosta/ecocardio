@@ -40,9 +40,13 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,13 +55,28 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmInit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInit.Designer.cs">
+      <DependentUpon>FrmInit.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNew.Designer.cs">
+      <DependentUpon>FrmNew.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSplashScreen.cs">
       <SubType>Form</SubType>
@@ -88,8 +107,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmInit.resx">
+      <DependentUpon>FrmInit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNew.resx">
+      <DependentUpon>FrmNew.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSplashScreen.resx">
       <DependentUpon>FrmSplashScreen.cs</DependentUpon>
@@ -121,6 +146,8 @@
     </Compile>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\EcoCardio.Repository.EcoCardioContext.datasource" />
+    <None Include="Properties\DataSources\EcoCardio.Repository.Migrations.AddServico.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -135,7 +162,11 @@
     <Content Include="Resources\Img16\exit.png" />
     <Content Include="Resources\Img24\exit.png" />
     <Content Include="Resources\Img32\exit.png" />
-    <Content Include="Resources\ImgCustom\remover.png" />
+    <Content Include="Resources\ImgCustom\editIcon.png" />
+    <Content Include="Resources\ImgCustom\login-image.png" />
+    <Content Include="Resources\ImgCustom\newIcon.png" />
+    <Content Include="Resources\ImgCustom\realecoSmall.png" />
+    <Content Include="Resources\ImgCustom\searchIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EcoCardio.Domain\EcoCardio.Domain.csproj">
