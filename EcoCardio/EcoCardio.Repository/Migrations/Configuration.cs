@@ -2,14 +2,14 @@ namespace EcoCardio.Repository.Migrations
 {
     using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<EcoCardio.Repository.EcoCardioContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<EcoCardioContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(EcoCardio.Repository.EcoCardioContext context)
+        protected override void Seed(EcoCardioContext context)
         {
             //  This method will be called after migrating to the latest version.
 
@@ -24,14 +24,15 @@ namespace EcoCardio.Repository.Migrations
             //    );
             //
 
-            context.Servicos.AddOrUpdate(
-                s => s.Nome,
-                new Domain.Servico
+            context.Utilizadores.AddOrUpdate(
+                u => u.Username,
+                new Domain.Utilizador
                 {
-                    Nome = "Servico teste",
-                    Tipo = "Tipo teste"
+                    Nome = "system",
+                    Password = "83lei77",
+                    Username = "system",
+                    Profile = Domain.Enums.ProfileType.System
                 }
-
             );
         }
     }

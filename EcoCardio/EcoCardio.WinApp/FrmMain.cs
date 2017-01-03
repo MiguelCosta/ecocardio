@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Data;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace EcoCardio.WinApp
@@ -20,6 +18,9 @@ namespace EcoCardio.WinApp
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            // Inicia a ligação à base de dados
+            GerallApp.AppRepository = new Repository.Implementation.AppUnitOfWork();
+
             // coisas a fazer quando abre o form
 
             // mostrar o splash screen
@@ -29,20 +30,19 @@ namespace EcoCardio.WinApp
             // Query de teste dos serviços
 
             // todos os servicos
-            var servicos = GerallApp.EcoCardioContext.Servicos.ToList();
+            var servicos = GerallApp.AppRepository.Servicos.GetAll(); ;
 
             // servicos filtrados por nome
-            var servicosNome = GerallApp.EcoCardioContext.Servicos
-                .Where(x => x.Nome == "A")
-                .ToList();
+            var servicosNome = GerallApp.AppRepository.Servicos
+                .GetBy(x => x.Nome.Contains("Dr"));
 
             // servico filtrado por Id
-            var servicoId = GerallApp.EcoCardioContext.Servicos
-                .Where(x => x.Id == 1)
-                .First();
+            var servicoId = GerallApp.AppRepository.Servicos
+                .Find(1);
 
-            var servicoId2 = GerallApp.EcoCardioContext.Servicos
-                .First(x => x.Id == 1);
+            // templates por um tipo
+            var templateCavidadesCardiacas = GerallApp.AppRepository.Templates
+                .GetBy(x => x.Type == Domain.Enums.TemplateType.CavidadesCardiacas);
         }
     }
 }
