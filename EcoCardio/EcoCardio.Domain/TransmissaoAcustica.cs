@@ -2,14 +2,13 @@
 
 namespace EcoCardio.Domain
 {
-    public class Servico
+    public class TransmissaoAcustica
     {
         public int Id { get; set; }
 
         public string Nome { get; set; }
 
-        public string Tipo { get; set; }
-
         public virtual ICollection<Exame> Exames { get; set; }
+
     }
 }

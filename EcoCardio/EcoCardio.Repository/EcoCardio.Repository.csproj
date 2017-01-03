@@ -48,10 +48,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IAppUnitOfWork.cs" />
+    <Compile Include="Abstract\IResponsavelRespository.cs" />
+    <Compile Include="Abstract\IGenericRepository.cs" />
+    <Compile Include="Abstract\IExameRespository.cs" />
+    <Compile Include="Abstract\ITransmissaoAcusticaRespository.cs" />
+    <Compile Include="Abstract\ITemplateRespository.cs" />
+    <Compile Include="Abstract\IServicoRespository.cs" />
+    <Compile Include="Abstract\IUtenteRespository.cs" />
+    <Compile Include="Abstract\IUtilizadorRespository.cs" />
     <Compile Include="EcoCardioContext.cs" />
+    <Compile Include="EntityConfiguration\ExameConfiguration.cs" />
+    <Compile Include="EntityConfiguration\ResponsavelConfiguration.cs" />
+    <Compile Include="EntityConfiguration\TransmissaoAcusticaConfiguration.cs" />
+    <Compile Include="EntityConfiguration\TemplateConfiguration.cs" />
+    <Compile Include="EntityConfiguration\ServicoConfiguration.cs" />
+    <Compile Include="EntityConfiguration\UtenteConfiguration.cs" />
+    <Compile Include="EntityConfiguration\UtilizadorConfiguration.cs" />
+    <Compile Include="Implementation\AppUnitOfWork.cs" />
+    <Compile Include="Implementation\ExameRespository.cs" />
+    <Compile Include="Implementation\GenericRepository.cs" />
+    <Compile Include="Implementation\ResponsavelRespository.cs" />
+    <Compile Include="Implementation\ServicoRespository.cs" />
+    <Compile Include="Implementation\UtilizadorRespository.cs" />
+    <Compile Include="Implementation\UtenteRespository.cs" />
+    <Compile Include="Implementation\TransmissoesAcusticasRespository.cs" />
+    <Compile Include="Implementation\TemplateRespository.cs" />
     <Compile Include="Migrations\201612132223033_AddServico.cs" />
     <Compile Include="Migrations\201612132223033_AddServico.Designer.cs">
       <DependentUpon>201612132223033_AddServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701022154432_AddUtilizador.cs" />
+    <Compile Include="Migrations\201701022154432_AddUtilizador.Designer.cs">
+      <DependentUpon>201701022154432_AddUtilizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701030019375_AddExame.cs" />
+    <Compile Include="Migrations\201701030019375_AddExame.Designer.cs">
+      <DependentUpon>201701030019375_AddExame.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,7 +103,14 @@
     <EmbeddedResource Include="Migrations\201612132223033_AddServico.resx">
       <DependentUpon>201612132223033_AddServico.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701022154432_AddUtilizador.resx">
+      <DependentUpon>201701022154432_AddUtilizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701030019375_AddExame.resx">
+      <DependentUpon>201701030019375_AddExame.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
