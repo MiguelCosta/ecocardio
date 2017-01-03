@@ -85,6 +85,11 @@
       <DependentUpon>FrmSplashScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="GerallApp.cs" />
+    <Compile Include="Img100.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img100.resx</DependentUpon>
+    </Compile>
     <Compile Include="Img16.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -99,6 +104,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Img32.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Img50.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img50.resx</DependentUpon>
     </Compile>
     <Compile Include="ImgCustom.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -119,6 +129,10 @@
     <EmbeddedResource Include="FrmSplashScreen.resx">
       <DependentUpon>FrmSplashScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Img100.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Img100.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Img16.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Img16.Designer.cs</LastGenOutput>
@@ -130,6 +144,10 @@
     <EmbeddedResource Include="Img32.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Img32.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img50.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Img50.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ImgCustom.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -159,9 +177,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Img100\Create100.png" />
+    <Content Include="Resources\Img100\CreateWhite100.png" />
+    <Content Include="Resources\Img100\Edit100.png" />
+    <Content Include="Resources\Img100\NewWhite100.png" />
+    <Content Include="Resources\Img100\Print100.png" />
+    <Content Include="Resources\Img100\Search100.png" />
     <Content Include="Resources\Img16\exit.png" />
     <Content Include="Resources\Img24\exit.png" />
     <Content Include="Resources\Img32\exit.png" />
+    <Content Include="Resources\Img50\Create50.png" />
+    <Content Include="Resources\Img50\CreateWhite50.png" />
+    <Content Include="Resources\Img50\Edit50.png" />
+    <Content Include="Resources\Img50\NewWhite50.png" />
+    <Content Include="Resources\Img50\Print50.png" />
+    <Content Include="Resources\Img50\Search50.png" />
     <Content Include="Resources\ImgCustom\editIcon.png" />
     <Content Include="Resources\ImgCustom\login-image.png" />
     <Content Include="Resources\ImgCustom\newIcon.png" />

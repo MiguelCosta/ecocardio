@@ -26,11 +26,13 @@ namespace EcoCardio.WinApp
             // mostrar o splash screen
             var splash = new FrmSplashScreen();
             splash.ShowDialog();
+            
 
             // se login OK
             var frm = new FrmInit();
             frm.MdiParent = this;
             frm.Show();
+
 
             // Query de teste dos serviços
 

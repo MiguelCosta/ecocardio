@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EcoCardio.WinApp.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,14 +17,5 @@ namespace EcoCardio.WinApp
             InitializeComponent();
         }
 
-        private void grpSearch_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
