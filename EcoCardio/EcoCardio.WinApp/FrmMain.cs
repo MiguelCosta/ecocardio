@@ -26,13 +26,15 @@ namespace EcoCardio.WinApp
             // mostrar o splash screen
             var splash = new FrmSplashScreen();
             splash.ShowDialog();
-            
+
+            lblUser.Text = GerallApp.CurrentUser.Nome;
 
             // se login OK
             var frm = new FrmInit();
             frm.MdiParent = this;
             frm.Show();
-
+            frm.WindowState = FormWindowState.Minimized;
+            frm.WindowState = FormWindowState.Maximized;
 
             // Query de teste dos serviços
 

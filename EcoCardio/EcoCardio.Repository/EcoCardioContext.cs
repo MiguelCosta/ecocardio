@@ -13,7 +13,17 @@ namespace EcoCardio.Repository
             Configuration.LazyLoadingEnabled = false;
         }
 
+        public DbSet<Exame> Exames { get; set; }
+
+        public DbSet<Responsavel> Responsaveis { get; set; }
+
         public DbSet<Servico> Servicos { get; set; }
+
+        public DbSet<Template> Templates { get; set; }
+
+        public DbSet<TransmissaoAcustica> TransmissoesAcusticas { get; set; }
+
+        public DbSet<Utente> Utentes { get; set; }
 
         public DbSet<Utilizador> Utilizadores { get; set; }
 

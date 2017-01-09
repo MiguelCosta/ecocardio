@@ -1,19 +1,22 @@
 ﻿using EcoCardio.Domain;
-using System;
-using System.Threading.Tasks;
+using System.Linq;
 
 namespace EcoCardio.Repository.Implementation
 {
     internal class UtilizadorRespository : GenericRepository<Domain.Utilizador>, Abstract.IUtilizadorRespository
     {
+        private EcoCardioContext _context;
+
         public UtilizadorRespository(EcoCardioContext context)
             : base(context)
         {
+            _context = context;
         }
 
-        public Task<Utilizador> FindByUsernameAndPassword(string username, string password)
+        public Utilizador FindByUsernameAndPassword(string username, string password)
         {
-            throw new NotImplementedException();
+            return _context.Utilizadores
+                .SingleOrDefault(x => x.Username == username && x.Password == password);
         }
     }
 }

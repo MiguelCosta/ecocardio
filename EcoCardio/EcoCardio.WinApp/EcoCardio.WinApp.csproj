@@ -164,6 +164,7 @@
     </Compile>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\EcoCardio.Domain.Exame.datasource" />
     <None Include="Properties\DataSources\EcoCardio.Repository.EcoCardioContext.datasource" />
     <None Include="Properties\DataSources\EcoCardio.Repository.Migrations.AddServico.datasource" />
     <None Include="Properties\Settings.settings">

@@ -14,6 +14,8 @@ namespace EcoCardio.Repository.Implementation
             Servicos = new ServicoRespository(_context);
             Templates = new TemplateRespository(_context);
             TransmissoesAcusticas = new TransmissoesAcusticasRespository(_context);
+            Utentes = new UtenteRespository(_context);
+            Utilizadores = new UtilizadorRespository(_context);
         }
 
         public IExameRespository Exames { get; set; }

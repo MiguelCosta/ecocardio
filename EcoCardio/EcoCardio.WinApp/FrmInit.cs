@@ -1,11 +1,4 @@
-﻿using EcoCardio.WinApp.Properties;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿using System;
 using System.Windows.Forms;
 
 namespace EcoCardio.WinApp
@@ -17,5 +10,13 @@ namespace EcoCardio.WinApp
             InitializeComponent();
         }
 
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string nome = txtSearchNome.Text;
+            int numero;
+            int.TryParse(txtSearchNumeroProcesso.Text, out numero);
+
+            var results = GerallApp.AppRepository.Exames.Search(txtSearchNome.Text, numero);
+        }
     }
 }

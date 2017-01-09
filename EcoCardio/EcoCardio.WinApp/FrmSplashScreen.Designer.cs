@@ -49,7 +49,6 @@
             this.lblUsername.Size = new System.Drawing.Size(55, 13);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Username";
-            this.lblUsername.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtUsername
             // 
@@ -57,15 +56,14 @@
             this.txtUsername.Location = new System.Drawing.Point(114, 210);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(188, 23);
-            this.txtUsername.TabIndex = 2;
-            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
+            this.txtUsername.TabIndex = 0;
             // 
             // btnLogin
             // 
             this.btnLogin.Location = new System.Drawing.Point(114, 341);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(84, 23);
-            this.btnLogin.TabIndex = 5;
+            this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Entrar";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -85,17 +83,15 @@
             this.boxLogin.TabIndex = 7;
             this.boxLogin.TabStop = false;
             this.boxLogin.Text = "Login";
-            this.boxLogin.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnSair
             // 
             this.btnSair.Location = new System.Drawing.Point(217, 341);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(85, 23);
-            this.btnSair.TabIndex = 7;
+            this.btnSair.TabIndex = 3;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtPassword
             // 
@@ -104,7 +100,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(188, 23);
-            this.txtPassword.TabIndex = 6;
+            this.txtPassword.TabIndex = 1;
             // 
             // label1
             // 
@@ -114,7 +110,6 @@
             this.label1.Size = new System.Drawing.Size(53, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Password";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // picLogin
             // 
@@ -143,7 +138,6 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.FrmSplashScreen_Load);
             this.boxLogin.ResumeLayout(false);
             this.boxLogin.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogin)).EndInit();
