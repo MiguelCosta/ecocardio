@@ -24,7 +24,7 @@ namespace EcoCardio.WinApp
             // coisas a fazer quando abre o form
 
             // mostrar o splash screen
-            var splash = new FrmSplashScreen();
+            var splash = new FrmLogin();
             splash.ShowDialog();
 
             lblUser.Text = GerallApp.CurrentUser.Nome;
