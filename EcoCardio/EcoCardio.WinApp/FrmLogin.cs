@@ -22,7 +22,8 @@ namespace EcoCardio.WinApp
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            MdiParent.Close();
+            DialogResult = DialogResult.Cancel;
+            Close();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -40,6 +41,7 @@ namespace EcoCardio.WinApp
             else
             {
                 GerallApp.CurrentUser = user;
+                DialogResult = DialogResult.OK;
                 Close();
             }
         }

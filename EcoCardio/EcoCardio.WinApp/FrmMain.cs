@@ -1,87 +1,66 @@
-ï»¿using System;
-using System.Windows.Forms;
+using System;
 
 namespace EcoCardio.WinApp
 {
-    public partial class FrmMain : Form
+    public partial class FrmMain : Syncfusion.Windows.Forms.MetroForm
     {
         public FrmMain()
         {
             InitializeComponent();
         }
 
-        private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            // coisas a fazer quando se fecha o form
-            // fechar a ligaÃ§Ã£o Ã  base de dados por exemplo
-        }
+        #region "FormMain"
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            // Inicia a ligaÃ§Ã£o Ã  base de dados
+            // Inicia a ligação à base de dados
             GerallApp.AppRepository = new Repository.Implementation.AppUnitOfWork();
-
-            // coisas a fazer quando abre o form
 
             // mostrar o splash screen
             var splash = new FrmLogin();
-            splash.ShowDialog();
+            var result = splash.ShowDialog();
+            if (result != System.Windows.Forms.DialogResult.OK)
+            {
+                // se não foi possível fazer login fecha a aplicação
+                this.Close();
+            }
+            else
+            {
+                ShowFormInit();
+            }
+        }
 
+        #endregion "FormMain"
+
+        #region "FormMain Actions"
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            ShowFormHome();
+        }
+
+        #endregion "FormMain Actions"
+
+        #region "ShowForms"
+
+        private void ShowFormHome()
+        {
+        }
+
+        private void ShowFormInit()
+        {
             lblUser.Text = GerallApp.CurrentUser.Nome;
 
-            // se login OK
-            var frm = new FrmInit();
+            var frm = new FrmHome();
             frm.MdiParent = this;
             frm.Show();
-            frm.WindowState = FormWindowState.Minimized;
-            frm.WindowState = FormWindowState.Maximized;
-
-            // Query de teste dos serviÃ§os
-
-            // todos os servicos
-            var servicos = GerallApp.AppRepository.Servicos.GetAll(); ;
-
-            // servicos filtrados por nome
-            var servicosNome = GerallApp.AppRepository.Servicos
-                .GetBy(x => x.Nome.Contains("Dr"));
-
-            // servico filtrado por Id
-            var servicoId = GerallApp.AppRepository.Servicos
-                .Find(1);
-
-            // templates por um tipo
-            var templateCavidadesCardiacas = GerallApp.AppRepository.Templates
-                .GetBy(x => x.Type == Domain.Enums.TemplateType.CavidadesCardiacas);
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void addServicoBindingSource_CurrentChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void grbPesquisas_Enter(object sender, EventArgs e)
-        {
-
-        }
+        #endregion "ShowForms"
     }
 }
