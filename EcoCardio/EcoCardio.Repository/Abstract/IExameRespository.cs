@@ -5,6 +5,6 @@ namespace EcoCardio.Repository.Abstract
 {
     public interface IExameRespository : IGenericRepository<Exame>
     {
-        IEnumerable<Exame> Search(string nome, int numero);
+        IEnumerable<Exame> Search(string nome, int numero, int maxResults = 100);
     }
 }

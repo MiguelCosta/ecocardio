@@ -15,5 +15,20 @@ namespace EcoCardio.WinApp
         {
             InitializeComponent();
         }
+
+        private void FrmHome_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            int numero = 0;
+            int.TryParse(txtSearchNumero.Text, out numero);
+            var results = GerallApp.AppRepository.Exames.Search(txtSearchNome.Text, numero);
+
+            exameBindingSource.DataSource = results;
+
+        }
     }
 }

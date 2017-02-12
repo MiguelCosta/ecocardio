@@ -15,13 +15,18 @@ namespace EcoCardio.Repository.Implementation
             _context = context;
         }
 
-        public IEnumerable<Exame> Search(string nome, int numero)
+        public IEnumerable<Exame> Search(string nome, int numero, int maxResults = 100)
         {
-            var query = _context.Exames.AsQueryable();
+            var query = _context.Exames.AsQueryable()
+                .Take(100);
 
             if (string.IsNullOrWhiteSpace(nome) == false)
             {
-                query = query.Where(e => e.Utente.Nome.Contains(nome));
+                var names = System.Text.RegularExpressions.Regex.Split(nome, @"\s+");
+                foreach (var n in names)
+                {
+                    query = query.Where(e => e.Utente.Nome.Contains(n));
+                }
             }
 
             if (numero > 0)
@@ -29,7 +34,8 @@ namespace EcoCardio.Repository.Implementation
                 query = query.Where(e => e.Numero == numero);
             }
 
-            return query.ToList();
+            var results = query.ToList();
+            return results;
         }
     }
 }

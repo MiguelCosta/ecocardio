@@ -34,7 +34,7 @@ namespace EcoCardio.WinApp
 
         #region "FormMain Actions"
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void mnuGeral_Exit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -62,5 +62,6 @@ namespace EcoCardio.WinApp
         }
 
         #endregion "ShowForms"
+
     }
 }
