@@ -56,7 +56,7 @@ namespace EcoCardio.WinApp
         {
             lblUser.Text = GerallApp.CurrentUser.Nome;
 
-            var frm = new FrmHome();
+            var frm = new FrmSearch();
             frm.MdiParent = this;
             frm.Show();
         }

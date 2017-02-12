@@ -1,24 +1,19 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
 namespace EcoCardio.WinApp
 {
-    public partial class FrmHome : Syncfusion.Windows.Forms.MetroForm
+    public partial class FrmSearch : Form
     {
-        public FrmHome()
+        public FrmSearch()
         {
             InitializeComponent();
-        }
-
-        private void FrmHome_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -28,7 +23,6 @@ namespace EcoCardio.WinApp
             var results = GerallApp.AppRepository.Exames.Search(txtSearchNome.Text, numero);
 
             exameBindingSource.DataSource = results;
-
         }
     }
 }
