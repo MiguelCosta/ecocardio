@@ -15,17 +15,17 @@ namespace EcoCardio.Repository.Implementation
             _context = context;
         }
 
-        public IEnumerable<Exame> Search(string nome, int numero, int maxResults = 100)
+        public IEnumerable<Exame> Search(string nome, int numero, int maxResults = 200)
         {
-            var query = _context.Exames.AsQueryable()
-                .Take(100);
+            var query = _context.Exames
+                .AsQueryable();
 
             if (string.IsNullOrWhiteSpace(nome) == false)
             {
                 var names = System.Text.RegularExpressions.Regex.Split(nome, @"\s+");
                 foreach (var n in names)
                 {
-                    query = query.Where(e => e.Utente.Nome.Contains(n));
+                    query = query.Where(e => e.Utente.Nome.Contains(n) || e.Nome.Contains(n));
                 }
             }
 
@@ -34,7 +34,10 @@ namespace EcoCardio.Repository.Implementation
                 query = query.Where(e => e.Numero == numero);
             }
 
-            var results = query.ToList();
+            var results = query
+                .OrderByDescending(e => e.Data)
+                .Take(maxResults)
+                .ToList();
             return results;
         }
     }

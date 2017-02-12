@@ -1,27 +1,36 @@
-using System;
+Ôªøusing System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
 
 namespace EcoCardio.WinApp
 {
-    public partial class FrmMain : Syncfusion.Windows.Forms.MetroForm
+    public partial class FrmMain : Form
     {
         public FrmMain()
         {
             InitializeComponent();
+            this.Load += FrmMain_Load;
+            mnuGeral_Exit.Click += mnuGeral_Exit_Click;
         }
 
         #region "FormMain"
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            // Inicia a ligaÁ„o ‡ base de dados
+            // Inicia a liga√ß√£o √† base de dados
             GerallApp.AppRepository = new Repository.Implementation.AppUnitOfWork();
 
             // mostrar o splash screen
-            var splash = new FrmLogin();
+            var splash = new FrmAutentication();
             var result = splash.ShowDialog();
             if (result != System.Windows.Forms.DialogResult.OK)
             {
-                // se n„o foi possÌvel fazer login fecha a aplicaÁ„o
+                // se n√£o foi poss√≠vel fazer login fecha a aplica√ß√£o
                 this.Close();
             }
             else
@@ -39,18 +48,9 @@ namespace EcoCardio.WinApp
             this.Close();
         }
 
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            ShowFormHome();
-        }
-
         #endregion "FormMain Actions"
 
         #region "ShowForms"
-
-        private void ShowFormHome()
-        {
-        }
 
         private void ShowFormInit()
         {
@@ -62,6 +62,5 @@ namespace EcoCardio.WinApp
         }
 
         #endregion "ShowForms"
-
     }
 }
