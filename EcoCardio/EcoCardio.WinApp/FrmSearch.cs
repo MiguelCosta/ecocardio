@@ -29,5 +29,10 @@ namespace EcoCardio.WinApp
         {
             Exame.FrmExameNew.Open();
         }
+
+        private void FrmSearch_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,15 +29,21 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.picLogo = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSearch));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSearchNumero = new System.Windows.Forms.TextBox();
             this.txtSearchNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.exameBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dgvExames = new System.Windows.Forms.DataGridView();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnConsultarRegisto = new System.Windows.Forms.Button();
+            this.btnEditarRegisto = new System.Windows.Forms.Button();
+            this.btnCriarRegisto = new System.Windows.Forms.Button();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,34 +54,16 @@
             this.servicoIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.utenteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.utenteIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnCriarRegisto = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pbtnImprimir = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pbtnConsultar = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pbtnEditarRegisto = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.exameBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exameBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExames)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbtnImprimir)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbtnConsultar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbtnEditarRegisto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exameBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // picLogo
-            // 
-            this.picLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picLogo.Image = global::EcoCardio.WinApp.ImgCustom.realecoSmall;
-            this.picLogo.Location = new System.Drawing.Point(717, 27);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(174, 76);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogo.TabIndex = 11;
-            this.picLogo.TabStop = false;
             // 
             // groupBox1
             // 
@@ -137,10 +125,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome";
             // 
-            // exameBindingSource
-            // 
-            this.exameBindingSource.DataSource = typeof(EcoCardio.Domain.Exame);
-            // 
             // dgvExames
             // 
             this.dgvExames.AllowUserToAddRows = false;
@@ -162,12 +146,96 @@
             this.utenteDataGridViewTextBoxColumn,
             this.utenteIdDataGridViewTextBoxColumn});
             this.dgvExames.DataSource = this.exameBindingSource;
-            this.dgvExames.Location = new System.Drawing.Point(131, 131);
+            this.dgvExames.Location = new System.Drawing.Point(6, 19);
             this.dgvExames.Name = "dgvExames";
             this.dgvExames.ReadOnly = true;
             this.dgvExames.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvExames.Size = new System.Drawing.Size(760, 383);
+            this.dgvExames.Size = new System.Drawing.Size(748, 368);
             this.dgvExames.TabIndex = 0;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btnConsultarRegisto);
+            this.groupBox2.Controls.Add(this.btnEditarRegisto);
+            this.groupBox2.Controls.Add(this.btnCriarRegisto);
+            this.groupBox2.Location = new System.Drawing.Point(12, 131);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(113, 393);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Opções";
+            // 
+            // button3
+            // 
+            this.button3.Image = global::EcoCardio.WinApp.Img32.PDF32;
+            this.button3.Location = new System.Drawing.Point(6, 325);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(101, 55);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "Gerar PDF";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Image = global::EcoCardio.WinApp.Img32.Print32;
+            this.button2.Location = new System.Drawing.Point(6, 264);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(101, 55);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Imprimir";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Image = global::EcoCardio.WinApp.Img32.Delete32;
+            this.button1.Location = new System.Drawing.Point(6, 203);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 55);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Apagar Registo";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnConsultarRegisto
+            // 
+            this.btnConsultarRegisto.Image = global::EcoCardio.WinApp.Img32.Search32;
+            this.btnConsultarRegisto.Location = new System.Drawing.Point(6, 142);
+            this.btnConsultarRegisto.Name = "btnConsultarRegisto";
+            this.btnConsultarRegisto.Size = new System.Drawing.Size(101, 55);
+            this.btnConsultarRegisto.TabIndex = 15;
+            this.btnConsultarRegisto.Text = "Consultar Registo";
+            this.btnConsultarRegisto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnConsultarRegisto.UseVisualStyleBackColor = true;
+            // 
+            // btnEditarRegisto
+            // 
+            this.btnEditarRegisto.Image = global::EcoCardio.WinApp.Img32.Edit32;
+            this.btnEditarRegisto.Location = new System.Drawing.Point(6, 80);
+            this.btnEditarRegisto.Name = "btnEditarRegisto";
+            this.btnEditarRegisto.Size = new System.Drawing.Size(101, 56);
+            this.btnEditarRegisto.TabIndex = 14;
+            this.btnEditarRegisto.Text = "Editar Registo";
+            this.btnEditarRegisto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnEditarRegisto.UseVisualStyleBackColor = true;
+            // 
+            // btnCriarRegisto
+            // 
+            this.btnCriarRegisto.Image = global::EcoCardio.WinApp.Img32.Create32;
+            this.btnCriarRegisto.Location = new System.Drawing.Point(6, 19);
+            this.btnCriarRegisto.Name = "btnCriarRegisto";
+            this.btnCriarRegisto.Size = new System.Drawing.Size(101, 55);
+            this.btnCriarRegisto.TabIndex = 0;
+            this.btnCriarRegisto.Text = "Criar Registo";
+            this.btnCriarRegisto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCriarRegisto.UseVisualStyleBackColor = true;
+            this.btnCriarRegisto.Click += new System.EventHandler(this.btnCriarRegisto_Click);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -241,116 +309,56 @@
             this.utenteIdDataGridViewTextBoxColumn.Name = "utenteIdDataGridViewTextBoxColumn";
             this.utenteIdDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // groupBox2
+            // exameBindingSource
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox2.Controls.Add(this.btnCriarRegisto);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.pbtnImprimir);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.pbtnConsultar);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.pbtnEditarRegisto);
-            this.groupBox2.Location = new System.Drawing.Point(12, 131);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(113, 388);
-            this.groupBox2.TabIndex = 14;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Opções";
+            this.exameBindingSource.DataSource = typeof(EcoCardio.Domain.Exame);
             // 
-            // btnCriarRegisto
+            // picLogo
             // 
-            this.btnCriarRegisto.Image = global::EcoCardio.WinApp.Img50.Create50;
-            this.btnCriarRegisto.Location = new System.Drawing.Point(6, 19);
-            this.btnCriarRegisto.Name = "btnCriarRegisto";
-            this.btnCriarRegisto.Size = new System.Drawing.Size(101, 72);
-            this.btnCriarRegisto.TabIndex = 0;
-            this.btnCriarRegisto.Text = "Criar Registo";
-            this.btnCriarRegisto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnCriarRegisto.UseVisualStyleBackColor = true;
-            this.btnCriarRegisto.Click += new System.EventHandler(this.btnCriarRegisto_Click);
+            this.picLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picLogo.Image = global::EcoCardio.WinApp.ImgCustom.realecoSmall;
+            this.picLogo.Location = new System.Drawing.Point(717, 27);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(174, 76);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 11;
+            this.picLogo.TabStop = false;
             // 
-            // label5
+            // groupBox3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(35, 332);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 13);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Imprimir";
-            // 
-            // pbtnImprimir
-            // 
-            this.pbtnImprimir.Image = global::EcoCardio.WinApp.Img50.Print50;
-            this.pbtnImprimir.Location = new System.Drawing.Point(31, 279);
-            this.pbtnImprimir.Name = "pbtnImprimir";
-            this.pbtnImprimir.Size = new System.Drawing.Size(50, 50);
-            this.pbtnImprimir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbtnImprimir.TabIndex = 12;
-            this.pbtnImprimir.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(30, 254);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Consultar";
-            // 
-            // pbtnConsultar
-            // 
-            this.pbtnConsultar.Image = global::EcoCardio.WinApp.Img50.Search50;
-            this.pbtnConsultar.Location = new System.Drawing.Point(31, 201);
-            this.pbtnConsultar.Name = "pbtnConsultar";
-            this.pbtnConsultar.Size = new System.Drawing.Size(50, 50);
-            this.pbtnConsultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbtnConsultar.TabIndex = 10;
-            this.pbtnConsultar.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 175);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Editar Registo";
-            // 
-            // pbtnEditarRegisto
-            // 
-            this.pbtnEditarRegisto.Image = global::EcoCardio.WinApp.Img50.Edit50;
-            this.pbtnEditarRegisto.Location = new System.Drawing.Point(31, 122);
-            this.pbtnEditarRegisto.Name = "pbtnEditarRegisto";
-            this.pbtnEditarRegisto.Size = new System.Drawing.Size(50, 50);
-            this.pbtnEditarRegisto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pbtnEditarRegisto.TabIndex = 8;
-            this.pbtnEditarRegisto.TabStop = false;
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Controls.Add(this.dgvExames);
+            this.groupBox3.Location = new System.Drawing.Point(131, 131);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(760, 393);
+            this.groupBox3.TabIndex = 15;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Listagem";
             // 
             // FrmSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(903, 526);
+            this.ClientSize = new System.Drawing.Size(903, 533);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.dgvExames);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.picLogo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSearch";
             this.ShowIcon = false;
-            this.Text = "FormSearch";
+            this.Text = "Página Inicial";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.Load += new System.EventHandler(this.FrmSearch_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exameBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExames)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbtnImprimir)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbtnConsultar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbtnEditarRegisto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.exameBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -367,12 +375,6 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnCriarRegisto;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pbtnImprimir;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pbtnConsultar;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pbtnEditarRegisto;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;
@@ -383,5 +385,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn servicoIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn utenteDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn utenteIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnConsultarRegisto;
+        private System.Windows.Forms.Button btnEditarRegisto;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

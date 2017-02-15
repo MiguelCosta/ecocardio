@@ -121,7 +121,25 @@
   <data name="Add32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\img32\add32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Create32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\img32\create32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Delete32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\img32\delete32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\img32\edit32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\img32\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Print32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\img32\print32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\img32\search32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PDF32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\img32\pdf32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
