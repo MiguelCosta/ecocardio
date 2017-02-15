@@ -7,23 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace EcoCardio.WinApp
+namespace EcoCardio.WinApp.Exame
 {
-    public partial class FrmNew : Form
+    public partial class FrmExameNew : Form
     {
-        public FrmNew()
+        public FrmExameNew()
         {
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        public static void Open()
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            var frm = new FrmExameNew();
+            frm.ShowDialog();
         }
     }
 }

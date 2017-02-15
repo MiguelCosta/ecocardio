@@ -77,6 +77,18 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exame\FrmExameNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exame\FrmExameNew.Designer.cs">
+      <DependentUpon>FrmExameNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exame\UscExameEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exame\UscExameEdit.Designer.cs">
+      <DependentUpon>UscExameEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSearch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,23 +101,11 @@
     <Compile Include="FrmAutentication.Designer.cs">
       <DependentUpon>FrmAutentication.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmInit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmInit.Designer.cs">
-      <DependentUpon>FrmInit.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmNew.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmNew.Designer.cs">
-      <DependentUpon>FrmNew.cs</DependentUpon>
     </Compile>
     <Compile Include="GerallApp.cs" />
     <Compile Include="Img100.Designer.cs">
@@ -140,26 +140,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UscCreate.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UscCreate.Designer.cs">
-      <DependentUpon>UscCreate.cs</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="Exame\FrmExameNew.resx">
+      <DependentUpon>FrmExameNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exame\UscExameEdit.resx">
+      <DependentUpon>UscExameEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmSearch.resx">
       <DependentUpon>FrmSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAutentication.resx">
       <DependentUpon>FrmAutentication.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmInit.resx">
-      <DependentUpon>FrmInit.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmNew.resx">
-      <DependentUpon>FrmNew.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Img100.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -194,9 +188,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UscCreate.resx">
-      <DependentUpon>UscCreate.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\EcoCardio.Domain.Exame.datasource" />
@@ -249,6 +240,7 @@
       <Name>EcoCardio.Repository</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

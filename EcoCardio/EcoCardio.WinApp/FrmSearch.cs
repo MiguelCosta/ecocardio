@@ -24,5 +24,10 @@ namespace EcoCardio.WinApp
 
             exameBindingSource.DataSource = results;
         }
+
+        private void btnCriarRegisto_Click(object sender, EventArgs e)
+        {
+            Exame.FrmExameNew.Open();
+        }
     }
 }
