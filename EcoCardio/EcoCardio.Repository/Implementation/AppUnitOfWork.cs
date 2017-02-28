@@ -28,5 +28,10 @@ namespace EcoCardio.Repository.Implementation
         public ITransmissaoAcusticaRespository TransmissoesAcusticas { get; set; }
 
         public IUtilizadorRespository Utilizadores { get; set; }
+
+        public void Complete()
+        {
+            _context.SaveChanges();
+        }
     }
 }

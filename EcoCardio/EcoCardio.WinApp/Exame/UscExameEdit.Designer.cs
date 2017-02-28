@@ -35,7 +35,7 @@
             this.cmbCardiologista1 = new System.Windows.Forms.ComboBox();
             this.lblCardiologista = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtConclusao = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.btnAddPericardico = new System.Windows.Forms.Button();
             this.txtPericardico = new System.Windows.Forms.TextBox();
@@ -61,11 +61,11 @@
             this.txtEstruturasValvulares = new System.Windows.Forms.TextBox();
             this.cmbEstrutrasValvulares = new System.Windows.Forms.ComboBox();
             this.gpbDimensoes = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtFracaoEjecao = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtParedeSuperior = new System.Windows.Forms.TextBox();
             this.lblParedePosterior = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtSepto = new System.Windows.Forms.TextBox();
             this.lblSepto = new System.Windows.Forms.Label();
             this.txtFracaoEncurtamento = new System.Windows.Forms.TextBox();
             this.lblFracaoEncurtamento = new System.Windows.Forms.Label();
@@ -80,11 +80,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtpDataExame = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbTransmissaoAcustica = new System.Windows.Forms.ComboBox();
             this.cmbRequisitadoPor = new System.Windows.Forms.ComboBox();
             this.lblTransmissaoAcustica = new System.Windows.Forms.Label();
             this.lblRequisitadoPor = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtInfoClinica = new System.Windows.Forms.TextBox();
             this.lblInformacaoClinica = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtExame = new System.Windows.Forms.TextBox();
@@ -99,7 +99,7 @@
             this.lblDataNascimento = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.grbAdicionar.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -186,7 +186,7 @@
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.textBox7);
+            this.groupBox9.Controls.Add(this.txtConclusao);
             this.groupBox9.Location = new System.Drawing.Point(7, 904);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(773, 64);
@@ -194,14 +194,14 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Conclusão";
             // 
-            // textBox7
+            // txtConclusao
             // 
-            this.textBox7.Location = new System.Drawing.Point(33, 19);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox7.Size = new System.Drawing.Size(688, 37);
-            this.textBox7.TabIndex = 17;
+            this.txtConclusao.Location = new System.Drawing.Point(33, 19);
+            this.txtConclusao.Multiline = true;
+            this.txtConclusao.Name = "txtConclusao";
+            this.txtConclusao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtConclusao.Size = new System.Drawing.Size(688, 37);
+            this.txtConclusao.TabIndex = 17;
             // 
             // groupBox8
             // 
@@ -433,11 +433,11 @@
             // 
             // gpbDimensoes
             // 
-            this.gpbDimensoes.Controls.Add(this.textBox4);
+            this.gpbDimensoes.Controls.Add(this.txtFracaoEjecao);
             this.gpbDimensoes.Controls.Add(this.label4);
-            this.gpbDimensoes.Controls.Add(this.textBox5);
+            this.gpbDimensoes.Controls.Add(this.txtParedeSuperior);
             this.gpbDimensoes.Controls.Add(this.lblParedePosterior);
-            this.gpbDimensoes.Controls.Add(this.textBox6);
+            this.gpbDimensoes.Controls.Add(this.txtSepto);
             this.gpbDimensoes.Controls.Add(this.lblSepto);
             this.gpbDimensoes.Controls.Add(this.txtFracaoEncurtamento);
             this.gpbDimensoes.Controls.Add(this.lblFracaoEncurtamento);
@@ -456,12 +456,12 @@
             this.gpbDimensoes.TabStop = false;
             this.gpbDimensoes.Text = "Dimensões (mm) :";
             // 
-            // textBox4
+            // txtFracaoEjecao
             // 
-            this.textBox4.Location = new System.Drawing.Point(731, 71);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(37, 20);
-            this.textBox4.TabIndex = 17;
+            this.txtFracaoEjecao.Location = new System.Drawing.Point(731, 71);
+            this.txtFracaoEjecao.Name = "txtFracaoEjecao";
+            this.txtFracaoEjecao.Size = new System.Drawing.Size(37, 20);
+            this.txtFracaoEjecao.TabIndex = 17;
             // 
             // label4
             // 
@@ -472,12 +472,12 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Fração de Ejeção (%):";
             // 
-            // textBox5
+            // txtParedeSuperior
             // 
-            this.textBox5.Location = new System.Drawing.Point(730, 45);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(37, 20);
-            this.textBox5.TabIndex = 15;
+            this.txtParedeSuperior.Location = new System.Drawing.Point(730, 45);
+            this.txtParedeSuperior.Name = "txtParedeSuperior";
+            this.txtParedeSuperior.Size = new System.Drawing.Size(37, 20);
+            this.txtParedeSuperior.TabIndex = 15;
             // 
             // lblParedePosterior
             // 
@@ -488,12 +488,12 @@
             this.lblParedePosterior.TabIndex = 14;
             this.lblParedePosterior.Text = "Parede Posterior (N<X):";
             // 
-            // textBox6
+            // txtSepto
             // 
-            this.textBox6.Location = new System.Drawing.Point(730, 19);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(37, 20);
-            this.textBox6.TabIndex = 13;
+            this.txtSepto.Location = new System.Drawing.Point(730, 19);
+            this.txtSepto.Name = "txtSepto";
+            this.txtSepto.Size = new System.Drawing.Size(37, 20);
+            this.txtSepto.TabIndex = 13;
             // 
             // lblSepto
             // 
@@ -597,11 +597,11 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dtpDataExame);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.cmbTransmissaoAcustica);
             this.groupBox2.Controls.Add(this.cmbRequisitadoPor);
             this.groupBox2.Controls.Add(this.lblTransmissaoAcustica);
             this.groupBox2.Controls.Add(this.lblRequisitadoPor);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.txtInfoClinica);
             this.groupBox2.Controls.Add(this.lblInformacaoClinica);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtExame);
@@ -621,13 +621,13 @@
             this.dtpDataExame.Size = new System.Drawing.Size(100, 20);
             this.dtpDataExame.TabIndex = 13;
             // 
-            // comboBox1
+            // cmbTransmissaoAcustica
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(542, 42);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(225, 21);
-            this.comboBox1.TabIndex = 12;
+            this.cmbTransmissaoAcustica.FormattingEnabled = true;
+            this.cmbTransmissaoAcustica.Location = new System.Drawing.Point(542, 42);
+            this.cmbTransmissaoAcustica.Name = "cmbTransmissaoAcustica";
+            this.cmbTransmissaoAcustica.Size = new System.Drawing.Size(225, 21);
+            this.cmbTransmissaoAcustica.TabIndex = 12;
             // 
             // cmbRequisitadoPor
             // 
@@ -655,12 +655,12 @@
             this.lblRequisitadoPor.TabIndex = 8;
             this.lblRequisitadoPor.Text = "Requisitado Por:";
             // 
-            // textBox3
+            // txtInfoClinica
             // 
-            this.textBox3.Location = new System.Drawing.Point(133, 70);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(634, 20);
-            this.textBox3.TabIndex = 7;
+            this.txtInfoClinica.Location = new System.Drawing.Point(133, 70);
+            this.txtInfoClinica.Name = "txtInfoClinica";
+            this.txtInfoClinica.Size = new System.Drawing.Size(634, 20);
+            this.txtInfoClinica.TabIndex = 7;
             // 
             // lblInformacaoClinica
             // 
@@ -684,6 +684,7 @@
             // 
             this.txtExame.Location = new System.Drawing.Point(133, 18);
             this.txtExame.Name = "txtExame";
+            this.txtExame.ReadOnly = true;
             this.txtExame.Size = new System.Drawing.Size(79, 20);
             this.txtExame.TabIndex = 3;
             // 
@@ -796,20 +797,21 @@
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.Location = new System.Drawing.Point(718, 1046);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSave.Location = new System.Drawing.Point(718, 1046);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 3;
+            this.btnSave.Text = "Guardar";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // UscExameEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.grbAdicionar);
             this.Name = "UscExameEdit";
             this.Size = new System.Drawing.Size(796, 1078);
@@ -850,7 +852,7 @@
         private System.Windows.Forms.ComboBox cmbCardiologista1;
         private System.Windows.Forms.Label lblCardiologista;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtConclusao;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Button btnAddPericardico;
         private System.Windows.Forms.TextBox txtPericardico;
@@ -876,11 +878,11 @@
         private System.Windows.Forms.TextBox txtEstruturasValvulares;
         private System.Windows.Forms.ComboBox cmbEstrutrasValvulares;
         private System.Windows.Forms.GroupBox gpbDimensoes;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtFracaoEjecao;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtParedeSuperior;
         private System.Windows.Forms.Label lblParedePosterior;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtSepto;
         private System.Windows.Forms.Label lblSepto;
         private System.Windows.Forms.TextBox txtFracaoEncurtamento;
         private System.Windows.Forms.Label lblFracaoEncurtamento;
@@ -895,11 +897,11 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DateTimePicker dtpDataExame;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbTransmissaoAcustica;
         private System.Windows.Forms.ComboBox cmbRequisitadoPor;
         private System.Windows.Forms.Label lblTransmissaoAcustica;
         private System.Windows.Forms.Label lblRequisitadoPor;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtInfoClinica;
         private System.Windows.Forms.Label lblInformacaoClinica;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtExame;
@@ -914,6 +916,6 @@
         private System.Windows.Forms.Label lblDataNascimento;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSave;
     }
 }

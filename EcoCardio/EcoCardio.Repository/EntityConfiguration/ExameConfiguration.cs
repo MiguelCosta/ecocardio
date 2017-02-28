@@ -27,6 +27,7 @@ namespace EcoCardio.Repository.EntityConfiguration
             Property(e => e.FracaoEncurtamento).IsOptional();
             Property(e => e.FuncaoVentricular).HasMaxLength(4096);
             Property(e => e.Idade).IsOptional();
+            Property(e => e.InfoClinica).IsOptional().HasMaxLength(4096);
             Property(e => e.LastName).IsOptional().HasMaxLength(4096);
             Property(e => e.MassasIntracavitarias).HasMaxLength(4096);
             Property(e => e.Morada).HasMaxLength(4096);
@@ -37,14 +38,6 @@ namespace EcoCardio.Repository.EntityConfiguration
             Property(e => e.Observacao).IsOptional().HasMaxLength(4096);
             Property(e => e.Telefone).IsOptional().HasMaxLength(4096);
             Property(e => e.Telemovel).IsOptional().HasMaxLength(4096);
-
-            HasOptional(e => e.Servico)
-                .WithMany(s => s.Exames)
-                .HasForeignKey(e => e.ServicoId);
-
-            HasOptional(e => e.TransmissaoAcustica)
-                .WithMany(t => t.Exames)
-                .HasForeignKey(e => e.TransmissaoAcusticaId);
         }
     }
 }

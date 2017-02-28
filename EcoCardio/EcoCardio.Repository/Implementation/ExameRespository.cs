@@ -15,6 +15,12 @@ namespace EcoCardio.Repository.Implementation
             _context = context;
         }
 
+        public int NextNumber()
+        {
+            var currentNumber = _context.Exames.Max(e => e.Numero);
+            return currentNumber++;
+        }
+
         public IEnumerable<Exame> Search(string nome, int numero, int maxResults = 200)
         {
             var query = _context.Exames

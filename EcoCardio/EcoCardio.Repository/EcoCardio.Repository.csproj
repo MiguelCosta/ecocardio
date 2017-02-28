@@ -87,6 +87,14 @@
     <Compile Include="Migrations\201702281611520_RemoveUtente.Designer.cs">
       <DependentUpon>201702281611520_RemoveUtente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702281711144_AddFieldsExame.cs" />
+    <Compile Include="Migrations\201702281711144_AddFieldsExame.Designer.cs">
+      <DependentUpon>201702281711144_AddFieldsExame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702281726188_RemoveRelationsOfExame.cs" />
+    <Compile Include="Migrations\201702281726188_RemoveRelationsOfExame.Designer.cs">
+      <DependentUpon>201702281726188_RemoveRelationsOfExame.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -112,6 +120,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702281611520_RemoveUtente.resx">
       <DependentUpon>201702281611520_RemoveUtente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702281711144_AddFieldsExame.resx">
+      <DependentUpon>201702281711144_AddFieldsExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702281726188_RemoveRelationsOfExame.resx">
+      <DependentUpon>201702281726188_RemoveRelationsOfExame.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

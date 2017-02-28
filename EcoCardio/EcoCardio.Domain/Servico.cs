@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace EcoCardio.Domain
+﻿namespace EcoCardio.Domain
 {
     public class Servico
     {
@@ -9,7 +7,5 @@ namespace EcoCardio.Domain
         public string Nome { get; set; }
 
         public string Tipo { get; set; }
-
-        public virtual ICollection<Exame> Exames { get; set; }
     }
 }

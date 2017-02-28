@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EcoCardio.Domain.Enums;
+using System;
 
 namespace EcoCardio.Domain
 {
@@ -38,13 +39,21 @@ namespace EcoCardio.Domain
 
         public string FuncaoVentricular { get; set; }
 
+        public Genre Genre { get; set; }
+
         public int Id { get; set; }
 
         public int? Idade { get; set; }
 
+        public string InfoClinica { get; set; }
+
         public string LastName { get; set; }
 
         public string MassasIntracavitarias { get; set; }
+
+        public string Medico1 { get; set; }
+
+        public string Medico2 { get; set; }
 
         public string Morada { get; set; }
 
@@ -58,16 +67,14 @@ namespace EcoCardio.Domain
 
         public string Observacao { get; set; }
 
-        public virtual Servico Servico { get; set; }
+        public string Pericardio { get; set; }
 
-        public int? ServicoId { get; set; }
+        public string RequisitadoPor { get; set; }
 
         public string Telefone { get; set; }
 
         public string Telemovel { get; set; }
 
-        public virtual TransmissaoAcustica TransmissaoAcustica { get; set; }
-
-        public int? TransmissaoAcusticaId { get; set; }
+        public string TransmissaoAcustica { get; set; }
     }
 }

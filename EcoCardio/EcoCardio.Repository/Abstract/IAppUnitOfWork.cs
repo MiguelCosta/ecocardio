@@ -13,5 +13,7 @@
         ITransmissaoAcusticaRespository TransmissoesAcusticas { get; set; }
 
         IUtilizadorRespository Utilizadores { get; set; }
+
+        void Complete();
     }
 }
