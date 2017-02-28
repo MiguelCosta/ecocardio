@@ -40,9 +40,29 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net40\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Syncfusion.Grid.Base, Version=14.4400.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Grouping.Base, Version=14.4460.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Grouping.Windows, Version=14.4460.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Windows, Version=14.4400.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grouping.Base, Version=14.4460.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Base, Version=14.4400.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Windows, Version=14.4400.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.SpellChecker.Base, Version=14.4460.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Base, Version=14.4400.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=14.4400.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,21 +71,48 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exame\FrmExameNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exame\FrmExameNew.Designer.cs">
+      <DependentUpon>FrmExameNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exame\UscExameEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exame\UscExameEdit.Designer.cs">
+      <DependentUpon>UscExameEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearch.Designer.cs">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutentication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutentication.Designer.cs">
+      <DependentUpon>FrmAutentication.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSplashScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSplashScreen.Designer.cs">
-      <DependentUpon>FrmSplashScreen.cs</DependentUpon>
-    </Compile>
     <Compile Include="GerallApp.cs" />
+    <Compile Include="Img100.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img100.resx</DependentUpon>
+    </Compile>
     <Compile Include="Img16.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -81,6 +128,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Img32.resx</DependentUpon>
     </Compile>
+    <Compile Include="Img50.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img50.resx</DependentUpon>
+    </Compile>
     <Compile Include="ImgCustom.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -88,11 +140,48 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Template\FrmTemplateEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Template\FrmTemplateEdit.Designer.cs">
+      <DependentUpon>FrmTemplateEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template\FrmTemplateList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Template\FrmTemplateList.Designer.cs">
+      <DependentUpon>FrmTemplateList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\FrmUsersEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\FrmUsersEdit.Designer.cs">
+      <DependentUpon>FrmUsersEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Users\FrmUsersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users\FrmUsersList.Designer.cs">
+      <DependentUpon>FrmUsersList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Exame\FrmExameNew.resx">
+      <DependentUpon>FrmExameNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exame\UscExameEdit.resx">
+      <DependentUpon>UscExameEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearch.resx">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutentication.resx">
+      <DependentUpon>FrmAutentication.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSplashScreen.resx">
-      <DependentUpon>FrmSplashScreen.cs</DependentUpon>
+    <EmbeddedResource Include="Img100.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Img100.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Img16.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -105,6 +194,10 @@
     <EmbeddedResource Include="Img32.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Img32.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img50.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Img50.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ImgCustom.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -119,8 +212,25 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Template\FrmTemplateEdit.resx">
+      <DependentUpon>FrmTemplateEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\FrmTemplateList.resx">
+      <DependentUpon>FrmTemplateList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\FrmUsersEdit.resx">
+      <DependentUpon>FrmUsersEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users\FrmUsersList.resx">
+      <DependentUpon>FrmUsersList.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\EcoCardio.Domain.Exame.datasource" />
+    <None Include="Properties\DataSources\EcoCardio.Domain.Template.datasource" />
+    <None Include="Properties\DataSources\EcoCardio.Domain.Utilizador.datasource" />
+    <None Include="Properties\DataSources\EcoCardio.Repository.EcoCardioContext.datasource" />
+    <None Include="Properties\DataSources\EcoCardio.Repository.Migrations.AddServico.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -132,10 +242,38 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\Img100\Add100.png" />
+    <Content Include="Resources\Img100\Create100.png" />
+    <Content Include="Resources\Img100\CreateWhite100.png" />
+    <Content Include="Resources\Img100\Edit100.png" />
+    <Content Include="Resources\Img100\NewWhite100.png" />
+    <Content Include="Resources\Img100\Print100.png" />
+    <Content Include="Resources\Img100\Search100.png" />
+    <Content Include="Resources\Img16\Add16.png" />
     <Content Include="Resources\Img16\exit.png" />
+    <Content Include="Resources\Img24\Add24.png" />
     <Content Include="Resources\Img24\exit.png" />
+    <Content Include="Resources\Img32\Add32.png" />
+    <Content Include="Resources\Img32\Create32.png" />
+    <Content Include="Resources\Img32\Delete32.png" />
+    <Content Include="Resources\Img32\Edit32.png" />
     <Content Include="Resources\Img32\exit.png" />
-    <Content Include="Resources\ImgCustom\remover.png" />
+    <Content Include="Resources\Img32\PDF32.png" />
+    <Content Include="Resources\Img32\Print32.png" />
+    <Content Include="Resources\Img32\Search32.png" />
+    <Content Include="Resources\Img50\Add50.png" />
+    <Content Include="Resources\Img50\Create50.png" />
+    <Content Include="Resources\Img50\CreateWhite50.png" />
+    <Content Include="Resources\Img50\Delete50.png" />
+    <Content Include="Resources\Img50\Edit50.png" />
+    <Content Include="Resources\Img50\NewWhite50.png" />
+    <Content Include="Resources\Img50\Print50.png" />
+    <Content Include="Resources\Img50\Search50.png" />
+    <Content Include="Resources\ImgCustom\editIcon.png" />
+    <Content Include="Resources\ImgCustom\login-image.png" />
+    <Content Include="Resources\ImgCustom\newIcon.png" />
+    <Content Include="Resources\ImgCustom\realecoSmall.png" />
+    <Content Include="Resources\ImgCustom\searchIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EcoCardio.Domain\EcoCardio.Domain.csproj">
@@ -147,6 +285,7 @@
       <Name>EcoCardio.Repository</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

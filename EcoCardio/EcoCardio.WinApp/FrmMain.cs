@@ -1,4 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 
 namespace EcoCardio.WinApp
@@ -8,41 +14,58 @@ namespace EcoCardio.WinApp
         public FrmMain()
         {
             InitializeComponent();
+            this.Load += FrmMain_Load;
+            mnuGeral_Exit.Click += mnuGeral_Exit_Click;
         }
 
-        private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            // coisas a fazer quando se fecha o form
-            // fechar a ligação à base de dados por exemplo
-        }
+        #region "FormMain"
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
             // Inicia a ligação à base de dados
             GerallApp.AppRepository = new Repository.Implementation.AppUnitOfWork();
 
-            // coisas a fazer quando abre o form
-
             // mostrar o splash screen
-            var splash = new FrmSplashScreen();
-            splash.ShowDialog();
+            var splash = new FrmAutentication();
+            var result = splash.ShowDialog();
+            if (result != System.Windows.Forms.DialogResult.OK)
+            {
+                // se não foi possível fazer login fecha a aplicação
+                this.Close();
+            }
+            else
+            {
+                ShowFormInit();
+            }
+        }
 
-            // Query de teste dos serviços
+        #endregion "FormMain"
 
-            // todos os servicos
-            var servicos = GerallApp.AppRepository.Servicos.GetAll(); ;
+        #region "FormMain Actions"
 
-            // servicos filtrados por nome
-            var servicosNome = GerallApp.AppRepository.Servicos
-                .GetBy(x => x.Nome.Contains("Dr"));
+        private void mnuGeral_Exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
-            // servico filtrado por Id
-            var servicoId = GerallApp.AppRepository.Servicos
-                .Find(1);
+        #endregion "FormMain Actions"
 
-            // templates por um tipo
-            var templateCavidadesCardiacas = GerallApp.AppRepository.Templates
-                .GetBy(x => x.Type == Domain.Enums.TemplateType.CavidadesCardiacas);
+        #region "ShowForms"
+
+        private void ShowFormInit()
+        {
+            lblUser.Text = GerallApp.CurrentUser.Nome;
+
+            var frm = new FrmSearch();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        #endregion "ShowForms"
+
+        private void FrmMain_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
