@@ -55,7 +55,6 @@
     <Compile Include="Abstract\ITransmissaoAcusticaRespository.cs" />
     <Compile Include="Abstract\ITemplateRespository.cs" />
     <Compile Include="Abstract\IServicoRespository.cs" />
-    <Compile Include="Abstract\IUtenteRespository.cs" />
     <Compile Include="Abstract\IUtilizadorRespository.cs" />
     <Compile Include="EcoCardioContext.cs" />
     <Compile Include="EntityConfiguration\ExameConfiguration.cs" />
@@ -63,7 +62,6 @@
     <Compile Include="EntityConfiguration\TransmissaoAcusticaConfiguration.cs" />
     <Compile Include="EntityConfiguration\TemplateConfiguration.cs" />
     <Compile Include="EntityConfiguration\ServicoConfiguration.cs" />
-    <Compile Include="EntityConfiguration\UtenteConfiguration.cs" />
     <Compile Include="EntityConfiguration\UtilizadorConfiguration.cs" />
     <Compile Include="Implementation\AppUnitOfWork.cs" />
     <Compile Include="Implementation\ExameRespository.cs" />
@@ -71,7 +69,6 @@
     <Compile Include="Implementation\ResponsavelRespository.cs" />
     <Compile Include="Implementation\ServicoRespository.cs" />
     <Compile Include="Implementation\UtilizadorRespository.cs" />
-    <Compile Include="Implementation\UtenteRespository.cs" />
     <Compile Include="Implementation\TransmissoesAcusticasRespository.cs" />
     <Compile Include="Implementation\TemplateRespository.cs" />
     <Compile Include="Migrations\201612132223033_AddServico.cs" />
@@ -85,6 +82,10 @@
     <Compile Include="Migrations\201701030019375_AddExame.cs" />
     <Compile Include="Migrations\201701030019375_AddExame.Designer.cs">
       <DependentUpon>201701030019375_AddExame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702281611520_RemoveUtente.cs" />
+    <Compile Include="Migrations\201702281611520_RemoveUtente.Designer.cs">
+      <DependentUpon>201702281611520_RemoveUtente.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201701030019375_AddExame.resx">
       <DependentUpon>201701030019375_AddExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702281611520_RemoveUtente.resx">
+      <DependentUpon>201702281611520_RemoveUtente.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

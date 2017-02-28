@@ -25,7 +25,7 @@ namespace EcoCardio.Repository.Implementation
                 var names = System.Text.RegularExpressions.Regex.Split(nome, @"\s+");
                 foreach (var n in names)
                 {
-                    query = query.Where(e => e.Utente.Nome.Contains(n) || e.Nome.Contains(n));
+                    query = query.Where(e => e.FirstName.Contains(n) || e.LastName.Contains(n) || e.Nome.Contains(n));
                 }
             }
 

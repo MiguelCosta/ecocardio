@@ -10,6 +10,8 @@ namespace EcoCardio.Domain
 
         public DateTime Data { get; set; }
 
+        public DateTime? DataNascimento { get; set; }
+
         public int? DiametroAorta { get; set; }
 
         public int? DiametroAuriculaEsquerda { get; set; }
@@ -22,9 +24,13 @@ namespace EcoCardio.Domain
 
         public int? DiametroVETelessistole { get; set; }
 
+        public string Email { get; set; }
+
         public string EspessuraParedesVentriculares { get; set; }
 
         public string EstruturasValvulares { get; set; }
+
+        public string FirstName { get; set; }
 
         public int? FracaoEjecao { get; set; }
 
@@ -36,7 +42,11 @@ namespace EcoCardio.Domain
 
         public int? Idade { get; set; }
 
+        public string LastName { get; set; }
+
         public string MassasIntracavitarias { get; set; }
+
+        public string Morada { get; set; }
 
         public string Nome { get; set; }
 
@@ -44,18 +54,20 @@ namespace EcoCardio.Domain
 
         public int? NumeroProcesso { get; set; }
 
+        public string NumeroSNS { get; set; }
+
         public string Observacao { get; set; }
 
         public virtual Servico Servico { get; set; }
 
         public int? ServicoId { get; set; }
 
+        public string Telefone { get; set; }
+
+        public string Telemovel { get; set; }
+
         public virtual TransmissaoAcustica TransmissaoAcustica { get; set; }
 
         public int? TransmissaoAcusticaId { get; set; }
-
-        public virtual Utente Utente { get; set; }
-
-        public int? UtenteId { get; set; }
     }
 }

@@ -23,8 +23,6 @@ namespace EcoCardio.Repository
 
         public DbSet<TransmissaoAcustica> TransmissoesAcusticas { get; set; }
 
-        public DbSet<Utente> Utentes { get; set; }
-
         public DbSet<Utilizador> Utilizadores { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -35,7 +33,6 @@ namespace EcoCardio.Repository
             modelBuilder.Configurations.Add(new ServicoConfiguration());
             modelBuilder.Configurations.Add(new TemplateConfiguration());
             modelBuilder.Configurations.Add(new TransmissaoAcusticaConfiguration());
-            modelBuilder.Configurations.Add(new UtenteConfiguration());
             modelBuilder.Configurations.Add(new UtilizadorConfiguration());
         }
     }

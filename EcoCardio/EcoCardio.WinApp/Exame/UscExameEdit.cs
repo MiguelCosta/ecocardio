@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace EcoCardio.WinApp.Exame
 {
@@ -11,19 +12,9 @@ namespace EcoCardio.WinApp.Exame
 
         private Domain.Exame Exame { get; set; }
 
-        private Domain.Utente Utente { get; set; }
-
         public void SetExame(int exameId)
         {
             Exame = GerallApp.AppRepository.Exames.Find(exameId);
-            if (Exame.UtenteId.HasValue)
-            {
-                Utente = GerallApp.AppRepository.Utentes.Find(Exame.UtenteId.Value);
-            }
-            else
-            {
-                Utente = new Domain.Utente();
-            }
             FillExame();
         }
 
@@ -31,7 +22,16 @@ namespace EcoCardio.WinApp.Exame
         {
             //identificacao
             txtNome.Text = Exame.Nome;
-            dtpDataNascimento.Value = Utente.DataNascimento;
+            if (Exame.DataNascimento.HasValue)
+            {
+                dtpDataNascimento.Value = Exame.DataNascimento.Value;
+                dtpDataNascimento.Checked = true;
+            }
+            else
+            {
+                dtpDataNascimento.Value = DateTime.Now;
+                dtpDataNascimento.Checked = false;
+            }
             txtIdade.Text = Exame.Idade?.ToString();
         }
     }

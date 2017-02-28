@@ -48,7 +48,6 @@
     <Compile Include="Servico.cs" />
     <Compile Include="Template.cs" />
     <Compile Include="TransmissaoAcustica.cs" />
-    <Compile Include="Utente.cs" />
     <Compile Include="Utilizador.cs" />
   </ItemGroup>
   <ItemGroup />

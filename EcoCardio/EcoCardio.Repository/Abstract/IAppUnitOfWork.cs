@@ -12,8 +12,6 @@
 
         ITransmissaoAcusticaRespository TransmissoesAcusticas { get; set; }
 
-        IUtenteRespository Utentes { get; set; }
-
         IUtilizadorRespository Utilizadores { get; set; }
     }
 }
