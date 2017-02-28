@@ -66,8 +66,8 @@ namespace EcoCardio.Repository.Implementation
 
         public void Update(int id, TEntity t)
         {
-            _dbSet.Attach(t);
-            _context.Entry(t).State = EntityState.Modified;
+            var oldItem = _context.Set<TEntity>().Find(id);
+            _context.Entry(oldItem).CurrentValues.SetValues(t);
         }
     }
 }

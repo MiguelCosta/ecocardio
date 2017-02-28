@@ -1,6 +1,5 @@
-﻿using System;
+﻿using EcoCardio.Domain;
 using System.Collections.Generic;
-using EcoCardio.Domain;
 using System.Linq;
 
 namespace EcoCardio.Repository.Implementation
@@ -13,6 +12,15 @@ namespace EcoCardio.Repository.Implementation
            : base(context)
         {
             _context = context;
+        }
+
+        public IEnumerable<Exame> MostRecent(int maxResults = 100)
+        {
+            var results = _context.Exames
+                .OrderByDescending(e => e.Data)
+                .Take(maxResults)
+                .ToList();
+            return results;
         }
 
         public int NextNumber()

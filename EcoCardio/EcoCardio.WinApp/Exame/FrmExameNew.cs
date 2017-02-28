@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace EcoCardio.WinApp.Exame
 {
@@ -19,6 +12,14 @@ namespace EcoCardio.WinApp.Exame
         public static void Open()
         {
             var frm = new FrmExameNew();
+            frm.ShowDialog();
+        }
+
+        public static void Open(int exameId)
+        {
+            var frm = new FrmExameNew();
+            frm.Text = "Editar Exame";
+            frm.uscExameEditControl.SetExame(exameId);
             frm.ShowDialog();
         }
     }

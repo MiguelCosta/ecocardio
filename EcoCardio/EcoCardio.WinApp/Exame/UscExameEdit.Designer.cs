@@ -133,7 +133,7 @@
             this.grbAdicionar.Controls.Add(this.groupBox1);
             this.grbAdicionar.Location = new System.Drawing.Point(2, 0);
             this.grbAdicionar.Name = "grbAdicionar";
-            this.grbAdicionar.Size = new System.Drawing.Size(794, 1040);
+            this.grbAdicionar.Size = new System.Drawing.Size(794, 1432);
             this.grbAdicionar.TabIndex = 2;
             this.grbAdicionar.TabStop = false;
             // 
@@ -143,7 +143,7 @@
             this.groupBox10.Controls.Add(this.cmbCardiologista2);
             this.groupBox10.Controls.Add(this.cmbCardiologista1);
             this.groupBox10.Controls.Add(this.lblCardiologista);
-            this.groupBox10.Location = new System.Drawing.Point(7, 974);
+            this.groupBox10.Location = new System.Drawing.Point(7, 1375);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(773, 51);
             this.groupBox10.TabIndex = 22;
@@ -153,7 +153,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(269, 22);
+            this.label5.Location = new System.Drawing.Point(333, 22);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(12, 13);
             this.label5.TabIndex = 7;
@@ -162,9 +162,9 @@
             // cmbCardiologista2
             // 
             this.cmbCardiologista2.FormattingEnabled = true;
-            this.cmbCardiologista2.Location = new System.Drawing.Point(295, 19);
+            this.cmbCardiologista2.Location = new System.Drawing.Point(359, 19);
             this.cmbCardiologista2.Name = "cmbCardiologista2";
-            this.cmbCardiologista2.Size = new System.Drawing.Size(121, 21);
+            this.cmbCardiologista2.Size = new System.Drawing.Size(190, 21);
             this.cmbCardiologista2.TabIndex = 6;
             // 
             // cmbCardiologista1
@@ -172,7 +172,7 @@
             this.cmbCardiologista1.FormattingEnabled = true;
             this.cmbCardiologista1.Location = new System.Drawing.Point(132, 19);
             this.cmbCardiologista1.Name = "cmbCardiologista1";
-            this.cmbCardiologista1.Size = new System.Drawing.Size(121, 21);
+            this.cmbCardiologista1.Size = new System.Drawing.Size(195, 21);
             this.cmbCardiologista1.TabIndex = 5;
             // 
             // lblCardiologista
@@ -187,9 +187,9 @@
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.txtConclusao);
-            this.groupBox9.Location = new System.Drawing.Point(7, 904);
+            this.groupBox9.Location = new System.Drawing.Point(7, 1264);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(773, 64);
+            this.groupBox9.Size = new System.Drawing.Size(773, 111);
             this.groupBox9.TabIndex = 21;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Conclusão";
@@ -200,7 +200,7 @@
             this.txtConclusao.Multiline = true;
             this.txtConclusao.Name = "txtConclusao";
             this.txtConclusao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtConclusao.Size = new System.Drawing.Size(688, 37);
+            this.txtConclusao.Size = new System.Drawing.Size(688, 86);
             this.txtConclusao.TabIndex = 17;
             // 
             // groupBox8
@@ -208,9 +208,9 @@
             this.groupBox8.Controls.Add(this.btnAddPericardico);
             this.groupBox8.Controls.Add(this.txtPericardico);
             this.groupBox8.Controls.Add(this.cmbPericardico);
-            this.groupBox8.Location = new System.Drawing.Point(7, 808);
+            this.groupBox8.Location = new System.Drawing.Point(6, 1108);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(773, 90);
+            this.groupBox8.Size = new System.Drawing.Size(773, 150);
             this.groupBox8.TabIndex = 20;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Pericárdico";
@@ -230,7 +230,7 @@
             this.txtPericardico.Multiline = true;
             this.txtPericardico.Name = "txtPericardico";
             this.txtPericardico.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtPericardico.Size = new System.Drawing.Size(688, 37);
+            this.txtPericardico.Size = new System.Drawing.Size(688, 98);
             this.txtPericardico.TabIndex = 17;
             // 
             // cmbPericardico
@@ -246,9 +246,9 @@
             this.groupBox7.Controls.Add(this.btnAddMassasIntracavitarias);
             this.groupBox7.Controls.Add(this.txtMassasIntracavitarias);
             this.groupBox7.Controls.Add(this.cmbMassasIntracavitarias);
-            this.groupBox7.Location = new System.Drawing.Point(7, 712);
+            this.groupBox7.Location = new System.Drawing.Point(6, 952);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(773, 90);
+            this.groupBox7.Size = new System.Drawing.Size(773, 150);
             this.groupBox7.TabIndex = 19;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Massas intracavitárias";
@@ -268,7 +268,7 @@
             this.txtMassasIntracavitarias.Multiline = true;
             this.txtMassasIntracavitarias.Name = "txtMassasIntracavitarias";
             this.txtMassasIntracavitarias.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMassasIntracavitarias.Size = new System.Drawing.Size(688, 37);
+            this.txtMassasIntracavitarias.Size = new System.Drawing.Size(688, 98);
             this.txtMassasIntracavitarias.TabIndex = 17;
             // 
             // cmbMassasIntracavitarias
@@ -284,9 +284,9 @@
             this.groupBox6.Controls.Add(this.btnAddFuncaoVentricular);
             this.groupBox6.Controls.Add(this.txtFuncaoVentricular);
             this.groupBox6.Controls.Add(this.cmbFuncaoVentricular);
-            this.groupBox6.Location = new System.Drawing.Point(7, 616);
+            this.groupBox6.Location = new System.Drawing.Point(6, 796);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(773, 90);
+            this.groupBox6.Size = new System.Drawing.Size(773, 150);
             this.groupBox6.TabIndex = 18;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Função ventricular";
@@ -306,7 +306,7 @@
             this.txtFuncaoVentricular.Multiline = true;
             this.txtFuncaoVentricular.Name = "txtFuncaoVentricular";
             this.txtFuncaoVentricular.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtFuncaoVentricular.Size = new System.Drawing.Size(688, 37);
+            this.txtFuncaoVentricular.Size = new System.Drawing.Size(688, 98);
             this.txtFuncaoVentricular.TabIndex = 17;
             // 
             // cmbFuncaoVentricular
@@ -322,9 +322,9 @@
             this.groupBox5.Controls.Add(this.btnEspessuraParedes);
             this.groupBox5.Controls.Add(this.txtEspessuraParedes);
             this.groupBox5.Controls.Add(this.cmbEspessuraParedes);
-            this.groupBox5.Location = new System.Drawing.Point(6, 520);
+            this.groupBox5.Location = new System.Drawing.Point(6, 640);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(773, 90);
+            this.groupBox5.Size = new System.Drawing.Size(773, 150);
             this.groupBox5.TabIndex = 17;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Espessura das paredes ventriculares";
@@ -344,7 +344,7 @@
             this.txtEspessuraParedes.Multiline = true;
             this.txtEspessuraParedes.Name = "txtEspessuraParedes";
             this.txtEspessuraParedes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEspessuraParedes.Size = new System.Drawing.Size(688, 37);
+            this.txtEspessuraParedes.Size = new System.Drawing.Size(688, 98);
             this.txtEspessuraParedes.TabIndex = 14;
             // 
             // cmbEspessuraParedes
@@ -360,9 +360,9 @@
             this.groupBox4.Controls.Add(this.btnAddCavidadesCardiacas);
             this.groupBox4.Controls.Add(this.txtCavidadesCardiacas);
             this.groupBox4.Controls.Add(this.cmbCavidadesCardiacas);
-            this.groupBox4.Location = new System.Drawing.Point(6, 424);
+            this.groupBox4.Location = new System.Drawing.Point(7, 484);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(773, 90);
+            this.groupBox4.Size = new System.Drawing.Size(773, 150);
             this.groupBox4.TabIndex = 16;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Cavidades cardíacas e grandes vasos";
@@ -382,7 +382,7 @@
             this.txtCavidadesCardiacas.Multiline = true;
             this.txtCavidadesCardiacas.Name = "txtCavidadesCardiacas";
             this.txtCavidadesCardiacas.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtCavidadesCardiacas.Size = new System.Drawing.Size(688, 37);
+            this.txtCavidadesCardiacas.Size = new System.Drawing.Size(688, 98);
             this.txtCavidadesCardiacas.TabIndex = 11;
             // 
             // cmbCavidadesCardiacas
@@ -400,7 +400,7 @@
             this.groupBox3.Controls.Add(this.cmbEstrutrasValvulares);
             this.groupBox3.Location = new System.Drawing.Point(7, 328);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(772, 90);
+            this.groupBox3.Size = new System.Drawing.Size(772, 150);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Estruturas valvulares";
@@ -420,7 +420,7 @@
             this.txtEstruturasValvulares.Multiline = true;
             this.txtEstruturasValvulares.Name = "txtEstruturasValvulares";
             this.txtEstruturasValvulares.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEstruturasValvulares.Size = new System.Drawing.Size(690, 37);
+            this.txtEstruturasValvulares.Size = new System.Drawing.Size(690, 97);
             this.txtEstruturasValvulares.TabIndex = 8;
             // 
             // cmbEstrutrasValvulares
@@ -760,6 +760,7 @@
             // 
             this.txtIdade.Location = new System.Drawing.Point(253, 48);
             this.txtIdade.Name = "txtIdade";
+            this.txtIdade.ReadOnly = true;
             this.txtIdade.Size = new System.Drawing.Size(37, 20);
             this.txtIdade.TabIndex = 7;
             // 
@@ -799,7 +800,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(718, 1046);
+            this.btnSave.Location = new System.Drawing.Point(718, 1438);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 3;
@@ -814,7 +815,7 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.grbAdicionar);
             this.Name = "UscExameEdit";
-            this.Size = new System.Drawing.Size(796, 1078);
+            this.Size = new System.Drawing.Size(796, 1480);
             this.grbAdicionar.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();

@@ -37,21 +37,20 @@
             this.txtSearchNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvExames = new System.Windows.Forms.DataGridView();
-            this.exameBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnConsultarRegisto = new System.Windows.Forms.Button();
-            this.btnEditarRegisto = new System.Windows.Forms.Button();
-            this.btnCriarRegisto = new System.Windows.Forms.Button();
-            this.picLogo = new System.Windows.Forms.PictureBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.numeroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataNascimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.exameBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnEditarRegisto = new System.Windows.Forms.Button();
+            this.btnCriarRegisto = new System.Windows.Forms.Button();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvExames)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exameBindingSource)).BeginInit();
@@ -144,118 +143,7 @@
             this.dgvExames.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvExames.Size = new System.Drawing.Size(748, 368);
             this.dgvExames.TabIndex = 0;
-            // 
-            // exameBindingSource
-            // 
-            this.exameBindingSource.DataSource = typeof(EcoCardio.Domain.Exame);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.btnConsultarRegisto);
-            this.groupBox2.Controls.Add(this.btnEditarRegisto);
-            this.groupBox2.Controls.Add(this.btnCriarRegisto);
-            this.groupBox2.Location = new System.Drawing.Point(12, 131);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(113, 393);
-            this.groupBox2.TabIndex = 14;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Opções";
-            // 
-            // button3
-            // 
-            this.button3.Image = global::EcoCardio.WinApp.Img32.PDF32;
-            this.button3.Location = new System.Drawing.Point(6, 325);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 55);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "Gerar PDF";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Image = global::EcoCardio.WinApp.Img32.Print32;
-            this.button2.Location = new System.Drawing.Point(6, 264);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 55);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Imprimir";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Image = global::EcoCardio.WinApp.Img32.Delete32;
-            this.button1.Location = new System.Drawing.Point(6, 203);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 55);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Apagar Registo";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // btnConsultarRegisto
-            // 
-            this.btnConsultarRegisto.Image = global::EcoCardio.WinApp.Img32.Search32;
-            this.btnConsultarRegisto.Location = new System.Drawing.Point(6, 142);
-            this.btnConsultarRegisto.Name = "btnConsultarRegisto";
-            this.btnConsultarRegisto.Size = new System.Drawing.Size(101, 55);
-            this.btnConsultarRegisto.TabIndex = 15;
-            this.btnConsultarRegisto.Text = "Consultar Registo";
-            this.btnConsultarRegisto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnConsultarRegisto.UseVisualStyleBackColor = true;
-            // 
-            // btnEditarRegisto
-            // 
-            this.btnEditarRegisto.Image = global::EcoCardio.WinApp.Img32.Edit32;
-            this.btnEditarRegisto.Location = new System.Drawing.Point(6, 80);
-            this.btnEditarRegisto.Name = "btnEditarRegisto";
-            this.btnEditarRegisto.Size = new System.Drawing.Size(101, 56);
-            this.btnEditarRegisto.TabIndex = 14;
-            this.btnEditarRegisto.Text = "Editar Registo";
-            this.btnEditarRegisto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnEditarRegisto.UseVisualStyleBackColor = true;
-            // 
-            // btnCriarRegisto
-            // 
-            this.btnCriarRegisto.Image = global::EcoCardio.WinApp.Img32.Create32;
-            this.btnCriarRegisto.Location = new System.Drawing.Point(6, 19);
-            this.btnCriarRegisto.Name = "btnCriarRegisto";
-            this.btnCriarRegisto.Size = new System.Drawing.Size(101, 55);
-            this.btnCriarRegisto.TabIndex = 0;
-            this.btnCriarRegisto.Text = "Criar Registo";
-            this.btnCriarRegisto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnCriarRegisto.UseVisualStyleBackColor = true;
-            this.btnCriarRegisto.Click += new System.EventHandler(this.btnCriarRegisto_Click);
-            // 
-            // picLogo
-            // 
-            this.picLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.picLogo.Image = global::EcoCardio.WinApp.ImgCustom.realecoSmall;
-            this.picLogo.Location = new System.Drawing.Point(717, 27);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(174, 76);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogo.TabIndex = 11;
-            this.picLogo.TabStop = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox3.Controls.Add(this.dgvExames);
-            this.groupBox3.Location = new System.Drawing.Point(131, 131);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(760, 393);
-            this.groupBox3.TabIndex = 15;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Listagem";
+            this.dgvExames.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvExames_CellDoubleClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -297,6 +185,107 @@
             this.dataNascimentoDataGridViewTextBoxColumn.Name = "dataNascimentoDataGridViewTextBoxColumn";
             this.dataNascimentoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // exameBindingSource
+            // 
+            this.exameBindingSource.DataSource = typeof(EcoCardio.Domain.Exame);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btnEditarRegisto);
+            this.groupBox2.Controls.Add(this.btnCriarRegisto);
+            this.groupBox2.Location = new System.Drawing.Point(12, 131);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(113, 393);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Opções";
+            // 
+            // button3
+            // 
+            this.button3.Image = global::EcoCardio.WinApp.Img32.PDF32;
+            this.button3.Location = new System.Drawing.Point(6, 264);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(101, 55);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "Gerar PDF";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Image = global::EcoCardio.WinApp.Img32.Print32;
+            this.button2.Location = new System.Drawing.Point(6, 203);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(101, 55);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Imprimir";
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Image = global::EcoCardio.WinApp.Img32.Delete32;
+            this.button1.Location = new System.Drawing.Point(6, 142);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 55);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Apagar Registo";
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnEditarRegisto
+            // 
+            this.btnEditarRegisto.Image = global::EcoCardio.WinApp.Img32.Edit32;
+            this.btnEditarRegisto.Location = new System.Drawing.Point(6, 80);
+            this.btnEditarRegisto.Name = "btnEditarRegisto";
+            this.btnEditarRegisto.Size = new System.Drawing.Size(101, 56);
+            this.btnEditarRegisto.TabIndex = 14;
+            this.btnEditarRegisto.Text = "Editar Registo";
+            this.btnEditarRegisto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnEditarRegisto.UseVisualStyleBackColor = true;
+            this.btnEditarRegisto.Click += new System.EventHandler(this.btnEditarRegisto_Click);
+            // 
+            // btnCriarRegisto
+            // 
+            this.btnCriarRegisto.Image = global::EcoCardio.WinApp.Img32.Create32;
+            this.btnCriarRegisto.Location = new System.Drawing.Point(6, 19);
+            this.btnCriarRegisto.Name = "btnCriarRegisto";
+            this.btnCriarRegisto.Size = new System.Drawing.Size(101, 55);
+            this.btnCriarRegisto.TabIndex = 0;
+            this.btnCriarRegisto.Text = "Criar Registo";
+            this.btnCriarRegisto.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnCriarRegisto.UseVisualStyleBackColor = true;
+            this.btnCriarRegisto.Click += new System.EventHandler(this.btnCriarRegisto_Click);
+            // 
+            // picLogo
+            // 
+            this.picLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picLogo.Image = global::EcoCardio.WinApp.ImgCustom.realecoSmall;
+            this.picLogo.Location = new System.Drawing.Point(717, 27);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(174, 76);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 11;
+            this.picLogo.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Controls.Add(this.dgvExames);
+            this.groupBox3.Location = new System.Drawing.Point(131, 131);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(760, 393);
+            this.groupBox3.TabIndex = 15;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Listagem";
+            // 
             // FrmSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,7 +326,6 @@
         private System.Windows.Forms.Button btnCriarRegisto;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnConsultarRegisto;
         private System.Windows.Forms.Button btnEditarRegisto;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox3;

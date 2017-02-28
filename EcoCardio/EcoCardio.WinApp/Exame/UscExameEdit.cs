@@ -18,6 +18,32 @@ namespace EcoCardio.WinApp.Exame
             FillExame();
         }
 
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            var newExame = GetExameInfo();
+            if (this.Exame == null)
+            {
+                newExame.Numero = GerallApp.AppRepository.Exames.NextNumber();
+                GerallApp.AppRepository.Exames.Insert(newExame);
+            }
+            else
+            {
+                newExame.Id = this.Exame.Id;
+                GerallApp.AppRepository.Exames.Update(this.Exame.Id, newExame);
+            }
+
+            GerallApp.AppRepository.Complete();
+            this.SetExame(newExame.Id);
+        }
+
+        private int CalculateAge(DateTime value)
+        {
+            var today = DateTime.Now;
+            var age = today.Year - value.Year;
+            if (value > today.AddYears(-age)) age--;
+            return age;
+        }
+
         private void FillExame()
         {
             //identificacao
@@ -33,23 +59,38 @@ namespace EcoCardio.WinApp.Exame
                 dtpDataNascimento.Checked = false;
             }
             txtIdade.Text = Exame.Idade?.ToString();
-        }
+            rdbFeminino.Checked = Exame.Genre == Domain.Enums.Genre.Fem;
+            rdbMasculino.Checked = Exame.Genre == Domain.Enums.Genre.Masc;
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            var newExame = GetExameInfo();
-            if (this.Exame == null )
-            {
-                GerallApp.AppRepository.Exames.Insert(newExame);
-            }
-            else
-            {
-                newExame.Id = this.Exame.Id;
-                GerallApp.AppRepository.Exames.Update(this.Exame.Id, newExame);
-            }
+            // Informacao do Exame
+            txtExame.Text = Exame.Numero.ToString();
+            dtpDataExame.Value = Exame.Data;
+            cmbRequisitadoPor.Text = Exame.RequisitadoPor;
+            cmbTransmissaoAcustica.Text = Exame.TransmissaoAcustica;
+            txtInfoClinica.Text = Exame.InfoClinica;
 
-            GerallApp.AppRepository.Complete();
-            this.SetExame(newExame.Id);
+            // Dimensoes
+            txtRaizAorta.Text = Exame.DiametroAorta.ToString();
+            txtAuriculaEsquerda.Text = Exame.DiametroAuriculaEsquerda.ToString();
+            txtVEtelediastole.Text = Exame.DiametroVETeleadiastole.ToString();
+            txtVEtelessistole.Text = Exame.DiametroVETelessistole.ToString();
+            txtFracaoEncurtamento.Text = Exame.FracaoEncurtamento.ToString();
+            txtSepto.Text = Exame.DiametroSepto.ToString();
+            txtParedeSuperior.Text = Exame.DiametroParedePosterior.ToString();
+            txtFracaoEjecao.Text = Exame.FracaoEjecao.ToString();
+
+            // Text info
+            txtEstruturasValvulares.Text = Exame.EstruturasValvulares;
+            txtCavidadesCardiacas.Text = Exame.CavidadesCardiacas;
+            txtEspessuraParedes.Text = Exame.EspessuraParedesVentriculares;
+            txtFuncaoVentricular.Text = Exame.FuncaoVentricular;
+            txtMassasIntracavitarias.Text = Exame.MassasIntracavitarias;
+            txtPericardico.Text = Exame.Pericardio;
+
+            // Final
+            txtConclusao.Text = Exame.Conclusao;
+            cmbCardiologista1.Text = Exame.Medico1;
+            cmbCardiologista2.Text = Exame.Medico2;
         }
 
         private Domain.Exame GetExameInfo()
@@ -65,11 +106,10 @@ namespace EcoCardio.WinApp.Exame
             }
             result.Genre = rdbFeminino.Checked ? Domain.Enums.Genre.Fem : Domain.Enums.Genre.Masc;
 
-
             // Informação do Exame
             result.Data = dtpDataExame.Value;
-            result.RequisitadoPor = cmbRequisitadoPor.SelectedText;
-            result.TransmissaoAcustica = cmbTransmissaoAcustica.SelectedText;
+            result.RequisitadoPor = cmbRequisitadoPor.Text;
+            result.TransmissaoAcustica = cmbTransmissaoAcustica.Text;
             result.InfoClinica = txtInfoClinica.Text;
 
             // Dimensoes
@@ -109,14 +149,6 @@ namespace EcoCardio.WinApp.Exame
             {
                 return null;
             }
-        }
-
-        private int CalculateAge(DateTime value)
-        {
-            var today = DateTime.Now;
-            var age = today.Year - value.Year;
-            if (value > today.AddYears(-age)) age--;
-            return age;
         }
     }
 }

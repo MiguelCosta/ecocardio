@@ -7,6 +7,8 @@ namespace EcoCardio.Repository.Abstract
     {
         IEnumerable<Exame> Search(string nome, int numero, int maxResults = 100);
 
+        IEnumerable<Exame> MostRecent(int maxResults = 100);
+
         int NextNumber();
     }
 }

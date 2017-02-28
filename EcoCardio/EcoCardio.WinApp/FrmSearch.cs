@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace EcoCardio.WinApp
@@ -16,6 +10,20 @@ namespace EcoCardio.WinApp
             InitializeComponent();
         }
 
+        private void btnCriarRegisto_Click(object sender, EventArgs e)
+        {
+            Exame.FrmExameNew.Open();
+        }
+
+        private void btnEditarRegisto_Click(object sender, EventArgs e)
+        {
+            if (dgvExames.CurrentRow != null)
+            {
+                Domain.Exame exame = (Domain.Exame)dgvExames.CurrentRow.DataBoundItem;
+                Exame.FrmExameNew.Open(exame.Id);
+            }
+        }
+
         private void btnSearch_Click(object sender, EventArgs e)
         {
             int numero = 0;
@@ -25,14 +33,17 @@ namespace EcoCardio.WinApp
             exameBindingSource.DataSource = results;
         }
 
-        private void btnCriarRegisto_Click(object sender, EventArgs e)
+        private void dgvExames_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            Exame.FrmExameNew.Open();
+            Domain.Exame exame = (Domain.Exame)dgvExames.Rows[e.RowIndex].DataBoundItem;
+            Exame.FrmExameNew.Open(exame.Id);
         }
 
         private void FrmSearch_Load(object sender, EventArgs e)
         {
+            var results = GerallApp.AppRepository.Exames.MostRecent(100);
 
+            exameBindingSource.DataSource = results;
         }
     }
 }
