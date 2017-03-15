@@ -45,7 +45,7 @@
             this.exameBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnEditarRegisto = new System.Windows.Forms.Button();
             this.btnCriarRegisto = new System.Windows.Forms.Button();
@@ -194,7 +194,7 @@
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button2);
+            this.groupBox2.Controls.Add(this.btnPrint);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.btnEditarRegisto);
             this.groupBox2.Controls.Add(this.btnCriarRegisto);
@@ -216,16 +216,17 @@
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnPrint
             // 
-            this.button2.Image = global::EcoCardio.WinApp.Img32.Print32;
-            this.button2.Location = new System.Drawing.Point(6, 203);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 55);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Imprimir";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnPrint.Image = global::EcoCardio.WinApp.Img32.Print32;
+            this.btnPrint.Location = new System.Drawing.Point(6, 203);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(101, 55);
+            this.btnPrint.TabIndex = 17;
+            this.btnPrint.Text = "Imprimir";
+            this.btnPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // button1
             // 
@@ -324,7 +325,7 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnCriarRegisto;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnEditarRegisto;
         private System.Windows.Forms.Button button3;
