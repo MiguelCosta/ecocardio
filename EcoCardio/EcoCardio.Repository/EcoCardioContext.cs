@@ -8,6 +8,7 @@ namespace EcoCardio.Repository
     public class EcoCardioContext : DbContext
     {
         public EcoCardioContext()
+            : base("name=EcoCardioConnection")
         {
             Configuration.AutoDetectChangesEnabled = true;
             Configuration.LazyLoadingEnabled = false;

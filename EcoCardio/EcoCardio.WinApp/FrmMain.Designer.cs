@@ -35,6 +35,7 @@
             this.mnuGeral_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.statusBarExt1 = new Syncfusion.Windows.Forms.Tools.Controls.StatusBar.StatusBarExt();
             this.lblUser = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.lblVersion = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarExt1)).BeginInit();
             this.statusBarExt1.SuspendLayout();
@@ -76,6 +77,7 @@
             this.statusBarExt1.BeforeTouchSize = new System.Drawing.Size(724, 22);
             this.statusBarExt1.BorderColor = System.Drawing.SystemColors.Control;
             this.statusBarExt1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.statusBarExt1.Controls.Add(this.lblVersion);
             this.statusBarExt1.Controls.Add(this.lblUser);
             this.statusBarExt1.CustomLayoutBounds = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.statusBarExt1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -90,11 +92,19 @@
             // 
             // lblUser
             // 
-            this.lblUser.Location = new System.Drawing.Point(0, 2);
+            this.lblUser.Location = new System.Drawing.Point(54, 2);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(39, 13);
             this.lblUser.TabIndex = 0;
             this.lblUser.Text = "lblUser";
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.Location = new System.Drawing.Point(0, 2);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(52, 13);
+            this.lblVersion.TabIndex = 1;
+            this.lblVersion.Text = "lblVersion";
             // 
             // FrmMain
             // 
@@ -127,5 +137,6 @@
         private System.Windows.Forms.ToolStripMenuItem mnuGeral_Exit;
         private Syncfusion.Windows.Forms.Tools.Controls.StatusBar.StatusBarExt statusBarExt1;
         private Syncfusion.Windows.Forms.Tools.AutoLabel lblUser;
+        private Syncfusion.Windows.Forms.Tools.AutoLabel lblVersion;
     }
 }

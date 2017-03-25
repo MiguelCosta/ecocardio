@@ -16,6 +16,7 @@ namespace EcoCardio.WinApp
             InitializeComponent();
             this.Load += FrmMain_Load;
             mnuGeral_Exit.Click += mnuGeral_Exit_Click;
+            lblVersion.Text = Application.ProductVersion;
         }
 
         #region "FormMain"
