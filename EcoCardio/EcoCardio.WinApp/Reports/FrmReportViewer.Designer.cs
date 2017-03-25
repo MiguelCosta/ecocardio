@@ -39,16 +39,19 @@
             this.crvExame.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crvExame.Location = new System.Drawing.Point(0, 0);
             this.crvExame.Name = "crvExame";
-            this.crvExame.Size = new System.Drawing.Size(982, 601);
+            this.crvExame.ShowRefreshButton = false;
+            this.crvExame.Size = new System.Drawing.Size(884, 601);
             this.crvExame.TabIndex = 0;
+            this.crvExame.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
             // FrmReportViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 601);
+            this.ClientSize = new System.Drawing.Size(884, 601);
             this.Controls.Add(this.crvExame);
             this.Name = "FrmReportViewer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Visualizador de Documentos";
             this.ResumeLayout(false);
 
