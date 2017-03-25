@@ -24,6 +24,17 @@ namespace EcoCardio.WinApp
             }
         }
 
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            if (dgvExames.CurrentRow != null)
+            {
+                var exame = (Domain.Exame)dgvExames.CurrentRow.DataBoundItem;
+                var frm = new Reports.FrmReportViewer();
+                frm.OpenExame(exame.Id);
+                frm.ShowDialog();
+            }
+        }
+
         private void btnSearch_Click(object sender, EventArgs e)
         {
             int numero = 0;
@@ -44,17 +55,6 @@ namespace EcoCardio.WinApp
             var results = GerallApp.AppRepository.Exames.MostRecent(100);
 
             exameBindingSource.DataSource = results;
-        }
-
-        private void btnPrint_Click(object sender, EventArgs e)
-        {
-            if (dgvExames.CurrentRow != null)
-            {
-                var exame = (Domain.Exame)dgvExames.CurrentRow.DataBoundItem;
-                var frm = new Reports.FrmReportViewer();
-                frm.OpenExame(exame.Id);
-                frm.ShowDialog();
-            }
         }
     }
 }

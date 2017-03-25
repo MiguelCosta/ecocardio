@@ -29,11 +29,13 @@ namespace EcoCardio.WinApp.Exame
             else
             {
                 newExame.Id = this.Exame.Id;
+                newExame.Numero = this.Exame.Numero;
                 GerallApp.AppRepository.Exames.Update(this.Exame.Id, newExame);
             }
 
             GerallApp.AppRepository.Complete();
             this.SetExame(newExame.Id);
+            MessageBox.Show($"Exame {newExame.Numero} guardado.");
         }
 
         private int CalculateAge(DateTime value)

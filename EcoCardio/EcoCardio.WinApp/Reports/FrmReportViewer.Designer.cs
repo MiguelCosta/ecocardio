@@ -39,6 +39,10 @@
             this.crvExame.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crvExame.Location = new System.Drawing.Point(0, 0);
             this.crvExame.Name = "crvExame";
+            this.crvExame.ShowCloseButton = false;
+            this.crvExame.ShowCopyButton = false;
+            this.crvExame.ShowGroupTreeButton = false;
+            this.crvExame.ShowParameterPanelButton = false;
             this.crvExame.ShowRefreshButton = false;
             this.crvExame.Size = new System.Drawing.Size(884, 601);
             this.crvExame.TabIndex = 0;

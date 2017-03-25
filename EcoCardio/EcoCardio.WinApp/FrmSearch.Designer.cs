@@ -44,7 +44,6 @@
             this.dataNascimentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.exameBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.btnPrint = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnEditarRegisto = new System.Windows.Forms.Button();
@@ -193,7 +192,6 @@
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.btnPrint);
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.btnEditarRegisto);
@@ -204,17 +202,6 @@
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Opções";
-            // 
-            // button3
-            // 
-            this.button3.Image = global::EcoCardio.WinApp.Img32.PDF32;
-            this.button3.Location = new System.Drawing.Point(6, 264);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 55);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "Gerar PDF";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // btnPrint
             // 
@@ -328,7 +315,6 @@
         private System.Windows.Forms.Button btnPrint;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnEditarRegisto;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn numeroDataGridViewTextBoxColumn;

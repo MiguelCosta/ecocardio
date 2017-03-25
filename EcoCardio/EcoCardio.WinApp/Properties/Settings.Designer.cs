@@ -70,5 +70,17 @@ namespace EcoCardio.WinApp.Properties {
                 this["DataBasePassword"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\migue\\Code\\ecocardio\\EcoCardio\\EcoCardio.WinApp\\Reports\\Exame.rpt")]
+        public string ReportPathExame {
+            get {
+                return ((string)(this["ReportPathExame"]));
+            }
+            set {
+                this["ReportPathExame"] = value;
+            }
+        }
     }
 }
