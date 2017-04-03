@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.grbAdicionar = new System.Windows.Forms.GroupBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -100,6 +101,12 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
+            this.templateBindingSourceEstruturasValvulares = new System.Windows.Forms.BindingSource(this.components);
+            this.templateBindingSourceCavidadesCardiacas = new System.Windows.Forms.BindingSource(this.components);
+            this.templateBindingSourceEspessuraParedes = new System.Windows.Forms.BindingSource(this.components);
+            this.templateBindingSourceFuncaoVentricular = new System.Windows.Forms.BindingSource(this.components);
+            this.templateBindingSourceMassasIntracavitarias = new System.Windows.Forms.BindingSource(this.components);
+            this.templateBindingSourcePericardio = new System.Windows.Forms.BindingSource(this.components);
             this.grbAdicionar.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -113,6 +120,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceEstruturasValvulares)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceCavidadesCardiacas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceEspessuraParedes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceFuncaoVentricular)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceMassasIntracavitarias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourcePericardio)).BeginInit();
             this.SuspendLayout();
             // 
             // grbAdicionar
@@ -223,6 +236,7 @@
             this.btnAddPericardico.Size = new System.Drawing.Size(38, 23);
             this.btnAddPericardico.TabIndex = 18;
             this.btnAddPericardico.UseVisualStyleBackColor = true;
+            this.btnAddPericardico.Click += new System.EventHandler(this.btnAddPericardico_Click);
             // 
             // txtPericardico
             // 
@@ -235,11 +249,15 @@
             // 
             // cmbPericardico
             // 
+            this.cmbPericardico.DataSource = this.templateBindingSourcePericardio;
+            this.cmbPericardico.DisplayMember = "Nome";
+            this.cmbPericardico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPericardico.FormattingEnabled = true;
             this.cmbPericardico.Location = new System.Drawing.Point(34, 19);
             this.cmbPericardico.Name = "cmbPericardico";
             this.cmbPericardico.Size = new System.Drawing.Size(688, 21);
             this.cmbPericardico.TabIndex = 16;
+            this.cmbPericardico.ValueMember = "Id";
             // 
             // groupBox7
             // 
@@ -261,6 +279,7 @@
             this.btnAddMassasIntracavitarias.Size = new System.Drawing.Size(38, 23);
             this.btnAddMassasIntracavitarias.TabIndex = 18;
             this.btnAddMassasIntracavitarias.UseVisualStyleBackColor = true;
+            this.btnAddMassasIntracavitarias.Click += new System.EventHandler(this.btnAddMassasIntracavitarias_Click);
             // 
             // txtMassasIntracavitarias
             // 
@@ -273,11 +292,15 @@
             // 
             // cmbMassasIntracavitarias
             // 
+            this.cmbMassasIntracavitarias.DataSource = this.templateBindingSourceMassasIntracavitarias;
+            this.cmbMassasIntracavitarias.DisplayMember = "Nome";
+            this.cmbMassasIntracavitarias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMassasIntracavitarias.FormattingEnabled = true;
             this.cmbMassasIntracavitarias.Location = new System.Drawing.Point(34, 19);
             this.cmbMassasIntracavitarias.Name = "cmbMassasIntracavitarias";
             this.cmbMassasIntracavitarias.Size = new System.Drawing.Size(688, 21);
             this.cmbMassasIntracavitarias.TabIndex = 16;
+            this.cmbMassasIntracavitarias.ValueMember = "Id";
             // 
             // groupBox6
             // 
@@ -299,6 +322,7 @@
             this.btnAddFuncaoVentricular.Size = new System.Drawing.Size(38, 23);
             this.btnAddFuncaoVentricular.TabIndex = 18;
             this.btnAddFuncaoVentricular.UseVisualStyleBackColor = true;
+            this.btnAddFuncaoVentricular.Click += new System.EventHandler(this.btnAddFuncaoVentricular_Click);
             // 
             // txtFuncaoVentricular
             // 
@@ -311,11 +335,15 @@
             // 
             // cmbFuncaoVentricular
             // 
+            this.cmbFuncaoVentricular.DataSource = this.templateBindingSourceFuncaoVentricular;
+            this.cmbFuncaoVentricular.DisplayMember = "Nome";
+            this.cmbFuncaoVentricular.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbFuncaoVentricular.FormattingEnabled = true;
             this.cmbFuncaoVentricular.Location = new System.Drawing.Point(34, 19);
             this.cmbFuncaoVentricular.Name = "cmbFuncaoVentricular";
             this.cmbFuncaoVentricular.Size = new System.Drawing.Size(688, 21);
             this.cmbFuncaoVentricular.TabIndex = 16;
+            this.cmbFuncaoVentricular.ValueMember = "Id";
             // 
             // groupBox5
             // 
@@ -337,6 +365,7 @@
             this.btnEspessuraParedes.Size = new System.Drawing.Size(38, 23);
             this.btnEspessuraParedes.TabIndex = 15;
             this.btnEspessuraParedes.UseVisualStyleBackColor = true;
+            this.btnEspessuraParedes.Click += new System.EventHandler(this.btnEspessuraParedes_Click);
             // 
             // txtEspessuraParedes
             // 
@@ -349,11 +378,15 @@
             // 
             // cmbEspessuraParedes
             // 
+            this.cmbEspessuraParedes.DataSource = this.templateBindingSourceEspessuraParedes;
+            this.cmbEspessuraParedes.DisplayMember = "Nome";
+            this.cmbEspessuraParedes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEspessuraParedes.FormattingEnabled = true;
             this.cmbEspessuraParedes.Location = new System.Drawing.Point(34, 19);
             this.cmbEspessuraParedes.Name = "cmbEspessuraParedes";
             this.cmbEspessuraParedes.Size = new System.Drawing.Size(688, 21);
             this.cmbEspessuraParedes.TabIndex = 13;
+            this.cmbEspessuraParedes.ValueMember = "Id";
             // 
             // groupBox4
             // 
@@ -375,6 +408,7 @@
             this.btnAddCavidadesCardiacas.Size = new System.Drawing.Size(38, 23);
             this.btnAddCavidadesCardiacas.TabIndex = 12;
             this.btnAddCavidadesCardiacas.UseVisualStyleBackColor = true;
+            this.btnAddCavidadesCardiacas.Click += new System.EventHandler(this.btnAddCavidadesCardiacas_Click);
             // 
             // txtCavidadesCardiacas
             // 
@@ -387,11 +421,15 @@
             // 
             // cmbCavidadesCardiacas
             // 
+            this.cmbCavidadesCardiacas.DataSource = this.templateBindingSourceCavidadesCardiacas;
+            this.cmbCavidadesCardiacas.DisplayMember = "Nome";
+            this.cmbCavidadesCardiacas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCavidadesCardiacas.FormattingEnabled = true;
             this.cmbCavidadesCardiacas.Location = new System.Drawing.Point(34, 19);
             this.cmbCavidadesCardiacas.Name = "cmbCavidadesCardiacas";
             this.cmbCavidadesCardiacas.Size = new System.Drawing.Size(688, 21);
             this.cmbCavidadesCardiacas.TabIndex = 10;
+            this.cmbCavidadesCardiacas.ValueMember = "Id";
             // 
             // groupBox3
             // 
@@ -413,6 +451,7 @@
             this.btnAddEstruturasValvulares.Size = new System.Drawing.Size(38, 23);
             this.btnAddEstruturasValvulares.TabIndex = 9;
             this.btnAddEstruturasValvulares.UseVisualStyleBackColor = true;
+            this.btnAddEstruturasValvulares.Click += new System.EventHandler(this.btnAddEstruturasValvulares_Click);
             // 
             // txtEstruturasValvulares
             // 
@@ -425,11 +464,15 @@
             // 
             // cmbEstrutrasValvulares
             // 
+            this.cmbEstrutrasValvulares.DataSource = this.templateBindingSourceEstruturasValvulares;
+            this.cmbEstrutrasValvulares.DisplayMember = "Nome";
+            this.cmbEstrutrasValvulares.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEstrutrasValvulares.FormattingEnabled = true;
             this.cmbEstrutrasValvulares.Location = new System.Drawing.Point(33, 19);
             this.cmbEstrutrasValvulares.Name = "cmbEstrutrasValvulares";
             this.cmbEstrutrasValvulares.Size = new System.Drawing.Size(688, 21);
             this.cmbEstrutrasValvulares.TabIndex = 0;
+            this.cmbEstrutrasValvulares.ValueMember = "Id";
             // 
             // gpbDimensoes
             // 
@@ -808,6 +851,30 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // templateBindingSourceEstruturasValvulares
+            // 
+            this.templateBindingSourceEstruturasValvulares.DataSource = typeof(EcoCardio.Domain.Template);
+            // 
+            // templateBindingSourceCavidadesCardiacas
+            // 
+            this.templateBindingSourceCavidadesCardiacas.DataSource = typeof(EcoCardio.Domain.Template);
+            // 
+            // templateBindingSourceEspessuraParedes
+            // 
+            this.templateBindingSourceEspessuraParedes.DataSource = typeof(EcoCardio.Domain.Template);
+            // 
+            // templateBindingSourceFuncaoVentricular
+            // 
+            this.templateBindingSourceFuncaoVentricular.DataSource = typeof(EcoCardio.Domain.Template);
+            // 
+            // templateBindingSourceMassasIntracavitarias
+            // 
+            this.templateBindingSourceMassasIntracavitarias.DataSource = typeof(EcoCardio.Domain.Template);
+            // 
+            // templateBindingSourcePericardio
+            // 
+            this.templateBindingSourcePericardio.DataSource = typeof(EcoCardio.Domain.Template);
+            // 
             // UscExameEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -840,6 +907,12 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceEstruturasValvulares)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceCavidadesCardiacas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceEspessuraParedes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceFuncaoVentricular)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceMassasIntracavitarias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourcePericardio)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -918,5 +991,11 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.BindingSource templateBindingSourceEstruturasValvulares;
+        private System.Windows.Forms.BindingSource templateBindingSourceCavidadesCardiacas;
+        private System.Windows.Forms.BindingSource templateBindingSourceEspessuraParedes;
+        private System.Windows.Forms.BindingSource templateBindingSourceFuncaoVentricular;
+        private System.Windows.Forms.BindingSource templateBindingSourceMassasIntracavitarias;
+        private System.Windows.Forms.BindingSource templateBindingSourcePericardio;
     }
 }

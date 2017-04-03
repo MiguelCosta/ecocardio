@@ -8,6 +8,7 @@ namespace EcoCardio.WinApp.Exame
         public UscExameEdit()
         {
             InitializeComponent();
+            FillDropdows();
         }
 
         private Domain.Exame Exame { get; set; }
@@ -44,6 +45,22 @@ namespace EcoCardio.WinApp.Exame
             var age = today.Year - value.Year;
             if (value > today.AddYears(-age)) age--;
             return age;
+        }
+
+        private void FillDropdows()
+        {
+            templateBindingSourceCavidadesCardiacas.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.CavidadesCardiacas);
+            templateBindingSourceEspessuraParedes.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.EspessuraParedesVentriculares);
+            templateBindingSourceEstruturasValvulares.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.EstruturasValvulares);
+            templateBindingSourceFuncaoVentricular.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.FuncaoVentricular);
+            templateBindingSourceMassasIntracavitarias.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.MassasIntracavitarias);
+            templateBindingSourcePericardio.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.Pericardio);
+            templateBindingSourceCavidadesCardiacas.ResetBindings(false);
+            templateBindingSourceEspessuraParedes.ResetBindings(false);
+            templateBindingSourceEstruturasValvulares.ResetBindings(false);
+            templateBindingSourceFuncaoVentricular.ResetBindings(false);
+            templateBindingSourceMassasIntracavitarias.ResetBindings(false);
+            templateBindingSourcePericardio.ResetBindings(false);
         }
 
         private void FillExame()
@@ -152,5 +169,48 @@ namespace EcoCardio.WinApp.Exame
                 return null;
             }
         }
+
+        #region "Dropdowns"
+
+        private void btnAddCavidadesCardiacas_Click(object sender, EventArgs e)
+        {
+            SetTextTemplate(cmbCavidadesCardiacas, txtCavidadesCardiacas);
+        }
+
+        private void btnAddEstruturasValvulares_Click(object sender, EventArgs e)
+        {
+            SetTextTemplate(cmbEstrutrasValvulares, txtEstruturasValvulares);
+        }
+
+        private void btnAddFuncaoVentricular_Click(object sender, EventArgs e)
+        {
+            SetTextTemplate(cmbFuncaoVentricular, txtFuncaoVentricular);
+        }
+
+        private void btnAddMassasIntracavitarias_Click(object sender, EventArgs e)
+        {
+            SetTextTemplate(cmbMassasIntracavitarias, txtMassasIntracavitarias);
+        }
+
+        private void btnAddPericardico_Click(object sender, EventArgs e)
+        {
+            SetTextTemplate(cmbPericardico, txtPericardico);
+        }
+
+        private void btnEspessuraParedes_Click(object sender, EventArgs e)
+        {
+            SetTextTemplate(cmbEspessuraParedes, txtEspessuraParedes);
+        }
+
+        private void SetTextTemplate(ComboBox cmb, TextBox txt)
+        {
+            if (cmb.SelectedItem != null)
+            {
+                var item = cmb.SelectedItem as Domain.Template;
+                txt.Text = item.Texto;
+            }
+        }
+
+        #endregion "Dropdowns"
     }
 }
