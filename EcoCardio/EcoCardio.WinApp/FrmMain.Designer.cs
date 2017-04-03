@@ -34,8 +34,9 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuGeral_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.statusBarExt1 = new Syncfusion.Windows.Forms.Tools.Controls.StatusBar.StatusBarExt();
-            this.lblUser = new Syncfusion.Windows.Forms.Tools.AutoLabel();
             this.lblVersion = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.lblUser = new Syncfusion.Windows.Forms.Tools.AutoLabel();
+            this.mnuTemplates = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarExt1)).BeginInit();
             this.statusBarExt1.SuspendLayout();
@@ -44,7 +45,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuGeral});
+            this.mnuGeral,
+            this.mnuTemplates});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(724, 24);
@@ -63,12 +65,12 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(90, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // mnuGeral_Exit
             // 
             this.mnuGeral_Exit.Name = "mnuGeral_Exit";
-            this.mnuGeral_Exit.Size = new System.Drawing.Size(93, 22);
+            this.mnuGeral_Exit.Size = new System.Drawing.Size(152, 22);
             this.mnuGeral_Exit.Text = "Sair";
             this.mnuGeral_Exit.Click += new System.EventHandler(this.mnuGeral_Exit_Click);
             // 
@@ -90,6 +92,14 @@
             this.statusBarExt1.ThemesEnabled = true;
             this.statusBarExt1.VisualStyle = Syncfusion.Windows.Forms.Tools.Controls.StatusBar.VisualStyle.Default;
             // 
+            // lblVersion
+            // 
+            this.lblVersion.Location = new System.Drawing.Point(0, 2);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(52, 13);
+            this.lblVersion.TabIndex = 1;
+            this.lblVersion.Text = "lblVersion";
+            // 
             // lblUser
             // 
             this.lblUser.Location = new System.Drawing.Point(54, 2);
@@ -98,13 +108,12 @@
             this.lblUser.TabIndex = 0;
             this.lblUser.Text = "lblUser";
             // 
-            // lblVersion
+            // mnuTemplates
             // 
-            this.lblVersion.Location = new System.Drawing.Point(0, 2);
-            this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(52, 13);
-            this.lblVersion.TabIndex = 1;
-            this.lblVersion.Text = "lblVersion";
+            this.mnuTemplates.Name = "mnuTemplates";
+            this.mnuTemplates.Size = new System.Drawing.Size(73, 20);
+            this.mnuTemplates.Text = "Templates";
+            this.mnuTemplates.Click += new System.EventHandler(this.mnuTemplates_Click);
             // 
             // FrmMain
             // 
@@ -118,7 +127,6 @@
             this.Name = "FrmMain";
             this.Text = "RealEco";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmMain_Load_1);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarExt1)).EndInit();
@@ -138,5 +146,6 @@
         private Syncfusion.Windows.Forms.Tools.Controls.StatusBar.StatusBarExt statusBarExt1;
         private Syncfusion.Windows.Forms.Tools.AutoLabel lblUser;
         private Syncfusion.Windows.Forms.Tools.AutoLabel lblVersion;
+        private System.Windows.Forms.ToolStripMenuItem mnuTemplates;
     }
 }

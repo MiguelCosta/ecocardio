@@ -64,9 +64,10 @@ namespace EcoCardio.WinApp
 
         #endregion "ShowForms"
 
-        private void FrmMain_Load_1(object sender, EventArgs e)
+        private void mnuTemplates_Click(object sender, EventArgs e)
         {
-
+            var frm = new Template.FrmTemplateList();
+            frm.ShowDialog();
         }
     }
 }
