@@ -2,6 +2,9 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EcoCardio.WinApp.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
+    <Setting Name="ReportPathExame" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\migue\Code\ecocardio\EcoCardio\EcoCardio.WinApp\Reports\Exame.rpt</Value>
+    </Setting>
     <Setting Name="DataBaseServer" Type="System.String" Scope="User">
       <Value Profile="(Default)">.\SQLEXPRESS2016</Value>
     </Setting>
@@ -13,9 +16,6 @@
     </Setting>
     <Setting Name="DataBasePassword" Type="System.String" Scope="User">
       <Value Profile="(Default)">ecocardio</Value>
-    </Setting>
-    <Setting Name="ReportPathExame" Type="System.String" Scope="User">
-      <Value Profile="(Default)">C:\Users\migue\Code\ecocardio\EcoCardio\EcoCardio.WinApp\Reports\Exame.rpt</Value>
     </Setting>
   </Settings>
 </SettingsFile>

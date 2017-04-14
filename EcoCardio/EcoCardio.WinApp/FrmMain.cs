@@ -16,7 +16,7 @@ namespace EcoCardio.WinApp
             InitializeComponent();
             this.Load += FrmMain_Load;
             mnuGeral_Exit.Click += mnuGeral_Exit_Click;
-            lblVersion.Text = Application.ProductVersion;
+            //lblVersion.Text = Application.ProductVersion;
         }
 
         #region "FormMain"
@@ -55,7 +55,7 @@ namespace EcoCardio.WinApp
 
         private void ShowFormInit()
         {
-            lblUser.Text = GerallApp.CurrentUser.Nome;
+            //lblUser.Text = GerallApp.CurrentUser.Nome;
 
             var frm = new FrmSearch();
             frm.MdiParent = this;

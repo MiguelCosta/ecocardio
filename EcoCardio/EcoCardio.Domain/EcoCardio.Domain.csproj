@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{59BE5F1F-0E56-45B9-B0C3-C840F1A034A2}</ProjectGuid>
+    <ProjectGuid>{BBFF01CE-62E4-4C59-B92C-5481A6A836D9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>EcoCardio.Domain</RootNamespace>
@@ -68,7 +68,6 @@
     <Compile Include="TransmissaoAcustica.cs" />
     <Compile Include="Utilizador.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

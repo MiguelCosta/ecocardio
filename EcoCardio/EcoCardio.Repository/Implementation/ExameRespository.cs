@@ -25,6 +25,7 @@ namespace EcoCardio.Repository.Implementation
 
         public int NextNumber()
         {
+            if (!_context.Exames.Any()) return 1;
             var currentNumber = _context.Exames.Max(e => e.Numero);
             return currentNumber++;
         }
