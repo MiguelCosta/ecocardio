@@ -43,12 +43,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.rbtConclusao = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.rbtConclusao);
             this.groupBox1.Controls.Add(this.rbtEstruturasValvulares);
             this.groupBox1.Controls.Add(this.rbtMassasIntracavitarias);
             this.groupBox1.Controls.Add(this.rbtPericardio);
@@ -57,7 +59,7 @@
             this.groupBox1.Controls.Add(this.rbtCavidadesCardiacas);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(459, 75);
+            this.groupBox1.Size = new System.Drawing.Size(459, 95);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipo";
@@ -134,7 +136,7 @@
             this.groupBox2.Controls.Add(this.txtNomeTemplate);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 93);
+            this.groupBox2.Location = new System.Drawing.Point(12, 113);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(459, 185);
             this.groupBox2.TabIndex = 3;
@@ -177,7 +179,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(168, 284);
+            this.btnSave.Location = new System.Drawing.Point(168, 304);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 0;
@@ -187,7 +189,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(249, 284);
+            this.btnCancelar.Location = new System.Drawing.Point(249, 304);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 1;
@@ -195,11 +197,22 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // rbtConclusao
+            // 
+            this.rbtConclusao.AutoSize = true;
+            this.rbtConclusao.Location = new System.Drawing.Point(12, 67);
+            this.rbtConclusao.Name = "rbtConclusao";
+            this.rbtConclusao.Size = new System.Drawing.Size(75, 17);
+            this.rbtConclusao.TabIndex = 6;
+            this.rbtConclusao.TabStop = true;
+            this.rbtConclusao.Text = "Conclusão";
+            this.rbtConclusao.UseVisualStyleBackColor = true;
+            // 
             // FrmTemplateEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 316);
+            this.ClientSize = new System.Drawing.Size(483, 333);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnSave);
@@ -232,5 +245,6 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.RadioButton rbtEstruturasValvulares;
+        private System.Windows.Forms.RadioButton rbtConclusao;
     }
 }

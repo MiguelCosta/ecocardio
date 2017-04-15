@@ -30,37 +30,47 @@
         {
             this.components = new System.ComponentModel.Container();
             this.grbAdicionar = new System.Windows.Forms.GroupBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbCardiologista2 = new System.Windows.Forms.ComboBox();
             this.cmbCardiologista1 = new System.Windows.Forms.ComboBox();
             this.lblCardiologista = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.btnConclusao = new System.Windows.Forms.Button();
+            this.cmbConclusao = new System.Windows.Forms.ComboBox();
+            this.templateBindingSourceConclusao = new System.Windows.Forms.BindingSource(this.components);
             this.txtConclusao = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.btnAddPericardico = new System.Windows.Forms.Button();
             this.txtPericardico = new System.Windows.Forms.TextBox();
             this.cmbPericardico = new System.Windows.Forms.ComboBox();
+            this.templateBindingSourcePericardio = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.btnAddMassasIntracavitarias = new System.Windows.Forms.Button();
             this.txtMassasIntracavitarias = new System.Windows.Forms.TextBox();
             this.cmbMassasIntracavitarias = new System.Windows.Forms.ComboBox();
+            this.templateBindingSourceMassasIntracavitarias = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.btnAddFuncaoVentricular = new System.Windows.Forms.Button();
             this.txtFuncaoVentricular = new System.Windows.Forms.TextBox();
             this.cmbFuncaoVentricular = new System.Windows.Forms.ComboBox();
+            this.templateBindingSourceFuncaoVentricular = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.btnEspessuraParedes = new System.Windows.Forms.Button();
             this.txtEspessuraParedes = new System.Windows.Forms.TextBox();
             this.cmbEspessuraParedes = new System.Windows.Forms.ComboBox();
+            this.templateBindingSourceEspessuraParedes = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btnAddCavidadesCardiacas = new System.Windows.Forms.Button();
             this.txtCavidadesCardiacas = new System.Windows.Forms.TextBox();
             this.cmbCavidadesCardiacas = new System.Windows.Forms.ComboBox();
+            this.templateBindingSourceCavidadesCardiacas = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnAddEstruturasValvulares = new System.Windows.Forms.Button();
             this.txtEstruturasValvulares = new System.Windows.Forms.TextBox();
             this.cmbEstrutrasValvulares = new System.Windows.Forms.ComboBox();
+            this.templateBindingSourceEstruturasValvulares = new System.Windows.Forms.BindingSource(this.components);
             this.gpbDimensoes = new System.Windows.Forms.GroupBox();
             this.txtFracaoEjecao = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -83,6 +93,7 @@
             this.dtpDataExame = new System.Windows.Forms.DateTimePicker();
             this.cmbTransmissaoAcustica = new System.Windows.Forms.ComboBox();
             this.cmbRequisitadoPor = new System.Windows.Forms.ComboBox();
+            this.servicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lblTransmissaoAcustica = new System.Windows.Forms.Label();
             this.lblRequisitadoPor = new System.Windows.Forms.Label();
             this.txtInfoClinica = new System.Windows.Forms.TextBox();
@@ -100,38 +111,36 @@
             this.lblDataNascimento = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.templateBindingSourceEstruturasValvulares = new System.Windows.Forms.BindingSource(this.components);
-            this.templateBindingSourceCavidadesCardiacas = new System.Windows.Forms.BindingSource(this.components);
-            this.templateBindingSourceEspessuraParedes = new System.Windows.Forms.BindingSource(this.components);
-            this.templateBindingSourceFuncaoVentricular = new System.Windows.Forms.BindingSource(this.components);
-            this.templateBindingSourceMassasIntracavitarias = new System.Windows.Forms.BindingSource(this.components);
-            this.templateBindingSourcePericardio = new System.Windows.Forms.BindingSource(this.components);
+            this.transmissaoAcusticaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.grbAdicionar.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceConclusao)).BeginInit();
             this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourcePericardio)).BeginInit();
             this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceMassasIntracavitarias)).BeginInit();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceFuncaoVentricular)).BeginInit();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceEspessuraParedes)).BeginInit();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceCavidadesCardiacas)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceEstruturasValvulares)).BeginInit();
             this.gpbDimensoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceEstruturasValvulares)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceCavidadesCardiacas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceEspessuraParedes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceFuncaoVentricular)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceMassasIntracavitarias)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourcePericardio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transmissaoAcusticaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // grbAdicionar
             // 
             this.grbAdicionar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grbAdicionar.Controls.Add(this.btnSave);
             this.grbAdicionar.Controls.Add(this.groupBox10);
             this.grbAdicionar.Controls.Add(this.groupBox9);
             this.grbAdicionar.Controls.Add(this.groupBox8);
@@ -146,9 +155,19 @@
             this.grbAdicionar.Controls.Add(this.groupBox1);
             this.grbAdicionar.Location = new System.Drawing.Point(2, 0);
             this.grbAdicionar.Name = "grbAdicionar";
-            this.grbAdicionar.Size = new System.Drawing.Size(794, 1432);
+            this.grbAdicionar.Size = new System.Drawing.Size(794, 1274);
             this.grbAdicionar.TabIndex = 2;
             this.grbAdicionar.TabStop = false;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(699, 1245);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 100;
+            this.btnSave.Text = "Guardar";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // groupBox10
             // 
@@ -156,7 +175,7 @@
             this.groupBox10.Controls.Add(this.cmbCardiologista2);
             this.groupBox10.Controls.Add(this.cmbCardiologista1);
             this.groupBox10.Controls.Add(this.lblCardiologista);
-            this.groupBox10.Location = new System.Drawing.Point(7, 1375);
+            this.groupBox10.Location = new System.Drawing.Point(1, 1175);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(773, 51);
             this.groupBox10.TabIndex = 22;
@@ -178,7 +197,7 @@
             this.cmbCardiologista2.Location = new System.Drawing.Point(359, 19);
             this.cmbCardiologista2.Name = "cmbCardiologista2";
             this.cmbCardiologista2.Size = new System.Drawing.Size(190, 21);
-            this.cmbCardiologista2.TabIndex = 6;
+            this.cmbCardiologista2.TabIndex = 1;
             // 
             // cmbCardiologista1
             // 
@@ -186,7 +205,7 @@
             this.cmbCardiologista1.Location = new System.Drawing.Point(132, 19);
             this.cmbCardiologista1.Name = "cmbCardiologista1";
             this.cmbCardiologista1.Size = new System.Drawing.Size(195, 21);
-            this.cmbCardiologista1.TabIndex = 5;
+            this.cmbCardiologista1.TabIndex = 0;
             // 
             // lblCardiologista
             // 
@@ -199,31 +218,59 @@
             // 
             // groupBox9
             // 
+            this.groupBox9.Controls.Add(this.btnConclusao);
+            this.groupBox9.Controls.Add(this.cmbConclusao);
             this.groupBox9.Controls.Add(this.txtConclusao);
-            this.groupBox9.Location = new System.Drawing.Point(7, 1264);
+            this.groupBox9.Location = new System.Drawing.Point(6, 1054);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(773, 111);
+            this.groupBox9.Size = new System.Drawing.Size(772, 115);
             this.groupBox9.TabIndex = 21;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Conclusão";
             // 
+            // btnConclusao
+            // 
+            this.btnConclusao.Image = global::EcoCardio.WinApp.Img16.Add16;
+            this.btnConclusao.Location = new System.Drawing.Point(727, 19);
+            this.btnConclusao.Name = "btnConclusao";
+            this.btnConclusao.Size = new System.Drawing.Size(38, 23);
+            this.btnConclusao.TabIndex = 1;
+            this.btnConclusao.UseVisualStyleBackColor = true;
+            this.btnConclusao.Click += new System.EventHandler(this.btnConclusao_Click);
+            // 
+            // cmbConclusao
+            // 
+            this.cmbConclusao.DataSource = this.templateBindingSourceConclusao;
+            this.cmbConclusao.DisplayMember = "Nome";
+            this.cmbConclusao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbConclusao.FormattingEnabled = true;
+            this.cmbConclusao.Location = new System.Drawing.Point(33, 19);
+            this.cmbConclusao.Name = "cmbConclusao";
+            this.cmbConclusao.Size = new System.Drawing.Size(688, 21);
+            this.cmbConclusao.TabIndex = 0;
+            this.cmbConclusao.ValueMember = "Id";
+            // 
+            // templateBindingSourceConclusao
+            // 
+            this.templateBindingSourceConclusao.DataSource = typeof(EcoCardio.Domain.Template);
+            // 
             // txtConclusao
             // 
-            this.txtConclusao.Location = new System.Drawing.Point(33, 19);
+            this.txtConclusao.Location = new System.Drawing.Point(34, 50);
             this.txtConclusao.Multiline = true;
             this.txtConclusao.Name = "txtConclusao";
             this.txtConclusao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtConclusao.Size = new System.Drawing.Size(688, 86);
-            this.txtConclusao.TabIndex = 17;
+            this.txtConclusao.Size = new System.Drawing.Size(690, 55);
+            this.txtConclusao.TabIndex = 2;
             // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.btnAddPericardico);
             this.groupBox8.Controls.Add(this.txtPericardico);
             this.groupBox8.Controls.Add(this.cmbPericardico);
-            this.groupBox8.Location = new System.Drawing.Point(6, 1108);
+            this.groupBox8.Location = new System.Drawing.Point(6, 933);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(773, 150);
+            this.groupBox8.Size = new System.Drawing.Size(772, 115);
             this.groupBox8.TabIndex = 20;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Pericárdico";
@@ -234,7 +281,7 @@
             this.btnAddPericardico.Location = new System.Drawing.Point(728, 19);
             this.btnAddPericardico.Name = "btnAddPericardico";
             this.btnAddPericardico.Size = new System.Drawing.Size(38, 23);
-            this.btnAddPericardico.TabIndex = 18;
+            this.btnAddPericardico.TabIndex = 1;
             this.btnAddPericardico.UseVisualStyleBackColor = true;
             this.btnAddPericardico.Click += new System.EventHandler(this.btnAddPericardico_Click);
             // 
@@ -244,8 +291,8 @@
             this.txtPericardico.Multiline = true;
             this.txtPericardico.Name = "txtPericardico";
             this.txtPericardico.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtPericardico.Size = new System.Drawing.Size(688, 98);
-            this.txtPericardico.TabIndex = 17;
+            this.txtPericardico.Size = new System.Drawing.Size(690, 55);
+            this.txtPericardico.TabIndex = 2;
             // 
             // cmbPericardico
             // 
@@ -256,17 +303,21 @@
             this.cmbPericardico.Location = new System.Drawing.Point(34, 19);
             this.cmbPericardico.Name = "cmbPericardico";
             this.cmbPericardico.Size = new System.Drawing.Size(688, 21);
-            this.cmbPericardico.TabIndex = 16;
+            this.cmbPericardico.TabIndex = 0;
             this.cmbPericardico.ValueMember = "Id";
+            // 
+            // templateBindingSourcePericardio
+            // 
+            this.templateBindingSourcePericardio.DataSource = typeof(EcoCardio.Domain.Template);
             // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.btnAddMassasIntracavitarias);
             this.groupBox7.Controls.Add(this.txtMassasIntracavitarias);
             this.groupBox7.Controls.Add(this.cmbMassasIntracavitarias);
-            this.groupBox7.Location = new System.Drawing.Point(6, 952);
+            this.groupBox7.Location = new System.Drawing.Point(6, 812);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(773, 150);
+            this.groupBox7.Size = new System.Drawing.Size(772, 115);
             this.groupBox7.TabIndex = 19;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Massas intracavitárias";
@@ -277,7 +328,7 @@
             this.btnAddMassasIntracavitarias.Location = new System.Drawing.Point(728, 19);
             this.btnAddMassasIntracavitarias.Name = "btnAddMassasIntracavitarias";
             this.btnAddMassasIntracavitarias.Size = new System.Drawing.Size(38, 23);
-            this.btnAddMassasIntracavitarias.TabIndex = 18;
+            this.btnAddMassasIntracavitarias.TabIndex = 1;
             this.btnAddMassasIntracavitarias.UseVisualStyleBackColor = true;
             this.btnAddMassasIntracavitarias.Click += new System.EventHandler(this.btnAddMassasIntracavitarias_Click);
             // 
@@ -287,8 +338,8 @@
             this.txtMassasIntracavitarias.Multiline = true;
             this.txtMassasIntracavitarias.Name = "txtMassasIntracavitarias";
             this.txtMassasIntracavitarias.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtMassasIntracavitarias.Size = new System.Drawing.Size(688, 98);
-            this.txtMassasIntracavitarias.TabIndex = 17;
+            this.txtMassasIntracavitarias.Size = new System.Drawing.Size(690, 55);
+            this.txtMassasIntracavitarias.TabIndex = 2;
             // 
             // cmbMassasIntracavitarias
             // 
@@ -299,17 +350,21 @@
             this.cmbMassasIntracavitarias.Location = new System.Drawing.Point(34, 19);
             this.cmbMassasIntracavitarias.Name = "cmbMassasIntracavitarias";
             this.cmbMassasIntracavitarias.Size = new System.Drawing.Size(688, 21);
-            this.cmbMassasIntracavitarias.TabIndex = 16;
+            this.cmbMassasIntracavitarias.TabIndex = 0;
             this.cmbMassasIntracavitarias.ValueMember = "Id";
+            // 
+            // templateBindingSourceMassasIntracavitarias
+            // 
+            this.templateBindingSourceMassasIntracavitarias.DataSource = typeof(EcoCardio.Domain.Template);
             // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.btnAddFuncaoVentricular);
             this.groupBox6.Controls.Add(this.txtFuncaoVentricular);
             this.groupBox6.Controls.Add(this.cmbFuncaoVentricular);
-            this.groupBox6.Location = new System.Drawing.Point(6, 796);
+            this.groupBox6.Location = new System.Drawing.Point(6, 691);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(773, 150);
+            this.groupBox6.Size = new System.Drawing.Size(772, 115);
             this.groupBox6.TabIndex = 18;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Função ventricular";
@@ -320,7 +375,7 @@
             this.btnAddFuncaoVentricular.Location = new System.Drawing.Point(728, 19);
             this.btnAddFuncaoVentricular.Name = "btnAddFuncaoVentricular";
             this.btnAddFuncaoVentricular.Size = new System.Drawing.Size(38, 23);
-            this.btnAddFuncaoVentricular.TabIndex = 18;
+            this.btnAddFuncaoVentricular.TabIndex = 1;
             this.btnAddFuncaoVentricular.UseVisualStyleBackColor = true;
             this.btnAddFuncaoVentricular.Click += new System.EventHandler(this.btnAddFuncaoVentricular_Click);
             // 
@@ -330,8 +385,8 @@
             this.txtFuncaoVentricular.Multiline = true;
             this.txtFuncaoVentricular.Name = "txtFuncaoVentricular";
             this.txtFuncaoVentricular.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtFuncaoVentricular.Size = new System.Drawing.Size(688, 98);
-            this.txtFuncaoVentricular.TabIndex = 17;
+            this.txtFuncaoVentricular.Size = new System.Drawing.Size(690, 55);
+            this.txtFuncaoVentricular.TabIndex = 2;
             // 
             // cmbFuncaoVentricular
             // 
@@ -342,17 +397,21 @@
             this.cmbFuncaoVentricular.Location = new System.Drawing.Point(34, 19);
             this.cmbFuncaoVentricular.Name = "cmbFuncaoVentricular";
             this.cmbFuncaoVentricular.Size = new System.Drawing.Size(688, 21);
-            this.cmbFuncaoVentricular.TabIndex = 16;
+            this.cmbFuncaoVentricular.TabIndex = 0;
             this.cmbFuncaoVentricular.ValueMember = "Id";
+            // 
+            // templateBindingSourceFuncaoVentricular
+            // 
+            this.templateBindingSourceFuncaoVentricular.DataSource = typeof(EcoCardio.Domain.Template);
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.btnEspessuraParedes);
             this.groupBox5.Controls.Add(this.txtEspessuraParedes);
             this.groupBox5.Controls.Add(this.cmbEspessuraParedes);
-            this.groupBox5.Location = new System.Drawing.Point(6, 640);
+            this.groupBox5.Location = new System.Drawing.Point(7, 570);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(773, 150);
+            this.groupBox5.Size = new System.Drawing.Size(772, 115);
             this.groupBox5.TabIndex = 17;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Espessura das paredes ventriculares";
@@ -363,7 +422,7 @@
             this.btnEspessuraParedes.Location = new System.Drawing.Point(728, 19);
             this.btnEspessuraParedes.Name = "btnEspessuraParedes";
             this.btnEspessuraParedes.Size = new System.Drawing.Size(38, 23);
-            this.btnEspessuraParedes.TabIndex = 15;
+            this.btnEspessuraParedes.TabIndex = 1;
             this.btnEspessuraParedes.UseVisualStyleBackColor = true;
             this.btnEspessuraParedes.Click += new System.EventHandler(this.btnEspessuraParedes_Click);
             // 
@@ -373,8 +432,8 @@
             this.txtEspessuraParedes.Multiline = true;
             this.txtEspessuraParedes.Name = "txtEspessuraParedes";
             this.txtEspessuraParedes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEspessuraParedes.Size = new System.Drawing.Size(688, 98);
-            this.txtEspessuraParedes.TabIndex = 14;
+            this.txtEspessuraParedes.Size = new System.Drawing.Size(690, 55);
+            this.txtEspessuraParedes.TabIndex = 2;
             // 
             // cmbEspessuraParedes
             // 
@@ -385,17 +444,21 @@
             this.cmbEspessuraParedes.Location = new System.Drawing.Point(34, 19);
             this.cmbEspessuraParedes.Name = "cmbEspessuraParedes";
             this.cmbEspessuraParedes.Size = new System.Drawing.Size(688, 21);
-            this.cmbEspessuraParedes.TabIndex = 13;
+            this.cmbEspessuraParedes.TabIndex = 0;
             this.cmbEspessuraParedes.ValueMember = "Id";
+            // 
+            // templateBindingSourceEspessuraParedes
+            // 
+            this.templateBindingSourceEspessuraParedes.DataSource = typeof(EcoCardio.Domain.Template);
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.btnAddCavidadesCardiacas);
             this.groupBox4.Controls.Add(this.txtCavidadesCardiacas);
             this.groupBox4.Controls.Add(this.cmbCavidadesCardiacas);
-            this.groupBox4.Location = new System.Drawing.Point(7, 484);
+            this.groupBox4.Location = new System.Drawing.Point(7, 449);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(773, 150);
+            this.groupBox4.Size = new System.Drawing.Size(772, 115);
             this.groupBox4.TabIndex = 16;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Cavidades cardíacas e grandes vasos";
@@ -406,7 +469,7 @@
             this.btnAddCavidadesCardiacas.Location = new System.Drawing.Point(728, 19);
             this.btnAddCavidadesCardiacas.Name = "btnAddCavidadesCardiacas";
             this.btnAddCavidadesCardiacas.Size = new System.Drawing.Size(38, 23);
-            this.btnAddCavidadesCardiacas.TabIndex = 12;
+            this.btnAddCavidadesCardiacas.TabIndex = 1;
             this.btnAddCavidadesCardiacas.UseVisualStyleBackColor = true;
             this.btnAddCavidadesCardiacas.Click += new System.EventHandler(this.btnAddCavidadesCardiacas_Click);
             // 
@@ -416,8 +479,8 @@
             this.txtCavidadesCardiacas.Multiline = true;
             this.txtCavidadesCardiacas.Name = "txtCavidadesCardiacas";
             this.txtCavidadesCardiacas.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtCavidadesCardiacas.Size = new System.Drawing.Size(688, 98);
-            this.txtCavidadesCardiacas.TabIndex = 11;
+            this.txtCavidadesCardiacas.Size = new System.Drawing.Size(690, 55);
+            this.txtCavidadesCardiacas.TabIndex = 2;
             // 
             // cmbCavidadesCardiacas
             // 
@@ -428,8 +491,12 @@
             this.cmbCavidadesCardiacas.Location = new System.Drawing.Point(34, 19);
             this.cmbCavidadesCardiacas.Name = "cmbCavidadesCardiacas";
             this.cmbCavidadesCardiacas.Size = new System.Drawing.Size(688, 21);
-            this.cmbCavidadesCardiacas.TabIndex = 10;
+            this.cmbCavidadesCardiacas.TabIndex = 0;
             this.cmbCavidadesCardiacas.ValueMember = "Id";
+            // 
+            // templateBindingSourceCavidadesCardiacas
+            // 
+            this.templateBindingSourceCavidadesCardiacas.DataSource = typeof(EcoCardio.Domain.Template);
             // 
             // groupBox3
             // 
@@ -438,7 +505,7 @@
             this.groupBox3.Controls.Add(this.cmbEstrutrasValvulares);
             this.groupBox3.Location = new System.Drawing.Point(7, 328);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(772, 150);
+            this.groupBox3.Size = new System.Drawing.Size(772, 115);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Estruturas valvulares";
@@ -449,7 +516,7 @@
             this.btnAddEstruturasValvulares.Location = new System.Drawing.Point(727, 19);
             this.btnAddEstruturasValvulares.Name = "btnAddEstruturasValvulares";
             this.btnAddEstruturasValvulares.Size = new System.Drawing.Size(38, 23);
-            this.btnAddEstruturasValvulares.TabIndex = 9;
+            this.btnAddEstruturasValvulares.TabIndex = 1;
             this.btnAddEstruturasValvulares.UseVisualStyleBackColor = true;
             this.btnAddEstruturasValvulares.Click += new System.EventHandler(this.btnAddEstruturasValvulares_Click);
             // 
@@ -459,8 +526,8 @@
             this.txtEstruturasValvulares.Multiline = true;
             this.txtEstruturasValvulares.Name = "txtEstruturasValvulares";
             this.txtEstruturasValvulares.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEstruturasValvulares.Size = new System.Drawing.Size(690, 97);
-            this.txtEstruturasValvulares.TabIndex = 8;
+            this.txtEstruturasValvulares.Size = new System.Drawing.Size(690, 55);
+            this.txtEstruturasValvulares.TabIndex = 2;
             // 
             // cmbEstrutrasValvulares
             // 
@@ -473,6 +540,10 @@
             this.cmbEstrutrasValvulares.Size = new System.Drawing.Size(688, 21);
             this.cmbEstrutrasValvulares.TabIndex = 0;
             this.cmbEstrutrasValvulares.ValueMember = "Id";
+            // 
+            // templateBindingSourceEstruturasValvulares
+            // 
+            this.templateBindingSourceEstruturasValvulares.DataSource = typeof(EcoCardio.Domain.Template);
             // 
             // gpbDimensoes
             // 
@@ -504,7 +575,7 @@
             this.txtFracaoEjecao.Location = new System.Drawing.Point(731, 71);
             this.txtFracaoEjecao.Name = "txtFracaoEjecao";
             this.txtFracaoEjecao.Size = new System.Drawing.Size(37, 20);
-            this.txtFracaoEjecao.TabIndex = 17;
+            this.txtFracaoEjecao.TabIndex = 7;
             // 
             // label4
             // 
@@ -520,7 +591,7 @@
             this.txtParedeSuperior.Location = new System.Drawing.Point(730, 45);
             this.txtParedeSuperior.Name = "txtParedeSuperior";
             this.txtParedeSuperior.Size = new System.Drawing.Size(37, 20);
-            this.txtParedeSuperior.TabIndex = 15;
+            this.txtParedeSuperior.TabIndex = 6;
             // 
             // lblParedePosterior
             // 
@@ -536,7 +607,7 @@
             this.txtSepto.Location = new System.Drawing.Point(730, 19);
             this.txtSepto.Name = "txtSepto";
             this.txtSepto.Size = new System.Drawing.Size(37, 20);
-            this.txtSepto.TabIndex = 13;
+            this.txtSepto.TabIndex = 5;
             // 
             // lblSepto
             // 
@@ -552,7 +623,7 @@
             this.txtFracaoEncurtamento.Location = new System.Drawing.Point(445, 71);
             this.txtFracaoEncurtamento.Name = "txtFracaoEncurtamento";
             this.txtFracaoEncurtamento.Size = new System.Drawing.Size(37, 20);
-            this.txtFracaoEncurtamento.TabIndex = 11;
+            this.txtFracaoEncurtamento.TabIndex = 4;
             // 
             // lblFracaoEncurtamento
             // 
@@ -568,7 +639,7 @@
             this.txtVEtelessistole.Location = new System.Drawing.Point(444, 45);
             this.txtVEtelessistole.Name = "txtVEtelessistole";
             this.txtVEtelessistole.Size = new System.Drawing.Size(37, 20);
-            this.txtVEtelessistole.TabIndex = 9;
+            this.txtVEtelessistole.TabIndex = 3;
             // 
             // lblVEtelessistole
             // 
@@ -584,7 +655,7 @@
             this.txtVEtelediastole.Location = new System.Drawing.Point(444, 19);
             this.txtVEtelediastole.Name = "txtVEtelediastole";
             this.txtVEtelediastole.Size = new System.Drawing.Size(37, 20);
-            this.txtVEtelediastole.TabIndex = 7;
+            this.txtVEtelediastole.TabIndex = 2;
             // 
             // lblVEteledisatole
             // 
@@ -600,7 +671,7 @@
             this.txtAuriculaEsquerda.Location = new System.Drawing.Point(165, 45);
             this.txtAuriculaEsquerda.Name = "txtAuriculaEsquerda";
             this.txtAuriculaEsquerda.Size = new System.Drawing.Size(37, 20);
-            this.txtAuriculaEsquerda.TabIndex = 5;
+            this.txtAuriculaEsquerda.TabIndex = 1;
             // 
             // lblAuriculaEsquerda
             // 
@@ -616,7 +687,7 @@
             this.txtRaizAorta.Location = new System.Drawing.Point(165, 19);
             this.txtRaizAorta.Name = "txtRaizAorta";
             this.txtRaizAorta.Size = new System.Drawing.Size(37, 20);
-            this.txtRaizAorta.TabIndex = 3;
+            this.txtRaizAorta.TabIndex = 0;
             // 
             // lblRaizAorta
             // 
@@ -662,23 +733,34 @@
             this.dtpDataExame.Location = new System.Drawing.Point(133, 44);
             this.dtpDataExame.Name = "dtpDataExame";
             this.dtpDataExame.Size = new System.Drawing.Size(100, 20);
-            this.dtpDataExame.TabIndex = 13;
+            this.dtpDataExame.TabIndex = 1;
             // 
             // cmbTransmissaoAcustica
             // 
+            this.cmbTransmissaoAcustica.DataSource = this.transmissaoAcusticaBindingSource;
+            this.cmbTransmissaoAcustica.DisplayMember = "Nome";
+            this.cmbTransmissaoAcustica.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTransmissaoAcustica.FormattingEnabled = true;
             this.cmbTransmissaoAcustica.Location = new System.Drawing.Point(542, 42);
             this.cmbTransmissaoAcustica.Name = "cmbTransmissaoAcustica";
             this.cmbTransmissaoAcustica.Size = new System.Drawing.Size(225, 21);
-            this.cmbTransmissaoAcustica.TabIndex = 12;
+            this.cmbTransmissaoAcustica.TabIndex = 3;
+            this.cmbTransmissaoAcustica.ValueMember = "Nome";
             // 
             // cmbRequisitadoPor
             // 
+            this.cmbRequisitadoPor.DataSource = this.servicoBindingSource;
+            this.cmbRequisitadoPor.DisplayMember = "Nome";
             this.cmbRequisitadoPor.FormattingEnabled = true;
             this.cmbRequisitadoPor.Location = new System.Drawing.Point(542, 15);
             this.cmbRequisitadoPor.Name = "cmbRequisitadoPor";
             this.cmbRequisitadoPor.Size = new System.Drawing.Size(225, 21);
-            this.cmbRequisitadoPor.TabIndex = 11;
+            this.cmbRequisitadoPor.TabIndex = 2;
+            this.cmbRequisitadoPor.ValueMember = "Nome";
+            // 
+            // servicoBindingSource
+            // 
+            this.servicoBindingSource.DataSource = typeof(EcoCardio.Domain.Servico);
             // 
             // lblTransmissaoAcustica
             // 
@@ -703,7 +785,7 @@
             this.txtInfoClinica.Location = new System.Drawing.Point(133, 70);
             this.txtInfoClinica.Name = "txtInfoClinica";
             this.txtInfoClinica.Size = new System.Drawing.Size(634, 20);
-            this.txtInfoClinica.TabIndex = 7;
+            this.txtInfoClinica.TabIndex = 4;
             // 
             // lblInformacaoClinica
             // 
@@ -729,7 +811,7 @@
             this.txtExame.Name = "txtExame";
             this.txtExame.ReadOnly = true;
             this.txtExame.Size = new System.Drawing.Size(79, 20);
-            this.txtExame.TabIndex = 3;
+            this.txtExame.TabIndex = 0;
             // 
             // lblEcocardiograma
             // 
@@ -766,7 +848,7 @@
             this.dtpDataNascimento.Name = "dtpDataNascimento";
             this.dtpDataNascimento.ShowCheckBox = true;
             this.dtpDataNascimento.Size = new System.Drawing.Size(100, 20);
-            this.dtpDataNascimento.TabIndex = 11;
+            this.dtpDataNascimento.TabIndex = 1;
             // 
             // rdbMasculino
             // 
@@ -774,7 +856,7 @@
             this.rdbMasculino.Location = new System.Drawing.Point(384, 48);
             this.rdbMasculino.Name = "rdbMasculino";
             this.rdbMasculino.Size = new System.Drawing.Size(34, 17);
-            this.rdbMasculino.TabIndex = 10;
+            this.rdbMasculino.TabIndex = 4;
             this.rdbMasculino.TabStop = true;
             this.rdbMasculino.Text = "M";
             this.rdbMasculino.UseVisualStyleBackColor = true;
@@ -785,7 +867,7 @@
             this.rdbFeminino.Location = new System.Drawing.Point(347, 48);
             this.rdbFeminino.Name = "rdbFeminino";
             this.rdbFeminino.Size = new System.Drawing.Size(31, 17);
-            this.rdbFeminino.TabIndex = 9;
+            this.rdbFeminino.TabIndex = 3;
             this.rdbFeminino.TabStop = true;
             this.rdbFeminino.Text = "F";
             this.rdbFeminino.UseVisualStyleBackColor = true;
@@ -805,7 +887,7 @@
             this.txtIdade.Name = "txtIdade";
             this.txtIdade.ReadOnly = true;
             this.txtIdade.Size = new System.Drawing.Size(37, 20);
-            this.txtIdade.TabIndex = 7;
+            this.txtIdade.TabIndex = 2;
             // 
             // label2
             // 
@@ -830,7 +912,7 @@
             this.txtNome.Location = new System.Drawing.Point(51, 22);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(524, 20);
-            this.txtNome.TabIndex = 3;
+            this.txtNome.TabIndex = 0;
             // 
             // lblNome
             // 
@@ -841,78 +923,51 @@
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
-            // btnSave
+            // transmissaoAcusticaBindingSource
             // 
-            this.btnSave.Location = new System.Drawing.Point(718, 1438);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 3;
-            this.btnSave.Text = "Guardar";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // templateBindingSourceEstruturasValvulares
-            // 
-            this.templateBindingSourceEstruturasValvulares.DataSource = typeof(EcoCardio.Domain.Template);
-            // 
-            // templateBindingSourceCavidadesCardiacas
-            // 
-            this.templateBindingSourceCavidadesCardiacas.DataSource = typeof(EcoCardio.Domain.Template);
-            // 
-            // templateBindingSourceEspessuraParedes
-            // 
-            this.templateBindingSourceEspessuraParedes.DataSource = typeof(EcoCardio.Domain.Template);
-            // 
-            // templateBindingSourceFuncaoVentricular
-            // 
-            this.templateBindingSourceFuncaoVentricular.DataSource = typeof(EcoCardio.Domain.Template);
-            // 
-            // templateBindingSourceMassasIntracavitarias
-            // 
-            this.templateBindingSourceMassasIntracavitarias.DataSource = typeof(EcoCardio.Domain.Template);
-            // 
-            // templateBindingSourcePericardio
-            // 
-            this.templateBindingSourcePericardio.DataSource = typeof(EcoCardio.Domain.Template);
+            this.transmissaoAcusticaBindingSource.DataSource = typeof(EcoCardio.Domain.TransmissaoAcustica);
             // 
             // UscExameEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.grbAdicionar);
             this.Name = "UscExameEdit";
-            this.Size = new System.Drawing.Size(796, 1480);
+            this.Size = new System.Drawing.Size(796, 1288);
+            this.Load += new System.EventHandler(this.UscExameEdit_Load);
             this.grbAdicionar.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceConclusao)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourcePericardio)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceMassasIntracavitarias)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceFuncaoVentricular)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceEspessuraParedes)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceCavidadesCardiacas)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceEstruturasValvulares)).EndInit();
             this.gpbDimensoes.ResumeLayout(false);
             this.gpbDimensoes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceEstruturasValvulares)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceCavidadesCardiacas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceEspessuraParedes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceFuncaoVentricular)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceMassasIntracavitarias)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourcePericardio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transmissaoAcusticaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -997,5 +1052,10 @@
         private System.Windows.Forms.BindingSource templateBindingSourceFuncaoVentricular;
         private System.Windows.Forms.BindingSource templateBindingSourceMassasIntracavitarias;
         private System.Windows.Forms.BindingSource templateBindingSourcePericardio;
+        private System.Windows.Forms.Button btnConclusao;
+        private System.Windows.Forms.ComboBox cmbConclusao;
+        private System.Windows.Forms.BindingSource templateBindingSourceConclusao;
+        private System.Windows.Forms.BindingSource servicoBindingSource;
+        private System.Windows.Forms.BindingSource transmissaoAcusticaBindingSource;
     }
 }

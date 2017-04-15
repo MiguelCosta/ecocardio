@@ -202,7 +202,9 @@
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\EcoCardio.Domain.Exame.datasource" />
+    <None Include="Properties\DataSources\EcoCardio.Domain.Servico.datasource" />
     <None Include="Properties\DataSources\EcoCardio.Domain.Template.datasource" />
+    <None Include="Properties\DataSources\EcoCardio.Domain.TransmissaoAcustica.datasource" />
     <None Include="Properties\DataSources\EcoCardio.Domain.Utilizador.datasource" />
     <None Include="Properties\DataSources\EcoCardio.Repository.EcoCardioContext.datasource" />
     <None Include="Properties\DataSources\EcoCardio.Repository.Migrations.AddServico.datasource" />

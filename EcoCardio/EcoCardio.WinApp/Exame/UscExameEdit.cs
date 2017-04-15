@@ -11,6 +11,11 @@ namespace EcoCardio.WinApp.Exame
             FillDropdows();
         }
 
+        private void UscExameEdit_Load(object sender, EventArgs e)
+        {
+            txtNome.Focus();
+        }
+
         private Domain.Exame Exame { get; set; }
 
         public void SetExame(int exameId)
@@ -37,6 +42,7 @@ namespace EcoCardio.WinApp.Exame
             GerallApp.AppRepository.Complete();
             this.SetExame(newExame.Id);
             MessageBox.Show($"Exame {newExame.Numero} guardado.");
+            this.ParentForm.Close();
         }
 
         private int CalculateAge(DateTime value)
@@ -49,18 +55,24 @@ namespace EcoCardio.WinApp.Exame
 
         private void FillDropdows()
         {
+            servicoBindingSource.DataSource = GerallApp.AppRepository.Servicos.GetAll();
+            transmissaoAcusticaBindingSource.DataSource = GerallApp.AppRepository.TransmissoesAcusticas.GetAll();
             templateBindingSourceCavidadesCardiacas.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.CavidadesCardiacas);
             templateBindingSourceEspessuraParedes.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.EspessuraParedesVentriculares);
             templateBindingSourceEstruturasValvulares.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.EstruturasValvulares);
             templateBindingSourceFuncaoVentricular.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.FuncaoVentricular);
             templateBindingSourceMassasIntracavitarias.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.MassasIntracavitarias);
             templateBindingSourcePericardio.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.Pericardio);
+            templateBindingSourceConclusao.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.Conclusao);
+            servicoBindingSource.ResetBindings(false);
+            transmissaoAcusticaBindingSource.ResetBindings(false);
             templateBindingSourceCavidadesCardiacas.ResetBindings(false);
             templateBindingSourceEspessuraParedes.ResetBindings(false);
             templateBindingSourceEstruturasValvulares.ResetBindings(false);
             templateBindingSourceFuncaoVentricular.ResetBindings(false);
             templateBindingSourceMassasIntracavitarias.ResetBindings(false);
             templateBindingSourcePericardio.ResetBindings(false);
+            templateBindingSourceConclusao.ResetBindings(false);
         }
 
         private void FillExame()
@@ -84,8 +96,8 @@ namespace EcoCardio.WinApp.Exame
             // Informacao do Exame
             txtExame.Text = Exame.Numero.ToString();
             dtpDataExame.Value = Exame.Data;
-            cmbRequisitadoPor.Text = Exame.RequisitadoPor;
-            cmbTransmissaoAcustica.Text = Exame.TransmissaoAcustica;
+            cmbRequisitadoPor.SelectedValue = Exame.RequisitadoPor;
+            cmbTransmissaoAcustica.SelectedValue = Exame.TransmissaoAcustica;
             txtInfoClinica.Text = Exame.InfoClinica;
 
             // Dimensoes
@@ -202,6 +214,11 @@ namespace EcoCardio.WinApp.Exame
             SetTextTemplate(cmbEspessuraParedes, txtEspessuraParedes);
         }
 
+        private void btnConclusao_Click(object sender, EventArgs e)
+        {
+            SetTextTemplate(cmbConclusao, txtConclusao);
+        }
+
         private void SetTextTemplate(ComboBox cmb, TextBox txt)
         {
             if (cmb.SelectedItem != null)
@@ -212,5 +229,6 @@ namespace EcoCardio.WinApp.Exame
         }
 
         #endregion "Dropdowns"
+
     }
 }
