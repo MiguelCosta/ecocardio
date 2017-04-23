@@ -63,9 +63,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Add24 {
+        internal static System.Drawing.Bitmap add24 {
             get {
-                object obj = ResourceManager.GetObject("Add24", resourceCulture);
+                object obj = ResourceManager.GetObject("add24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

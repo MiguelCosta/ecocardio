@@ -63,9 +63,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap editIcon {
+        internal static System.Drawing.Bitmap editicon {
             get {
-                object obj = ResourceManager.GetObject("editIcon", resourceCulture);
+                object obj = ResourceManager.GetObject("editicon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap newIcon {
+        internal static System.Drawing.Bitmap newicon {
             get {
-                object obj = ResourceManager.GetObject("newIcon", resourceCulture);
+                object obj = ResourceManager.GetObject("newicon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap searchIcon {
+        internal static System.Drawing.Bitmap searchicon {
             get {
-                object obj = ResourceManager.GetObject("searchIcon", resourceCulture);
+                object obj = ResourceManager.GetObject("searchicon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

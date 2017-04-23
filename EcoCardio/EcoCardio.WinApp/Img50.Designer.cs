@@ -63,9 +63,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Add50 {
+        internal static System.Drawing.Bitmap add50 {
             get {
-                object obj = ResourceManager.GetObject("Add50", resourceCulture);
+                object obj = ResourceManager.GetObject("add50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CreateWhite50 {
+        internal static System.Drawing.Bitmap createwhite50 {
             get {
-                object obj = ResourceManager.GetObject("CreateWhite50", resourceCulture);
+                object obj = ResourceManager.GetObject("createwhite50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NewWhite50 {
+        internal static System.Drawing.Bitmap newwhite50 {
             get {
-                object obj = ResourceManager.GetObject("NewWhite50", resourceCulture);
+                object obj = ResourceManager.GetObject("newwhite50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Search50 {
+        internal static System.Drawing.Bitmap search50 {
             get {
-                object obj = ResourceManager.GetObject("Search50", resourceCulture);
+                object obj = ResourceManager.GetObject("search50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

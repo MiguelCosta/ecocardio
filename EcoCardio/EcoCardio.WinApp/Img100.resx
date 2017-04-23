@@ -118,25 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Add100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\img100\add100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Img100\add100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Create100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\img100\create100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="create100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Img100\create100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="CreateWhite100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\img100\createwhite100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="createwhite100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Img100\createwhite100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Edit100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\img100\edit100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="edit100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Img100\edit100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NewWhite100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\img100\newwhite100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="newwhite100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Img100\newwhite100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Print100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\img100\print100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="print100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Img100\print100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Search100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\img100\search100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="search100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Img100\search100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
