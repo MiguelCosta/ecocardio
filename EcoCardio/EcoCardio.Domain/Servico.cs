@@ -6,6 +6,6 @@
 
         public string Nome { get; set; }
 
-        public string Tipo { get; set; }
+        public Enums.ServicoType Tipo { get; set; }
     }
 }

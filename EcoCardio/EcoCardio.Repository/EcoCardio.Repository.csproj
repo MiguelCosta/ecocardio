@@ -113,6 +113,10 @@
     <Compile Include="Migrations\201702281726188_RemoveRelationsOfExame.Designer.cs">
       <DependentUpon>201702281726188_RemoveRelationsOfExame.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704231512371_ServicoTipo.cs" />
+    <Compile Include="Migrations\201704231512371_ServicoTipo.Designer.cs">
+      <DependentUpon>201704231512371_ServicoTipo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -134,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702281726188_RemoveRelationsOfExame.resx">
       <DependentUpon>201702281726188_RemoveRelationsOfExame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201704231512371_ServicoTipo.resx">
+      <DependentUpon>201704231512371_ServicoTipo.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
