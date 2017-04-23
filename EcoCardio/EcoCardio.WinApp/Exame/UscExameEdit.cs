@@ -55,7 +55,7 @@ namespace EcoCardio.WinApp.Exame
 
         private void FillDropdows()
         {
-            servicoBindingSource.DataSource = GerallApp.AppRepository.Servicos.GetAll();
+            servicoBindingSourceRequisitado.DataSource = GerallApp.AppRepository.Servicos.GetByType(Domain.Enums.ServicoType.Requisitado);
             transmissaoAcusticaBindingSource.DataSource = GerallApp.AppRepository.TransmissoesAcusticas.GetAll();
             templateBindingSourceCavidadesCardiacas.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.CavidadesCardiacas);
             templateBindingSourceEspessuraParedes.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.EspessuraParedesVentriculares);
@@ -64,7 +64,9 @@ namespace EcoCardio.WinApp.Exame
             templateBindingSourceMassasIntracavitarias.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.MassasIntracavitarias);
             templateBindingSourcePericardio.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.Pericardio);
             templateBindingSourceConclusao.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.Conclusao);
-            servicoBindingSource.ResetBindings(false);
+            servicoBindingSourceMedico1.DataSource = GerallApp.AppRepository.Servicos.GetByType(Domain.Enums.ServicoType.Medico1);
+            servicoBindingSourceMedico2.DataSource = GerallApp.AppRepository.Servicos.GetByType(Domain.Enums.ServicoType.Medico2);
+            servicoBindingSourceRequisitado.ResetBindings(false);
             transmissaoAcusticaBindingSource.ResetBindings(false);
             templateBindingSourceCavidadesCardiacas.ResetBindings(false);
             templateBindingSourceEspessuraParedes.ResetBindings(false);
@@ -73,6 +75,8 @@ namespace EcoCardio.WinApp.Exame
             templateBindingSourceMassasIntracavitarias.ResetBindings(false);
             templateBindingSourcePericardio.ResetBindings(false);
             templateBindingSourceConclusao.ResetBindings(false);
+            servicoBindingSourceMedico1.ResetBindings(false);
+            servicoBindingSourceMedico2.ResetBindings(false);
         }
 
         private void FillExame()
@@ -120,8 +124,8 @@ namespace EcoCardio.WinApp.Exame
 
             // Final
             txtConclusao.Text = Exame.Conclusao;
-            cmbCardiologista1.Text = Exame.Medico1;
-            cmbCardiologista2.Text = Exame.Medico2;
+            cmbCardiologista1.SelectedValue = Exame.Medico1;
+            cmbCardiologista2.SelectedValue = Exame.Medico2;
         }
 
         private Domain.Exame GetExameInfo()

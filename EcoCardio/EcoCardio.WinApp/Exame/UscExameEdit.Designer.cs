@@ -92,8 +92,9 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtpDataExame = new System.Windows.Forms.DateTimePicker();
             this.cmbTransmissaoAcustica = new System.Windows.Forms.ComboBox();
+            this.transmissaoAcusticaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cmbRequisitadoPor = new System.Windows.Forms.ComboBox();
-            this.servicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.servicoBindingSourceRequisitado = new System.Windows.Forms.BindingSource(this.components);
             this.lblTransmissaoAcustica = new System.Windows.Forms.Label();
             this.lblRequisitadoPor = new System.Windows.Forms.Label();
             this.txtInfoClinica = new System.Windows.Forms.TextBox();
@@ -111,7 +112,8 @@
             this.lblDataNascimento = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
-            this.transmissaoAcusticaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.servicoBindingSourceMedico1 = new System.Windows.Forms.BindingSource(this.components);
+            this.servicoBindingSourceMedico2 = new System.Windows.Forms.BindingSource(this.components);
             this.grbAdicionar.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -131,9 +133,11 @@
             this.gpbDimensoes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSource)).BeginInit();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.transmissaoAcusticaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceRequisitado)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceMedico1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceMedico2)).BeginInit();
             this.SuspendLayout();
             // 
             // grbAdicionar
@@ -193,19 +197,25 @@
             // 
             // cmbCardiologista2
             // 
+            this.cmbCardiologista2.DataSource = this.servicoBindingSourceMedico2;
+            this.cmbCardiologista2.DisplayMember = "Nome";
             this.cmbCardiologista2.FormattingEnabled = true;
             this.cmbCardiologista2.Location = new System.Drawing.Point(359, 19);
             this.cmbCardiologista2.Name = "cmbCardiologista2";
             this.cmbCardiologista2.Size = new System.Drawing.Size(190, 21);
             this.cmbCardiologista2.TabIndex = 1;
+            this.cmbCardiologista2.ValueMember = "Nome";
             // 
             // cmbCardiologista1
             // 
+            this.cmbCardiologista1.DataSource = this.servicoBindingSourceMedico1;
+            this.cmbCardiologista1.DisplayMember = "Nome";
             this.cmbCardiologista1.FormattingEnabled = true;
             this.cmbCardiologista1.Location = new System.Drawing.Point(132, 19);
             this.cmbCardiologista1.Name = "cmbCardiologista1";
             this.cmbCardiologista1.Size = new System.Drawing.Size(195, 21);
             this.cmbCardiologista1.TabIndex = 0;
+            this.cmbCardiologista1.ValueMember = "Nome";
             // 
             // lblCardiologista
             // 
@@ -747,9 +757,13 @@
             this.cmbTransmissaoAcustica.TabIndex = 3;
             this.cmbTransmissaoAcustica.ValueMember = "Nome";
             // 
+            // transmissaoAcusticaBindingSource
+            // 
+            this.transmissaoAcusticaBindingSource.DataSource = typeof(EcoCardio.Domain.TransmissaoAcustica);
+            // 
             // cmbRequisitadoPor
             // 
-            this.cmbRequisitadoPor.DataSource = this.servicoBindingSource;
+            this.cmbRequisitadoPor.DataSource = this.servicoBindingSourceRequisitado;
             this.cmbRequisitadoPor.DisplayMember = "Nome";
             this.cmbRequisitadoPor.FormattingEnabled = true;
             this.cmbRequisitadoPor.Location = new System.Drawing.Point(542, 15);
@@ -758,9 +772,9 @@
             this.cmbRequisitadoPor.TabIndex = 2;
             this.cmbRequisitadoPor.ValueMember = "Nome";
             // 
-            // servicoBindingSource
+            // servicoBindingSourceRequisitado
             // 
-            this.servicoBindingSource.DataSource = typeof(EcoCardio.Domain.Servico);
+            this.servicoBindingSourceRequisitado.DataSource = typeof(EcoCardio.Domain.Servico);
             // 
             // lblTransmissaoAcustica
             // 
@@ -923,9 +937,13 @@
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
-            // transmissaoAcusticaBindingSource
+            // servicoBindingSourceMedico1
             // 
-            this.transmissaoAcusticaBindingSource.DataSource = typeof(EcoCardio.Domain.TransmissaoAcustica);
+            this.servicoBindingSourceMedico1.DataSource = typeof(EcoCardio.Domain.Servico);
+            // 
+            // servicoBindingSourceMedico2
+            // 
+            this.servicoBindingSourceMedico2.DataSource = typeof(EcoCardio.Domain.Servico);
             // 
             // UscExameEdit
             // 
@@ -964,10 +982,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transmissaoAcusticaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceRequisitado)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.transmissaoAcusticaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceMedico1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceMedico2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1055,7 +1075,9 @@
         private System.Windows.Forms.Button btnConclusao;
         private System.Windows.Forms.ComboBox cmbConclusao;
         private System.Windows.Forms.BindingSource templateBindingSourceConclusao;
-        private System.Windows.Forms.BindingSource servicoBindingSource;
+        private System.Windows.Forms.BindingSource servicoBindingSourceRequisitado;
         private System.Windows.Forms.BindingSource transmissaoAcusticaBindingSource;
+        private System.Windows.Forms.BindingSource servicoBindingSourceMedico1;
+        private System.Windows.Forms.BindingSource servicoBindingSourceMedico2;
     }
 }

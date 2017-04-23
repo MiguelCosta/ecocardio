@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmTemplateEdit));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbtConclusao = new System.Windows.Forms.RadioButton();
             this.rbtEstruturasValvulares = new System.Windows.Forms.RadioButton();
             this.rbtMassasIntracavitarias = new System.Windows.Forms.RadioButton();
             this.rbtPericardio = new System.Windows.Forms.RadioButton();
@@ -43,7 +44,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.rbtConclusao = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +63,17 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipo";
+            // 
+            // rbtConclusao
+            // 
+            this.rbtConclusao.AutoSize = true;
+            this.rbtConclusao.Location = new System.Drawing.Point(12, 67);
+            this.rbtConclusao.Name = "rbtConclusao";
+            this.rbtConclusao.Size = new System.Drawing.Size(75, 17);
+            this.rbtConclusao.TabIndex = 6;
+            this.rbtConclusao.TabStop = true;
+            this.rbtConclusao.Text = "Conclusão";
+            this.rbtConclusao.UseVisualStyleBackColor = true;
             // 
             // rbtEstruturasValvulares
             // 
@@ -197,17 +208,6 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // rbtConclusao
-            // 
-            this.rbtConclusao.AutoSize = true;
-            this.rbtConclusao.Location = new System.Drawing.Point(12, 67);
-            this.rbtConclusao.Name = "rbtConclusao";
-            this.rbtConclusao.Size = new System.Drawing.Size(75, 17);
-            this.rbtConclusao.TabIndex = 6;
-            this.rbtConclusao.TabStop = true;
-            this.rbtConclusao.Text = "Conclusão";
-            this.rbtConclusao.UseVisualStyleBackColor = true;
-            // 
             // FrmTemplateEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,6 +218,8 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmTemplateEdit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Template";
