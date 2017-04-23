@@ -117,9 +117,10 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.picLogin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmAutentication";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "FrmAutentication";
+            this.Text = "EcoCardio - Login";
             ((System.ComponentModel.ISupportInitialize)(this.picLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -43,7 +43,7 @@ namespace EcoCardio.WinApp
             {
                 var exame = (Domain.Exame)dgvExames.CurrentRow.DataBoundItem;
 
-                var responde = MessageBox.Show("Tem a certeza que pretende eliminar o exame?", "Elimiar exame", MessageBoxButtons.YesNo);
+                var responde = MessageBox.Show("Tem a certeza que pretende eliminar o exame?", "Eliminar exame", MessageBoxButtons.YesNo);
                 if (responde == DialogResult.Yes)
                 {
                     GerallApp.AppRepository.Exames.Delete(exame.Id);
