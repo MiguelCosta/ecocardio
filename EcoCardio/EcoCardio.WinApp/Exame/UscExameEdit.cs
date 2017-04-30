@@ -190,7 +190,7 @@ namespace EcoCardio.WinApp.Exame
 
         private void btnAddCavidadesCardiacas_Click(object sender, EventArgs e)
         {
-            SetTextTemplate(cmbCavidadesCardiacas, txtCavidadesCardiacas, true);
+            SetTextTemplate(cmbCavidadesCardiacas, txtCavidadesCardiacas);
         }
 
         private void btnAddEstruturasValvulares_Click(object sender, EventArgs e)
@@ -230,12 +230,12 @@ namespace EcoCardio.WinApp.Exame
         /// <param name="cmb"></param>
         /// <param name="txt"></param>
         /// <param name="append"></param>
-        private void SetTextTemplate(ComboBox cmb, TextBox txt, bool append = false)
+        private void SetTextTemplate(ComboBox cmb, TextBox txt)
         {
             if (cmb.SelectedItem != null)
             {
                 var texto = (cmb.SelectedItem as Domain.Template).Texto;
-                if (append && !string.IsNullOrWhiteSpace(txt.Text))
+                if (!string.IsNullOrWhiteSpace(txt.Text))
                 {
                     texto = $"{txt.Text}{Environment.NewLine}{texto}";
                 }
