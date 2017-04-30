@@ -8,6 +8,7 @@ namespace EcoCardio.WinApp
         public FrmSearch()
         {
             InitializeComponent();
+            dataNascimentoDataGridViewTextBoxColumn.DefaultCellStyle.Format = "yyyy/MM/dd";
         }
 
         private void btnCriarRegisto_Click(object sender, EventArgs e)
