@@ -11,11 +11,6 @@ namespace EcoCardio.WinApp.Exame
             FillDropdows();
         }
 
-        private void UscExameEdit_Load(object sender, EventArgs e)
-        {
-            txtNome.Focus();
-        }
-
         private Domain.Exame Exame { get; set; }
 
         public void SetExame(int exameId)
@@ -26,22 +21,16 @@ namespace EcoCardio.WinApp.Exame
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            var newExame = GetExameInfo();
-            if (this.Exame == null)
-            {
-                newExame.Numero = GerallApp.AppRepository.Exames.NextNumber();
-                GerallApp.AppRepository.Exames.Insert(newExame);
-            }
-            else
-            {
-                newExame.Id = this.Exame.Id;
-                newExame.Numero = this.Exame.Numero;
-                GerallApp.AppRepository.Exames.Update(this.Exame.Id, newExame);
-            }
+            Save();
+            this.ParentForm.Close();
+        }
 
-            GerallApp.AppRepository.Complete();
-            this.SetExame(newExame.Id);
-            MessageBox.Show($"Exame {newExame.Numero} guardado.");
+        private void btnSavePrint_Click(object sender, EventArgs e)
+        {
+            Save();
+            var frm = new Reports.FrmReportViewer();
+            frm.OpenExame(Exame.Id);
+            frm.ShowDialog();
             this.ParentForm.Close();
         }
 
@@ -106,13 +95,17 @@ namespace EcoCardio.WinApp.Exame
 
             // Dimensoes
             txtRaizAorta.Text = Exame.DiametroAorta.ToString();
+            txtAortaAscendente.Text = Exame.DiametroAortaAscendente.ToString();
             txtAuriculaEsquerda.Text = Exame.DiametroAuriculaEsquerda.ToString();
+            txtAuriculaEsquerda1.Text = Exame.DiametroAuriculaEsquerda1.ToString();
+            txtAuriculaEsquerda2.Text = Exame.DiametroAuriculaEsquerda2.ToString();
             txtVEtelediastole.Text = Exame.DiametroVETeleadiastole.ToString();
             txtVEtelessistole.Text = Exame.DiametroVETelessistole.ToString();
-            txtFracaoEncurtamento.Text = Exame.FracaoEncurtamento.ToString();
             txtSepto.Text = Exame.DiametroSepto.ToString();
             txtParedeSuperior.Text = Exame.DiametroParedePosterior.ToString();
+            txtMassaVE.Text = Exame.MassaVE.ToString();
             txtFracaoEjecao.Text = Exame.FracaoEjecao.ToString();
+            txtFuncaoVD.Text = Exame.DiametroFuncaoVd.ToString();
 
             // Text info
             txtEstruturasValvulares.Text = Exame.EstruturasValvulares;
@@ -149,13 +142,17 @@ namespace EcoCardio.WinApp.Exame
 
             // Dimensoes
             result.DiametroAorta = GetIntFromTextBox(txtRaizAorta);
+            result.DiametroAortaAscendente = GetIntFromTextBox(txtAortaAscendente);
             result.DiametroAuriculaEsquerda = GetIntFromTextBox(txtAuriculaEsquerda);
+            result.DiametroAuriculaEsquerda1 = GetIntFromTextBox(txtAuriculaEsquerda1);
+            result.DiametroAuriculaEsquerda2 = GetIntFromTextBox(txtAuriculaEsquerda2);
             result.DiametroVETeleadiastole = GetIntFromTextBox(txtVEtelediastole);
             result.DiametroVETelessistole = GetIntFromTextBox(txtVEtelessistole);
-            result.FracaoEncurtamento = GetIntFromTextBox(txtFracaoEncurtamento);
             result.DiametroSepto = GetIntFromTextBox(txtSepto);
             result.DiametroParedePosterior = GetIntFromTextBox(txtParedeSuperior);
             result.FracaoEjecao = GetIntFromTextBox(txtFracaoEjecao);
+            result.DiametroFuncaoVd = GetIntFromTextBox(txtFuncaoVD);
+            result.MassaVE = result.CalcMassaVE();
 
             // Text info
             result.EstruturasValvulares = txtEstruturasValvulares.Text;
@@ -186,6 +183,30 @@ namespace EcoCardio.WinApp.Exame
             }
         }
 
+        private void Save()
+        {
+            var newExame = GetExameInfo();
+            if (this.Exame == null)
+            {
+                newExame.Numero = GerallApp.AppRepository.Exames.NextNumber();
+                GerallApp.AppRepository.Exames.Insert(newExame);
+            }
+            else
+            {
+                newExame.Id = this.Exame.Id;
+                newExame.Numero = this.Exame.Numero;
+                GerallApp.AppRepository.Exames.Update(this.Exame.Id, newExame);
+            }
+
+            GerallApp.AppRepository.Complete();
+            this.SetExame(newExame.Id);
+        }
+
+        private void UscExameEdit_Load(object sender, EventArgs e)
+        {
+            txtNome.Focus();
+        }
+
         #region "Dropdowns"
 
         private void btnAddCavidadesCardiacas_Click(object sender, EventArgs e)
@@ -213,14 +234,14 @@ namespace EcoCardio.WinApp.Exame
             SetTextTemplate(cmbPericardico, txtPericardico);
         }
 
-        private void btnEspessuraParedes_Click(object sender, EventArgs e)
-        {
-            SetTextTemplate(cmbEspessuraParedes, txtEspessuraParedes);
-        }
-
         private void btnConclusao_Click(object sender, EventArgs e)
         {
             SetTextTemplate(cmbConclusao, txtConclusao);
+        }
+
+        private void btnEspessuraParedes_Click(object sender, EventArgs e)
+        {
+            SetTextTemplate(cmbEspessuraParedes, txtEspessuraParedes);
         }
 
         /// <summary>
@@ -244,6 +265,5 @@ namespace EcoCardio.WinApp.Exame
         }
 
         #endregion "Dropdowns"
-
     }
 }

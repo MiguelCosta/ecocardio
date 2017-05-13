@@ -32,6 +32,11 @@ namespace EcoCardio.WinApp.Servico
             Edit();
         }
 
+        private void dgvListaServicos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Edit();
+        }
+
         private void Edit()
         {
             if (dgvListaServicos.CurrentRow != null)

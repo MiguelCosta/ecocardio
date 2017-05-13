@@ -30,11 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.grbAdicionar = new System.Windows.Forms.GroupBox();
+            this.btnSavePrint = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbCardiologista2 = new System.Windows.Forms.ComboBox();
+            this.servicoBindingSourceMedico2 = new System.Windows.Forms.BindingSource(this.components);
             this.cmbCardiologista1 = new System.Windows.Forms.ComboBox();
+            this.servicoBindingSourceMedico1 = new System.Windows.Forms.BindingSource(this.components);
             this.lblCardiologista = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.btnConclusao = new System.Windows.Forms.Button();
@@ -72,14 +75,34 @@
             this.cmbEstrutrasValvulares = new System.Windows.Forms.ComboBox();
             this.templateBindingSourceEstruturasValvulares = new System.Windows.Forms.BindingSource(this.components);
             this.gpbDimensoes = new System.Windows.Forms.GroupBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txtFuncaoVD = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtMassaVE = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtAuriculaEsquerda2 = new System.Windows.Forms.TextBox();
+            this.txtAuriculaEsquerda1 = new System.Windows.Forms.TextBox();
+            this.txtAortaAscendente = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.txtFracaoEjecao = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtParedeSuperior = new System.Windows.Forms.TextBox();
             this.lblParedePosterior = new System.Windows.Forms.Label();
             this.txtSepto = new System.Windows.Forms.TextBox();
             this.lblSepto = new System.Windows.Forms.Label();
-            this.txtFracaoEncurtamento = new System.Windows.Forms.TextBox();
-            this.lblFracaoEncurtamento = new System.Windows.Forms.Label();
             this.txtVEtelessistole = new System.Windows.Forms.TextBox();
             this.lblVEtelessistole = new System.Windows.Forms.Label();
             this.txtVEtelediastole = new System.Windows.Forms.TextBox();
@@ -112,10 +135,10 @@
             this.lblDataNascimento = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
-            this.servicoBindingSourceMedico1 = new System.Windows.Forms.BindingSource(this.components);
-            this.servicoBindingSourceMedico2 = new System.Windows.Forms.BindingSource(this.components);
             this.grbAdicionar.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceMedico2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceMedico1)).BeginInit();
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceConclusao)).BeginInit();
             this.groupBox8.SuspendLayout();
@@ -136,14 +159,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.transmissaoAcusticaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceRequisitado)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceMedico1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceMedico2)).BeginInit();
             this.SuspendLayout();
             // 
             // grbAdicionar
             // 
             this.grbAdicionar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.grbAdicionar.Controls.Add(this.btnSavePrint);
             this.grbAdicionar.Controls.Add(this.btnSave);
             this.grbAdicionar.Controls.Add(this.groupBox10);
             this.grbAdicionar.Controls.Add(this.groupBox9);
@@ -159,16 +181,26 @@
             this.grbAdicionar.Controls.Add(this.groupBox1);
             this.grbAdicionar.Location = new System.Drawing.Point(2, 0);
             this.grbAdicionar.Name = "grbAdicionar";
-            this.grbAdicionar.Size = new System.Drawing.Size(794, 1274);
+            this.grbAdicionar.Size = new System.Drawing.Size(794, 1325);
             this.grbAdicionar.TabIndex = 2;
             this.grbAdicionar.TabStop = false;
             // 
+            // btnSavePrint
+            // 
+            this.btnSavePrint.Location = new System.Drawing.Point(653, 1281);
+            this.btnSavePrint.Name = "btnSavePrint";
+            this.btnSavePrint.Size = new System.Drawing.Size(126, 23);
+            this.btnSavePrint.TabIndex = 1;
+            this.btnSavePrint.Text = "Guardar e Imprimir";
+            this.btnSavePrint.UseVisualStyleBackColor = true;
+            this.btnSavePrint.Click += new System.EventHandler(this.btnSavePrint_Click);
+            // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(699, 1245);
+            this.btnSave.Location = new System.Drawing.Point(572, 1281);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 100;
+            this.btnSave.TabIndex = 2;
             this.btnSave.Text = "Guardar";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -179,7 +211,7 @@
             this.groupBox10.Controls.Add(this.cmbCardiologista2);
             this.groupBox10.Controls.Add(this.cmbCardiologista1);
             this.groupBox10.Controls.Add(this.lblCardiologista);
-            this.groupBox10.Location = new System.Drawing.Point(1, 1175);
+            this.groupBox10.Location = new System.Drawing.Point(6, 1224);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(773, 51);
             this.groupBox10.TabIndex = 22;
@@ -206,6 +238,10 @@
             this.cmbCardiologista2.TabIndex = 1;
             this.cmbCardiologista2.ValueMember = "Nome";
             // 
+            // servicoBindingSourceMedico2
+            // 
+            this.servicoBindingSourceMedico2.DataSource = typeof(EcoCardio.Domain.Servico);
+            // 
             // cmbCardiologista1
             // 
             this.cmbCardiologista1.DataSource = this.servicoBindingSourceMedico1;
@@ -216,6 +252,10 @@
             this.cmbCardiologista1.Size = new System.Drawing.Size(195, 21);
             this.cmbCardiologista1.TabIndex = 0;
             this.cmbCardiologista1.ValueMember = "Nome";
+            // 
+            // servicoBindingSourceMedico1
+            // 
+            this.servicoBindingSourceMedico1.DataSource = typeof(EcoCardio.Domain.Servico);
             // 
             // lblCardiologista
             // 
@@ -231,7 +271,7 @@
             this.groupBox9.Controls.Add(this.btnConclusao);
             this.groupBox9.Controls.Add(this.cmbConclusao);
             this.groupBox9.Controls.Add(this.txtConclusao);
-            this.groupBox9.Location = new System.Drawing.Point(6, 1054);
+            this.groupBox9.Location = new System.Drawing.Point(5, 1103);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(772, 115);
             this.groupBox9.TabIndex = 21;
@@ -278,7 +318,7 @@
             this.groupBox8.Controls.Add(this.btnAddPericardico);
             this.groupBox8.Controls.Add(this.txtPericardico);
             this.groupBox8.Controls.Add(this.cmbPericardico);
-            this.groupBox8.Location = new System.Drawing.Point(6, 933);
+            this.groupBox8.Location = new System.Drawing.Point(5, 982);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(772, 115);
             this.groupBox8.TabIndex = 20;
@@ -325,7 +365,7 @@
             this.groupBox7.Controls.Add(this.btnAddMassasIntracavitarias);
             this.groupBox7.Controls.Add(this.txtMassasIntracavitarias);
             this.groupBox7.Controls.Add(this.cmbMassasIntracavitarias);
-            this.groupBox7.Location = new System.Drawing.Point(6, 812);
+            this.groupBox7.Location = new System.Drawing.Point(5, 861);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(772, 115);
             this.groupBox7.TabIndex = 19;
@@ -372,7 +412,7 @@
             this.groupBox6.Controls.Add(this.btnAddFuncaoVentricular);
             this.groupBox6.Controls.Add(this.txtFuncaoVentricular);
             this.groupBox6.Controls.Add(this.cmbFuncaoVentricular);
-            this.groupBox6.Location = new System.Drawing.Point(6, 691);
+            this.groupBox6.Location = new System.Drawing.Point(5, 740);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(772, 115);
             this.groupBox6.TabIndex = 18;
@@ -419,7 +459,7 @@
             this.groupBox5.Controls.Add(this.btnEspessuraParedes);
             this.groupBox5.Controls.Add(this.txtEspessuraParedes);
             this.groupBox5.Controls.Add(this.cmbEspessuraParedes);
-            this.groupBox5.Location = new System.Drawing.Point(7, 570);
+            this.groupBox5.Location = new System.Drawing.Point(6, 619);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(772, 115);
             this.groupBox5.TabIndex = 17;
@@ -466,7 +506,7 @@
             this.groupBox4.Controls.Add(this.btnAddCavidadesCardiacas);
             this.groupBox4.Controls.Add(this.txtCavidadesCardiacas);
             this.groupBox4.Controls.Add(this.cmbCavidadesCardiacas);
-            this.groupBox4.Location = new System.Drawing.Point(7, 449);
+            this.groupBox4.Location = new System.Drawing.Point(6, 498);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(772, 115);
             this.groupBox4.TabIndex = 16;
@@ -513,7 +553,7 @@
             this.groupBox3.Controls.Add(this.btnAddEstruturasValvulares);
             this.groupBox3.Controls.Add(this.txtEstruturasValvulares);
             this.groupBox3.Controls.Add(this.cmbEstrutrasValvulares);
-            this.groupBox3.Location = new System.Drawing.Point(7, 328);
+            this.groupBox3.Location = new System.Drawing.Point(6, 377);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(772, 115);
             this.groupBox3.TabIndex = 15;
@@ -557,14 +597,34 @@
             // 
             // gpbDimensoes
             // 
+            this.gpbDimensoes.Controls.Add(this.label21);
+            this.gpbDimensoes.Controls.Add(this.txtFuncaoVD);
+            this.gpbDimensoes.Controls.Add(this.label22);
+            this.gpbDimensoes.Controls.Add(this.label19);
+            this.gpbDimensoes.Controls.Add(this.txtMassaVE);
+            this.gpbDimensoes.Controls.Add(this.label20);
+            this.gpbDimensoes.Controls.Add(this.label18);
+            this.gpbDimensoes.Controls.Add(this.label17);
+            this.gpbDimensoes.Controls.Add(this.label16);
+            this.gpbDimensoes.Controls.Add(this.label15);
+            this.gpbDimensoes.Controls.Add(this.label14);
+            this.gpbDimensoes.Controls.Add(this.label13);
+            this.gpbDimensoes.Controls.Add(this.label12);
+            this.gpbDimensoes.Controls.Add(this.label11);
+            this.gpbDimensoes.Controls.Add(this.label10);
+            this.gpbDimensoes.Controls.Add(this.label9);
+            this.gpbDimensoes.Controls.Add(this.label8);
+            this.gpbDimensoes.Controls.Add(this.label7);
+            this.gpbDimensoes.Controls.Add(this.txtAuriculaEsquerda2);
+            this.gpbDimensoes.Controls.Add(this.txtAuriculaEsquerda1);
+            this.gpbDimensoes.Controls.Add(this.txtAortaAscendente);
+            this.gpbDimensoes.Controls.Add(this.label6);
             this.gpbDimensoes.Controls.Add(this.txtFracaoEjecao);
             this.gpbDimensoes.Controls.Add(this.label4);
             this.gpbDimensoes.Controls.Add(this.txtParedeSuperior);
             this.gpbDimensoes.Controls.Add(this.lblParedePosterior);
             this.gpbDimensoes.Controls.Add(this.txtSepto);
             this.gpbDimensoes.Controls.Add(this.lblSepto);
-            this.gpbDimensoes.Controls.Add(this.txtFracaoEncurtamento);
-            this.gpbDimensoes.Controls.Add(this.lblFracaoEncurtamento);
             this.gpbDimensoes.Controls.Add(this.txtVEtelessistole);
             this.gpbDimensoes.Controls.Add(this.lblVEtelessistole);
             this.gpbDimensoes.Controls.Add(this.txtVEtelediastole);
@@ -575,38 +635,227 @@
             this.gpbDimensoes.Controls.Add(this.lblRaizAorta);
             this.gpbDimensoes.Location = new System.Drawing.Point(6, 217);
             this.gpbDimensoes.Name = "gpbDimensoes";
-            this.gpbDimensoes.Size = new System.Drawing.Size(773, 104);
+            this.gpbDimensoes.Size = new System.Drawing.Size(773, 154);
             this.gpbDimensoes.TabIndex = 14;
             this.gpbDimensoes.TabStop = false;
             this.gpbDimensoes.Text = "Dimensões (mm) :";
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(731, 74);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(23, 13);
+            this.label21.TabIndex = 38;
+            this.label21.Text = "mm";
+            // 
+            // txtFuncaoVD
+            // 
+            this.txtFuncaoVD.Location = new System.Drawing.Point(673, 71);
+            this.txtFuncaoVD.Name = "txtFuncaoVD";
+            this.txtFuncaoVD.Size = new System.Drawing.Size(52, 20);
+            this.txtFuncaoVD.TabIndex = 10;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(529, 74);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(138, 13);
+            this.label22.TabIndex = 37;
+            this.label22.Text = "Função VD - TAPSE (N<X):";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(731, 22);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(13, 13);
+            this.label19.TabIndex = 35;
+            this.label19.Text = "g";
+            // 
+            // txtMassaVE
+            // 
+            this.txtMassaVE.Location = new System.Drawing.Point(673, 19);
+            this.txtMassaVE.Name = "txtMassaVE";
+            this.txtMassaVE.ReadOnly = true;
+            this.txtMassaVE.Size = new System.Drawing.Size(52, 20);
+            this.txtMassaVE.TabIndex = 33;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(573, 22);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(94, 13);
+            this.label20.TabIndex = 34;
+            this.label20.Text = "Massa V.E. (N<X):";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(731, 48);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(15, 13);
+            this.label18.TabIndex = 32;
+            this.label18.Text = "%";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(480, 100);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(23, 13);
+            this.label17.TabIndex = 31;
+            this.label17.Text = "mm";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(480, 74);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(23, 13);
+            this.label16.TabIndex = 30;
+            this.label16.Text = "mm";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(480, 48);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(23, 13);
+            this.label15.TabIndex = 29;
+            this.label15.Text = "mm";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(480, 22);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(23, 13);
+            this.label14.TabIndex = 28;
+            this.label14.Text = "mm";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(223, 126);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(36, 13);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "ml/m2";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(223, 100);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(27, 13);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "cm2";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(223, 74);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(23, 13);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "mm";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(223, 48);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(23, 13);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "mm";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(223, 22);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(23, 13);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "mm";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(117, 126);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(42, 13);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "(N<34):";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(117, 100);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 13);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "(N<20):";
+            // 
+            // txtAuriculaEsquerda2
+            // 
+            this.txtAuriculaEsquerda2.Location = new System.Drawing.Point(165, 123);
+            this.txtAuriculaEsquerda2.Name = "txtAuriculaEsquerda2";
+            this.txtAuriculaEsquerda2.Size = new System.Drawing.Size(52, 20);
+            this.txtAuriculaEsquerda2.TabIndex = 4;
+            // 
+            // txtAuriculaEsquerda1
+            // 
+            this.txtAuriculaEsquerda1.Location = new System.Drawing.Point(165, 97);
+            this.txtAuriculaEsquerda1.Name = "txtAuriculaEsquerda1";
+            this.txtAuriculaEsquerda1.Size = new System.Drawing.Size(52, 20);
+            this.txtAuriculaEsquerda1.TabIndex = 3;
+            // 
+            // txtAortaAscendente
+            // 
+            this.txtAortaAscendente.Location = new System.Drawing.Point(165, 45);
+            this.txtAortaAscendente.Name = "txtAortaAscendente";
+            this.txtAortaAscendente.Size = new System.Drawing.Size(52, 20);
+            this.txtAortaAscendente.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(34, 48);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(125, 13);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Aorta Ascendente (N<X):";
+            // 
             // txtFracaoEjecao
             // 
-            this.txtFracaoEjecao.Location = new System.Drawing.Point(731, 71);
+            this.txtFracaoEjecao.Location = new System.Drawing.Point(673, 45);
             this.txtFracaoEjecao.Name = "txtFracaoEjecao";
-            this.txtFracaoEjecao.Size = new System.Drawing.Size(37, 20);
-            this.txtFracaoEjecao.TabIndex = 7;
+            this.txtFracaoEjecao.Size = new System.Drawing.Size(52, 20);
+            this.txtFracaoEjecao.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(614, 71);
+            this.label4.Location = new System.Drawing.Point(541, 48);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(111, 13);
+            this.label4.Size = new System.Drawing.Size(126, 13);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Fração de Ejeção (%):";
+            this.label4.Text = "Fração Ejeção VE (N>X):";
             // 
             // txtParedeSuperior
             // 
-            this.txtParedeSuperior.Location = new System.Drawing.Point(730, 45);
+            this.txtParedeSuperior.Location = new System.Drawing.Point(422, 97);
             this.txtParedeSuperior.Name = "txtParedeSuperior";
-            this.txtParedeSuperior.Size = new System.Drawing.Size(37, 20);
-            this.txtParedeSuperior.TabIndex = 6;
+            this.txtParedeSuperior.Size = new System.Drawing.Size(52, 20);
+            this.txtParedeSuperior.TabIndex = 8;
             // 
             // lblParedePosterior
             // 
             this.lblParedePosterior.AutoSize = true;
-            this.lblParedePosterior.Location = new System.Drawing.Point(607, 45);
+            this.lblParedePosterior.Location = new System.Drawing.Point(299, 100);
             this.lblParedePosterior.Name = "lblParedePosterior";
             this.lblParedePosterior.Size = new System.Drawing.Size(118, 13);
             this.lblParedePosterior.TabIndex = 14;
@@ -614,47 +863,31 @@
             // 
             // txtSepto
             // 
-            this.txtSepto.Location = new System.Drawing.Point(730, 19);
+            this.txtSepto.Location = new System.Drawing.Point(422, 71);
             this.txtSepto.Name = "txtSepto";
-            this.txtSepto.Size = new System.Drawing.Size(37, 20);
-            this.txtSepto.TabIndex = 5;
+            this.txtSepto.Size = new System.Drawing.Size(52, 20);
+            this.txtSepto.TabIndex = 7;
             // 
             // lblSepto
             // 
             this.lblSepto.AutoSize = true;
-            this.lblSepto.Location = new System.Drawing.Point(643, 19);
+            this.lblSepto.Location = new System.Drawing.Point(335, 74);
             this.lblSepto.Name = "lblSepto";
             this.lblSepto.Size = new System.Drawing.Size(81, 13);
             this.lblSepto.TabIndex = 12;
             this.lblSepto.Text = "Septo IV (N<X):";
             // 
-            // txtFracaoEncurtamento
-            // 
-            this.txtFracaoEncurtamento.Location = new System.Drawing.Point(445, 71);
-            this.txtFracaoEncurtamento.Name = "txtFracaoEncurtamento";
-            this.txtFracaoEncurtamento.Size = new System.Drawing.Size(37, 20);
-            this.txtFracaoEncurtamento.TabIndex = 4;
-            // 
-            // lblFracaoEncurtamento
-            // 
-            this.lblFracaoEncurtamento.AutoSize = true;
-            this.lblFracaoEncurtamento.Location = new System.Drawing.Point(265, 74);
-            this.lblFracaoEncurtamento.Name = "lblFracaoEncurtamento";
-            this.lblFracaoEncurtamento.Size = new System.Drawing.Size(174, 13);
-            this.lblFracaoEncurtamento.TabIndex = 10;
-            this.lblFracaoEncurtamento.Text = "Fração de Encurtamento (%) (N>X):";
-            // 
             // txtVEtelessistole
             // 
-            this.txtVEtelessistole.Location = new System.Drawing.Point(444, 45);
+            this.txtVEtelessistole.Location = new System.Drawing.Point(422, 45);
             this.txtVEtelessistole.Name = "txtVEtelessistole";
-            this.txtVEtelessistole.Size = new System.Drawing.Size(37, 20);
-            this.txtVEtelessistole.TabIndex = 3;
+            this.txtVEtelessistole.Size = new System.Drawing.Size(52, 20);
+            this.txtVEtelessistole.TabIndex = 6;
             // 
             // lblVEtelessistole
             // 
             this.lblVEtelessistole.AutoSize = true;
-            this.lblVEtelessistole.Location = new System.Drawing.Point(328, 48);
+            this.lblVEtelessistole.Location = new System.Drawing.Point(306, 48);
             this.lblVEtelessistole.Name = "lblVEtelessistole";
             this.lblVEtelessistole.Size = new System.Drawing.Size(110, 13);
             this.lblVEtelessistole.TabIndex = 8;
@@ -662,15 +895,15 @@
             // 
             // txtVEtelediastole
             // 
-            this.txtVEtelediastole.Location = new System.Drawing.Point(444, 19);
+            this.txtVEtelediastole.Location = new System.Drawing.Point(422, 19);
             this.txtVEtelediastole.Name = "txtVEtelediastole";
-            this.txtVEtelediastole.Size = new System.Drawing.Size(37, 20);
-            this.txtVEtelediastole.TabIndex = 2;
+            this.txtVEtelediastole.Size = new System.Drawing.Size(52, 20);
+            this.txtVEtelediastole.TabIndex = 5;
             // 
             // lblVEteledisatole
             // 
             this.lblVEteledisatole.AutoSize = true;
-            this.lblVEteledisatole.Location = new System.Drawing.Point(328, 22);
+            this.lblVEteledisatole.Location = new System.Drawing.Point(306, 22);
             this.lblVEteledisatole.Name = "lblVEteledisatole";
             this.lblVEteledisatole.Size = new System.Drawing.Size(110, 13);
             this.lblVEteledisatole.TabIndex = 6;
@@ -678,35 +911,35 @@
             // 
             // txtAuriculaEsquerda
             // 
-            this.txtAuriculaEsquerda.Location = new System.Drawing.Point(165, 45);
+            this.txtAuriculaEsquerda.Location = new System.Drawing.Point(165, 71);
             this.txtAuriculaEsquerda.Name = "txtAuriculaEsquerda";
-            this.txtAuriculaEsquerda.Size = new System.Drawing.Size(37, 20);
-            this.txtAuriculaEsquerda.TabIndex = 1;
+            this.txtAuriculaEsquerda.Size = new System.Drawing.Size(52, 20);
+            this.txtAuriculaEsquerda.TabIndex = 2;
             // 
             // lblAuriculaEsquerda
             // 
             this.lblAuriculaEsquerda.AutoSize = true;
-            this.lblAuriculaEsquerda.Location = new System.Drawing.Point(31, 48);
+            this.lblAuriculaEsquerda.Location = new System.Drawing.Point(26, 74);
             this.lblAuriculaEsquerda.Name = "lblAuriculaEsquerda";
-            this.lblAuriculaEsquerda.Size = new System.Drawing.Size(128, 13);
+            this.lblAuriculaEsquerda.Size = new System.Drawing.Size(133, 13);
             this.lblAuriculaEsquerda.TabIndex = 4;
-            this.lblAuriculaEsquerda.Text = "Aurícula Esquerda (N<X):";
+            this.lblAuriculaEsquerda.Text = "Aurícula Esquerda (N<40):";
             // 
             // txtRaizAorta
             // 
             this.txtRaizAorta.Location = new System.Drawing.Point(165, 19);
             this.txtRaizAorta.Name = "txtRaizAorta";
-            this.txtRaizAorta.Size = new System.Drawing.Size(37, 20);
+            this.txtRaizAorta.Size = new System.Drawing.Size(52, 20);
             this.txtRaizAorta.TabIndex = 0;
             // 
             // lblRaizAorta
             // 
             this.lblRaizAorta.AutoSize = true;
-            this.lblRaizAorta.Location = new System.Drawing.Point(55, 22);
+            this.lblRaizAorta.Location = new System.Drawing.Point(49, 22);
             this.lblRaizAorta.Name = "lblRaizAorta";
-            this.lblRaizAorta.Size = new System.Drawing.Size(104, 13);
+            this.lblRaizAorta.Size = new System.Drawing.Size(109, 13);
             this.lblRaizAorta.TabIndex = 2;
-            this.lblRaizAorta.Text = "Raiz da Aorta (N<X):";
+            this.lblRaizAorta.Text = "Raiz da Aorta (N<37):";
             // 
             // pictureBox1
             // 
@@ -733,7 +966,7 @@
             this.groupBox2.Location = new System.Drawing.Point(6, 114);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(773, 97);
-            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informação Exame";
             // 
@@ -867,10 +1100,10 @@
             // rdbMasculino
             // 
             this.rdbMasculino.AutoSize = true;
-            this.rdbMasculino.Location = new System.Drawing.Point(384, 48);
+            this.rdbMasculino.Location = new System.Drawing.Point(387, 50);
             this.rdbMasculino.Name = "rdbMasculino";
             this.rdbMasculino.Size = new System.Drawing.Size(34, 17);
-            this.rdbMasculino.TabIndex = 4;
+            this.rdbMasculino.TabIndex = 3;
             this.rdbMasculino.TabStop = true;
             this.rdbMasculino.Text = "M";
             this.rdbMasculino.UseVisualStyleBackColor = true;
@@ -878,10 +1111,10 @@
             // rdbFeminino
             // 
             this.rdbFeminino.AutoSize = true;
-            this.rdbFeminino.Location = new System.Drawing.Point(347, 48);
+            this.rdbFeminino.Location = new System.Drawing.Point(350, 49);
             this.rdbFeminino.Name = "rdbFeminino";
             this.rdbFeminino.Size = new System.Drawing.Size(31, 17);
-            this.rdbFeminino.TabIndex = 3;
+            this.rdbFeminino.TabIndex = 2;
             this.rdbFeminino.TabStop = true;
             this.rdbFeminino.Text = "F";
             this.rdbFeminino.UseVisualStyleBackColor = true;
@@ -889,7 +1122,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(307, 50);
+            this.label3.Location = new System.Drawing.Point(310, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(34, 13);
             this.label3.TabIndex = 8;
@@ -937,25 +1170,19 @@
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
-            // servicoBindingSourceMedico1
-            // 
-            this.servicoBindingSourceMedico1.DataSource = typeof(EcoCardio.Domain.Servico);
-            // 
-            // servicoBindingSourceMedico2
-            // 
-            this.servicoBindingSourceMedico2.DataSource = typeof(EcoCardio.Domain.Servico);
-            // 
             // UscExameEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.grbAdicionar);
             this.Name = "UscExameEdit";
-            this.Size = new System.Drawing.Size(796, 1288);
+            this.Size = new System.Drawing.Size(796, 1340);
             this.Load += new System.EventHandler(this.UscExameEdit_Load);
             this.grbAdicionar.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceMedico2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceMedico1)).EndInit();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.templateBindingSourceConclusao)).EndInit();
@@ -986,8 +1213,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceRequisitado)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceMedico1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceMedico2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1033,8 +1258,6 @@
         private System.Windows.Forms.Label lblParedePosterior;
         private System.Windows.Forms.TextBox txtSepto;
         private System.Windows.Forms.Label lblSepto;
-        private System.Windows.Forms.TextBox txtFracaoEncurtamento;
-        private System.Windows.Forms.Label lblFracaoEncurtamento;
         private System.Windows.Forms.TextBox txtVEtelessistole;
         private System.Windows.Forms.Label lblVEtelessistole;
         private System.Windows.Forms.TextBox txtVEtelediastole;
@@ -1079,5 +1302,28 @@
         private System.Windows.Forms.BindingSource transmissaoAcusticaBindingSource;
         private System.Windows.Forms.BindingSource servicoBindingSourceMedico1;
         private System.Windows.Forms.BindingSource servicoBindingSourceMedico2;
+        private System.Windows.Forms.TextBox txtAortaAscendente;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtAuriculaEsquerda2;
+        private System.Windows.Forms.TextBox txtAuriculaEsquerda1;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox txtFuncaoVD;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txtMassaVE;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button btnSavePrint;
     }
 }

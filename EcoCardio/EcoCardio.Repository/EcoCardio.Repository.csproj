@@ -117,6 +117,14 @@
     <Compile Include="Migrations\201704231512371_ServicoTipo.Designer.cs">
       <DependentUpon>201704231512371_ServicoTipo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705131018030_ExameFieldsDiametro.cs" />
+    <Compile Include="Migrations\201705131018030_ExameFieldsDiametro.Designer.cs">
+      <DependentUpon>201705131018030_ExameFieldsDiametro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705131104492_AddFieldExameMassaVE.cs" />
+    <Compile Include="Migrations\201705131104492_AddFieldExameMassaVE.Designer.cs">
+      <DependentUpon>201705131104492_AddFieldExameMassaVE.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -141,6 +149,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201704231512371_ServicoTipo.resx">
       <DependentUpon>201704231512371_ServicoTipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705131018030_ExameFieldsDiametro.resx">
+      <DependentUpon>201705131018030_ExameFieldsDiametro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705131104492_AddFieldExameMassaVE.resx">
+      <DependentUpon>201705131104492_AddFieldExameMassaVE.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

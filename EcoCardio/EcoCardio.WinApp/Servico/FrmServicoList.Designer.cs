@@ -130,6 +130,7 @@
             this.dgvListaServicos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvListaServicos.Size = new System.Drawing.Size(617, 389);
             this.dgvListaServicos.TabIndex = 1;
+            this.dgvListaServicos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListaServicos_CellDoubleClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
