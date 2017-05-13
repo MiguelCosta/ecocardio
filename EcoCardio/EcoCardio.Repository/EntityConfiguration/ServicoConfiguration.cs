@@ -14,7 +14,7 @@ namespace EcoCardio.Repository.EntityConfiguration
                 .HasMaxLength(1024);
 
             Property(u => u.Tipo)
-                .HasMaxLength(1024);
+                .IsRequired();
         }
     }
 }

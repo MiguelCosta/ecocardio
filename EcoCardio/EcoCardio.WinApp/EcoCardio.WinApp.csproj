@@ -106,12 +106,36 @@
       <DependentUpon>FrmSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="GerallApp.cs" />
-    <Compile Include="Img100.Designer.cs" />
-    <Compile Include="Img16.Designer.cs" />
-    <Compile Include="Img24.Designer.cs" />
-    <Compile Include="Img32.Designer.cs" />
-    <Compile Include="Img50.Designer.cs" />
-    <Compile Include="ImgCustom.Designer.cs" />
+    <Compile Include="Img100.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img100.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Img16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img16.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Img24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img24.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Img32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img32.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Img50.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Img50.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ImgCustom.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImgCustom.resx</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reports\Exame.cs">
@@ -125,6 +149,18 @@
     </Compile>
     <Compile Include="Reports\FrmReportViewer.Designer.cs">
       <DependentUpon>FrmReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Servico\FrmServicoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servico\FrmServicoEdit.Designer.cs">
+      <DependentUpon>FrmServicoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Servico\FrmServicoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servico\FrmServicoList.Designer.cs">
+      <DependentUpon>FrmServicoList.cs</DependentUpon>
     </Compile>
     <Compile Include="Template\FrmTemplateEdit.cs">
       <SubType>Form</SubType>
@@ -165,12 +201,36 @@
     <EmbeddedResource Include="FrmSearch.resx">
       <DependentUpon>FrmSearch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Img100.resx" />
-    <EmbeddedResource Include="Img16.resx" />
-    <EmbeddedResource Include="Img24.resx" />
-    <EmbeddedResource Include="Img32.resx" />
-    <EmbeddedResource Include="Img50.resx" />
-    <EmbeddedResource Include="ImgCustom.resx" />
+    <EmbeddedResource Include="Img100.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Img100.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img16.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Img16.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img24.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Img24.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img32.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Img32.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Img50.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Img50.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImgCustom.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>ImgCustom.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -187,6 +247,12 @@
     <EmbeddedResource Include="Reports\FrmReportViewer.resx">
       <DependentUpon>FrmReportViewer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Servico\FrmServicoEdit.resx">
+      <DependentUpon>FrmServicoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servico\FrmServicoList.resx">
+      <DependentUpon>FrmServicoList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Template\FrmTemplateEdit.resx">
       <DependentUpon>FrmTemplateEdit.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,7 +268,9 @@
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\EcoCardio.Domain.Exame.datasource" />
+    <None Include="Properties\DataSources\EcoCardio.Domain.Servico.datasource" />
     <None Include="Properties\DataSources\EcoCardio.Domain.Template.datasource" />
+    <None Include="Properties\DataSources\EcoCardio.Domain.TransmissaoAcustica.datasource" />
     <None Include="Properties\DataSources\EcoCardio.Domain.Utilizador.datasource" />
     <None Include="Properties\DataSources\EcoCardio.Repository.EcoCardioContext.datasource" />
     <None Include="Properties\DataSources\EcoCardio.Repository.Migrations.AddServico.datasource" />

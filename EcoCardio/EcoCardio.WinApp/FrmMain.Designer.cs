@@ -34,6 +34,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuGeral_Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuTemplates = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuServicos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,7 +42,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuGeral,
-            this.mnuTemplates});
+            this.mnuTemplates,
+            this.mnuServicos});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(724, 24);
@@ -60,12 +62,12 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(90, 6);
             // 
             // mnuGeral_Exit
             // 
             this.mnuGeral_Exit.Name = "mnuGeral_Exit";
-            this.mnuGeral_Exit.Size = new System.Drawing.Size(152, 22);
+            this.mnuGeral_Exit.Size = new System.Drawing.Size(93, 22);
             this.mnuGeral_Exit.Text = "Sair";
             this.mnuGeral_Exit.Click += new System.EventHandler(this.mnuGeral_Exit_Click);
             // 
@@ -75,6 +77,13 @@
             this.mnuTemplates.Size = new System.Drawing.Size(73, 20);
             this.mnuTemplates.Text = "Templates";
             this.mnuTemplates.Click += new System.EventHandler(this.mnuTemplates_Click);
+            // 
+            // mnuServicos
+            // 
+            this.mnuServicos.Name = "mnuServicos";
+            this.mnuServicos.Size = new System.Drawing.Size(62, 20);
+            this.mnuServicos.Text = "Serviços";
+            this.mnuServicos.Click += new System.EventHandler(this.mnuServicos_Click);
             // 
             // FrmMain
             // 
@@ -101,5 +110,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem mnuGeral_Exit;
         private System.Windows.Forms.ToolStripMenuItem mnuTemplates;
+        private System.Windows.Forms.ToolStripMenuItem mnuServicos;
     }
 }

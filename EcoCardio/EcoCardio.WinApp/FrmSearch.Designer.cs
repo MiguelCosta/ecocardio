@@ -45,7 +45,7 @@
             this.exameBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnPrint = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.btnEditarRegisto = new System.Windows.Forms.Button();
             this.btnCriarRegisto = new System.Windows.Forms.Button();
             this.picLogo = new System.Windows.Forms.PictureBox();
@@ -193,7 +193,7 @@
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox2.Controls.Add(this.btnPrint);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btnDelete);
             this.groupBox2.Controls.Add(this.btnEditarRegisto);
             this.groupBox2.Controls.Add(this.btnCriarRegisto);
             this.groupBox2.Location = new System.Drawing.Point(12, 131);
@@ -215,16 +215,17 @@
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
-            // button1
+            // btnDelete
             // 
-            this.button1.Image = global::EcoCardio.WinApp.Img32.Delete32;
-            this.button1.Location = new System.Drawing.Point(6, 142);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 55);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Apagar Registo";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnDelete.Image = global::EcoCardio.WinApp.Img32.Delete32;
+            this.btnDelete.Location = new System.Drawing.Point(6, 142);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(101, 55);
+            this.btnDelete.TabIndex = 16;
+            this.btnDelete.Text = "Apagar Registo";
+            this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEditarRegisto
             // 
@@ -313,7 +314,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnCriarRegisto;
         private System.Windows.Forms.Button btnPrint;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEditarRegisto;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;

@@ -26,8 +26,8 @@ namespace EcoCardio.Repository.Implementation
         public int NextNumber()
         {
             if (!_context.Exames.Any()) return 1;
-            var currentNumber = _context.Exames.Max(e => e.Numero);
-            return currentNumber++;
+            var currentNumber = _context.Exames.Max(e => e.Numero) + 1;
+            return currentNumber;
         }
 
         public IEnumerable<Exame> Search(string nome, int numero, int maxResults = 200)

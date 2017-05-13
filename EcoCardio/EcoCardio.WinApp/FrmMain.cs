@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace EcoCardio.WinApp
@@ -16,7 +10,6 @@ namespace EcoCardio.WinApp
             InitializeComponent();
             this.Load += FrmMain_Load;
             mnuGeral_Exit.Click += mnuGeral_Exit_Click;
-            //lblVersion.Text = Application.ProductVersion;
         }
 
         #region "FormMain"
@@ -55,14 +48,18 @@ namespace EcoCardio.WinApp
 
         private void ShowFormInit()
         {
-            //lblUser.Text = GerallApp.CurrentUser.Nome;
-
             var frm = new FrmSearch();
             frm.MdiParent = this;
             frm.Show();
         }
 
         #endregion "ShowForms"
+
+        private void mnuServicos_Click(object sender, EventArgs e)
+        {
+            var frm = new Servico.FrmServicoList();
+            frm.ShowDialog();
+        }
 
         private void mnuTemplates_Click(object sender, EventArgs e)
         {

@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\Genre.cs" />
+    <Compile Include="Enums\ServicoType .cs" />
     <Compile Include="Enums\ProfileType.cs" />
     <Compile Include="Enums\TemplateType.cs" />
     <Compile Include="Exame.cs" />

@@ -63,9 +63,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Add100 {
+        internal static System.Drawing.Bitmap add100 {
             get {
-                object obj = ResourceManager.GetObject("Add100", resourceCulture);
+                object obj = ResourceManager.GetObject("add100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Create100 {
+        internal static System.Drawing.Bitmap create100 {
             get {
-                object obj = ResourceManager.GetObject("Create100", resourceCulture);
+                object obj = ResourceManager.GetObject("create100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CreateWhite100 {
+        internal static System.Drawing.Bitmap createwhite100 {
             get {
-                object obj = ResourceManager.GetObject("CreateWhite100", resourceCulture);
+                object obj = ResourceManager.GetObject("createwhite100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Edit100 {
+        internal static System.Drawing.Bitmap edit100 {
             get {
-                object obj = ResourceManager.GetObject("Edit100", resourceCulture);
+                object obj = ResourceManager.GetObject("edit100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NewWhite100 {
+        internal static System.Drawing.Bitmap newwhite100 {
             get {
-                object obj = ResourceManager.GetObject("NewWhite100", resourceCulture);
+                object obj = ResourceManager.GetObject("newwhite100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Print100 {
+        internal static System.Drawing.Bitmap print100 {
             get {
-                object obj = ResourceManager.GetObject("Print100", resourceCulture);
+                object obj = ResourceManager.GetObject("print100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Search100 {
+        internal static System.Drawing.Bitmap search100 {
             get {
-                object obj = ResourceManager.GetObject("Search100", resourceCulture);
+                object obj = ResourceManager.GetObject("search100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

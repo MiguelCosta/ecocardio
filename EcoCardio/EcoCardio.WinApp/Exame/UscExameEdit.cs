@@ -21,22 +21,17 @@ namespace EcoCardio.WinApp.Exame
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            var newExame = GetExameInfo();
-            if (this.Exame == null)
-            {
-                newExame.Numero = GerallApp.AppRepository.Exames.NextNumber();
-                GerallApp.AppRepository.Exames.Insert(newExame);
-            }
-            else
-            {
-                newExame.Id = this.Exame.Id;
-                newExame.Numero = this.Exame.Numero;
-                GerallApp.AppRepository.Exames.Update(this.Exame.Id, newExame);
-            }
+            Save();
+            this.ParentForm.Close();
+        }
 
-            GerallApp.AppRepository.Complete();
-            this.SetExame(newExame.Id);
-            MessageBox.Show($"Exame {newExame.Numero} guardado.");
+        private void btnSavePrint_Click(object sender, EventArgs e)
+        {
+            Save();
+            var frm = new Reports.FrmReportViewer();
+            frm.OpenExame(Exame.Id);
+            frm.ShowDialog();
+            this.ParentForm.Close();
         }
 
         private int CalculateAge(DateTime value)
@@ -49,18 +44,28 @@ namespace EcoCardio.WinApp.Exame
 
         private void FillDropdows()
         {
+            servicoBindingSourceRequisitado.DataSource = GerallApp.AppRepository.Servicos.GetByType(Domain.Enums.ServicoType.Requisitado);
+            transmissaoAcusticaBindingSource.DataSource = GerallApp.AppRepository.TransmissoesAcusticas.GetAll();
             templateBindingSourceCavidadesCardiacas.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.CavidadesCardiacas);
             templateBindingSourceEspessuraParedes.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.EspessuraParedesVentriculares);
             templateBindingSourceEstruturasValvulares.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.EstruturasValvulares);
             templateBindingSourceFuncaoVentricular.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.FuncaoVentricular);
             templateBindingSourceMassasIntracavitarias.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.MassasIntracavitarias);
             templateBindingSourcePericardio.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.Pericardio);
+            templateBindingSourceConclusao.DataSource = GerallApp.AppRepository.Templates.GetByType(Domain.Enums.TemplateType.Conclusao);
+            servicoBindingSourceMedico1.DataSource = GerallApp.AppRepository.Servicos.GetByType(Domain.Enums.ServicoType.Medico1);
+            servicoBindingSourceMedico2.DataSource = GerallApp.AppRepository.Servicos.GetByType(Domain.Enums.ServicoType.Medico2);
+            servicoBindingSourceRequisitado.ResetBindings(false);
+            transmissaoAcusticaBindingSource.ResetBindings(false);
             templateBindingSourceCavidadesCardiacas.ResetBindings(false);
             templateBindingSourceEspessuraParedes.ResetBindings(false);
             templateBindingSourceEstruturasValvulares.ResetBindings(false);
             templateBindingSourceFuncaoVentricular.ResetBindings(false);
             templateBindingSourceMassasIntracavitarias.ResetBindings(false);
             templateBindingSourcePericardio.ResetBindings(false);
+            templateBindingSourceConclusao.ResetBindings(false);
+            servicoBindingSourceMedico1.ResetBindings(false);
+            servicoBindingSourceMedico2.ResetBindings(false);
         }
 
         private void FillExame()
@@ -84,19 +89,23 @@ namespace EcoCardio.WinApp.Exame
             // Informacao do Exame
             txtExame.Text = Exame.Numero.ToString();
             dtpDataExame.Value = Exame.Data;
-            cmbRequisitadoPor.Text = Exame.RequisitadoPor;
-            cmbTransmissaoAcustica.Text = Exame.TransmissaoAcustica;
+            cmbRequisitadoPor.SelectedValue = Exame.RequisitadoPor;
+            cmbTransmissaoAcustica.SelectedValue = Exame.TransmissaoAcustica;
             txtInfoClinica.Text = Exame.InfoClinica;
 
             // Dimensoes
             txtRaizAorta.Text = Exame.DiametroAorta.ToString();
+            txtAortaAscendente.Text = Exame.DiametroAortaAscendente.ToString();
             txtAuriculaEsquerda.Text = Exame.DiametroAuriculaEsquerda.ToString();
+            txtAuriculaEsquerda1.Text = Exame.DiametroAuriculaEsquerda1.ToString();
+            txtAuriculaEsquerda2.Text = Exame.DiametroAuriculaEsquerda2.ToString();
             txtVEtelediastole.Text = Exame.DiametroVETeleadiastole.ToString();
             txtVEtelessistole.Text = Exame.DiametroVETelessistole.ToString();
-            txtFracaoEncurtamento.Text = Exame.FracaoEncurtamento.ToString();
             txtSepto.Text = Exame.DiametroSepto.ToString();
             txtParedeSuperior.Text = Exame.DiametroParedePosterior.ToString();
+            txtMassaVE.Text = Exame.MassaVE.ToString();
             txtFracaoEjecao.Text = Exame.FracaoEjecao.ToString();
+            txtFuncaoVD.Text = Exame.DiametroFuncaoVd.ToString();
 
             // Text info
             txtEstruturasValvulares.Text = Exame.EstruturasValvulares;
@@ -108,8 +117,8 @@ namespace EcoCardio.WinApp.Exame
 
             // Final
             txtConclusao.Text = Exame.Conclusao;
-            cmbCardiologista1.Text = Exame.Medico1;
-            cmbCardiologista2.Text = Exame.Medico2;
+            cmbCardiologista1.SelectedValue = Exame.Medico1;
+            cmbCardiologista2.SelectedValue = Exame.Medico2;
         }
 
         private Domain.Exame GetExameInfo()
@@ -133,13 +142,17 @@ namespace EcoCardio.WinApp.Exame
 
             // Dimensoes
             result.DiametroAorta = GetIntFromTextBox(txtRaizAorta);
+            result.DiametroAortaAscendente = GetIntFromTextBox(txtAortaAscendente);
             result.DiametroAuriculaEsquerda = GetIntFromTextBox(txtAuriculaEsquerda);
+            result.DiametroAuriculaEsquerda1 = GetIntFromTextBox(txtAuriculaEsquerda1);
+            result.DiametroAuriculaEsquerda2 = GetIntFromTextBox(txtAuriculaEsquerda2);
             result.DiametroVETeleadiastole = GetIntFromTextBox(txtVEtelediastole);
             result.DiametroVETelessistole = GetIntFromTextBox(txtVEtelessistole);
-            result.FracaoEncurtamento = GetIntFromTextBox(txtFracaoEncurtamento);
             result.DiametroSepto = GetIntFromTextBox(txtSepto);
             result.DiametroParedePosterior = GetIntFromTextBox(txtParedeSuperior);
             result.FracaoEjecao = GetIntFromTextBox(txtFracaoEjecao);
+            result.DiametroFuncaoVd = GetIntFromTextBox(txtFuncaoVD);
+            result.MassaVE = result.CalcMassaVE();
 
             // Text info
             result.EstruturasValvulares = txtEstruturasValvulares.Text;
@@ -170,6 +183,30 @@ namespace EcoCardio.WinApp.Exame
             }
         }
 
+        private void Save()
+        {
+            var newExame = GetExameInfo();
+            if (this.Exame == null)
+            {
+                newExame.Numero = GerallApp.AppRepository.Exames.NextNumber();
+                GerallApp.AppRepository.Exames.Insert(newExame);
+            }
+            else
+            {
+                newExame.Id = this.Exame.Id;
+                newExame.Numero = this.Exame.Numero;
+                GerallApp.AppRepository.Exames.Update(this.Exame.Id, newExame);
+            }
+
+            GerallApp.AppRepository.Complete();
+            this.SetExame(newExame.Id);
+        }
+
+        private void UscExameEdit_Load(object sender, EventArgs e)
+        {
+            txtNome.Focus();
+        }
+
         #region "Dropdowns"
 
         private void btnAddCavidadesCardiacas_Click(object sender, EventArgs e)
@@ -197,17 +234,33 @@ namespace EcoCardio.WinApp.Exame
             SetTextTemplate(cmbPericardico, txtPericardico);
         }
 
+        private void btnConclusao_Click(object sender, EventArgs e)
+        {
+            SetTextTemplate(cmbConclusao, txtConclusao);
+        }
+
         private void btnEspessuraParedes_Click(object sender, EventArgs e)
         {
             SetTextTemplate(cmbEspessuraParedes, txtEspessuraParedes);
         }
 
+        /// <summary>
+        /// Alterar o texto de uma textbox com o texto selecionado na
+        /// dropdown associada.
+        /// </summary>
+        /// <param name="cmb"></param>
+        /// <param name="txt"></param>
+        /// <param name="append"></param>
         private void SetTextTemplate(ComboBox cmb, TextBox txt)
         {
             if (cmb.SelectedItem != null)
             {
-                var item = cmb.SelectedItem as Domain.Template;
-                txt.Text = item.Texto;
+                var texto = (cmb.SelectedItem as Domain.Template).Texto;
+                if (!string.IsNullOrWhiteSpace(txt.Text))
+                {
+                    texto = $"{txt.Text}{Environment.NewLine}{texto}";
+                }
+                txt.Text = texto;
             }
         }
 

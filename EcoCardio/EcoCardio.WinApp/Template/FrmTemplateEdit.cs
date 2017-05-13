@@ -79,6 +79,10 @@ namespace EcoCardio.WinApp.Template
                     rbtMassasIntracavitarias.Checked = true;
                     break;
 
+                case Domain.Enums.TemplateType.Conclusao:
+                    rbtConclusao.Checked = true;
+                    break;
+
                 default:
                     break;
             }
@@ -95,6 +99,7 @@ namespace EcoCardio.WinApp.Template
                 rbtEstruturasValvulares.Checked ? Domain.Enums.TemplateType.EstruturasValvulares :
                 rbtFuncaoVentricular.Checked ? Domain.Enums.TemplateType.FuncaoVentricular :
                 rbtMassasIntracavitarias.Checked ? Domain.Enums.TemplateType.MassasIntracavitarias :
+                rbtConclusao.Checked ? Domain.Enums.TemplateType.Conclusao :
                 Domain.Enums.TemplateType.Pericardio;
             return template;
         }

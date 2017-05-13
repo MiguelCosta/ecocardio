@@ -7,6 +7,7 @@
         EstruturasValvulares = 2,
         FuncaoVentricular = 3,
         Pericardio = 4,
-        MassasIntracavitarias = 5
+        MassasIntracavitarias = 5,
+        Conclusao = 6
     }
 }

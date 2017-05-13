@@ -63,9 +63,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Add32 {
+        internal static System.Drawing.Bitmap add32 {
             get {
-                object obj = ResourceManager.GetObject("Add32", resourceCulture);
+                object obj = ResourceManager.GetObject("add32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PDF32 {
+        internal static System.Drawing.Bitmap pdf32 {
             get {
-                object obj = ResourceManager.GetObject("PDF32", resourceCulture);
+                object obj = ResourceManager.GetObject("pdf32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace EcoCardio.WinApp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Search32 {
+        internal static System.Drawing.Bitmap search32 {
             get {
-                object obj = ResourceManager.GetObject("Search32", resourceCulture);
+                object obj = ResourceManager.GetObject("search32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
