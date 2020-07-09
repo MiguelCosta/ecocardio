@@ -4,7 +4,7 @@ namespace EcoCardio.Repository.Implementation
 {
     public class AppUnitOfWork : IAppUnitOfWork
     {
-        private EcoCardioContext _context;
+        private readonly EcoCardioContext _context;
 
         public AppUnitOfWork()
         {
