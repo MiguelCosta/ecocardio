@@ -135,6 +135,18 @@
             this.lblDataNascimento = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
+            this.lblPeso = new System.Windows.Forms.Label();
+            this.lblAltura = new System.Windows.Forms.Label();
+            this.lblSuperficieCorporal = new System.Windows.Forms.Label();
+            this.txtPeso = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtAltura = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.txtSuperficieCorporal = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.txtVEvolume = new System.Windows.Forms.TextBox();
+            this.lblVEvolume = new System.Windows.Forms.Label();
             this.grbAdicionar.SuspendLayout();
             this.groupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.servicoBindingSourceMedico2)).BeginInit();
@@ -597,6 +609,9 @@
             // 
             // gpbDimensoes
             // 
+            this.gpbDimensoes.Controls.Add(this.label29);
+            this.gpbDimensoes.Controls.Add(this.txtVEvolume);
+            this.gpbDimensoes.Controls.Add(this.lblVEvolume);
             this.gpbDimensoes.Controls.Add(this.label21);
             this.gpbDimensoes.Controls.Add(this.txtFuncaoVD);
             this.gpbDimensoes.Controls.Add(this.label22);
@@ -676,6 +691,7 @@
             // 
             // txtMassaVE
             // 
+            this.txtMassaVE.BackColor = System.Drawing.SystemColors.Window;
             this.txtMassaVE.Location = new System.Drawing.Point(673, 19);
             this.txtMassaVE.Name = "txtMassaVE";
             this.txtMassaVE.ReadOnly = true;
@@ -703,7 +719,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(480, 100);
+            this.label17.Location = new System.Drawing.Point(480, 126);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(23, 13);
             this.label17.TabIndex = 31;
@@ -712,7 +728,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(480, 74);
+            this.label16.Location = new System.Drawing.Point(480, 100);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(23, 13);
             this.label16.TabIndex = 30;
@@ -721,7 +737,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(480, 48);
+            this.label15.Location = new System.Drawing.Point(480, 74);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(23, 13);
             this.label15.TabIndex = 29;
@@ -847,7 +863,7 @@
             // 
             // txtParedeSuperior
             // 
-            this.txtParedeSuperior.Location = new System.Drawing.Point(422, 97);
+            this.txtParedeSuperior.Location = new System.Drawing.Point(422, 123);
             this.txtParedeSuperior.Name = "txtParedeSuperior";
             this.txtParedeSuperior.Size = new System.Drawing.Size(52, 20);
             this.txtParedeSuperior.TabIndex = 8;
@@ -855,7 +871,7 @@
             // lblParedePosterior
             // 
             this.lblParedePosterior.AutoSize = true;
-            this.lblParedePosterior.Location = new System.Drawing.Point(299, 100);
+            this.lblParedePosterior.Location = new System.Drawing.Point(299, 126);
             this.lblParedePosterior.Name = "lblParedePosterior";
             this.lblParedePosterior.Size = new System.Drawing.Size(118, 13);
             this.lblParedePosterior.TabIndex = 14;
@@ -863,7 +879,7 @@
             // 
             // txtSepto
             // 
-            this.txtSepto.Location = new System.Drawing.Point(422, 71);
+            this.txtSepto.Location = new System.Drawing.Point(422, 97);
             this.txtSepto.Name = "txtSepto";
             this.txtSepto.Size = new System.Drawing.Size(52, 20);
             this.txtSepto.TabIndex = 7;
@@ -871,7 +887,7 @@
             // lblSepto
             // 
             this.lblSepto.AutoSize = true;
-            this.lblSepto.Location = new System.Drawing.Point(335, 74);
+            this.lblSepto.Location = new System.Drawing.Point(335, 100);
             this.lblSepto.Name = "lblSepto";
             this.lblSepto.Size = new System.Drawing.Size(81, 13);
             this.lblSepto.TabIndex = 12;
@@ -879,7 +895,7 @@
             // 
             // txtVEtelessistole
             // 
-            this.txtVEtelessistole.Location = new System.Drawing.Point(422, 45);
+            this.txtVEtelessistole.Location = new System.Drawing.Point(422, 71);
             this.txtVEtelessistole.Name = "txtVEtelessistole";
             this.txtVEtelessistole.Size = new System.Drawing.Size(52, 20);
             this.txtVEtelessistole.TabIndex = 6;
@@ -887,7 +903,7 @@
             // lblVEtelessistole
             // 
             this.lblVEtelessistole.AutoSize = true;
-            this.lblVEtelessistole.Location = new System.Drawing.Point(306, 48);
+            this.lblVEtelessistole.Location = new System.Drawing.Point(306, 74);
             this.lblVEtelessistole.Name = "lblVEtelessistole";
             this.lblVEtelessistole.Size = new System.Drawing.Size(110, 13);
             this.lblVEtelessistole.TabIndex = 8;
@@ -953,6 +969,15 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label28);
+            this.groupBox2.Controls.Add(this.txtSuperficieCorporal);
+            this.groupBox2.Controls.Add(this.label27);
+            this.groupBox2.Controls.Add(this.txtAltura);
+            this.groupBox2.Controls.Add(this.label26);
+            this.groupBox2.Controls.Add(this.txtPeso);
+            this.groupBox2.Controls.Add(this.lblSuperficieCorporal);
+            this.groupBox2.Controls.Add(this.lblAltura);
+            this.groupBox2.Controls.Add(this.lblPeso);
             this.groupBox2.Controls.Add(this.dtpDataExame);
             this.groupBox2.Controls.Add(this.cmbTransmissaoAcustica);
             this.groupBox2.Controls.Add(this.cmbRequisitadoPor);
@@ -1031,13 +1056,13 @@
             // 
             this.txtInfoClinica.Location = new System.Drawing.Point(133, 70);
             this.txtInfoClinica.Name = "txtInfoClinica";
-            this.txtInfoClinica.Size = new System.Drawing.Size(634, 20);
+            this.txtInfoClinica.Size = new System.Drawing.Size(248, 20);
             this.txtInfoClinica.TabIndex = 4;
             // 
             // lblInformacaoClinica
             // 
             this.lblInformacaoClinica.AutoSize = true;
-            this.lblInformacaoClinica.Location = new System.Drawing.Point(31, 70);
+            this.lblInformacaoClinica.Location = new System.Drawing.Point(31, 73);
             this.lblInformacaoClinica.Name = "lblInformacaoClinica";
             this.lblInformacaoClinica.Size = new System.Drawing.Size(99, 13);
             this.lblInformacaoClinica.TabIndex = 6;
@@ -1169,6 +1194,106 @@
             this.lblNome.Size = new System.Drawing.Size(38, 13);
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
+            // 
+            // lblPeso
+            // 
+            this.lblPeso.AutoSize = true;
+            this.lblPeso.Location = new System.Drawing.Point(387, 74);
+            this.lblPeso.Name = "lblPeso";
+            this.lblPeso.Size = new System.Drawing.Size(34, 13);
+            this.lblPeso.TabIndex = 11;
+            this.lblPeso.Text = "Peso:";
+            // 
+            // lblAltura
+            // 
+            this.lblAltura.AutoSize = true;
+            this.lblAltura.Location = new System.Drawing.Point(493, 74);
+            this.lblAltura.Name = "lblAltura";
+            this.lblAltura.Size = new System.Drawing.Size(37, 13);
+            this.lblAltura.TabIndex = 12;
+            this.lblAltura.Text = "Altura:";
+            // 
+            // lblSuperficieCorporal
+            // 
+            this.lblSuperficieCorporal.AutoSize = true;
+            this.lblSuperficieCorporal.Location = new System.Drawing.Point(600, 74);
+            this.lblSuperficieCorporal.Name = "lblSuperficieCorporal";
+            this.lblSuperficieCorporal.Size = new System.Drawing.Size(98, 13);
+            this.lblSuperficieCorporal.TabIndex = 13;
+            this.lblSuperficieCorporal.Text = "Superfície Coporal:";
+            // 
+            // txtPeso
+            // 
+            this.txtPeso.Location = new System.Drawing.Point(418, 70);
+            this.txtPeso.Name = "txtPeso";
+            this.txtPeso.Size = new System.Drawing.Size(48, 20);
+            this.txtPeso.TabIndex = 14;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(466, 74);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(19, 13);
+            this.label26.TabIndex = 24;
+            this.label26.Text = "kg";
+            // 
+            // txtAltura
+            // 
+            this.txtAltura.Location = new System.Drawing.Point(529, 70);
+            this.txtAltura.Name = "txtAltura";
+            this.txtAltura.Size = new System.Drawing.Size(48, 20);
+            this.txtAltura.TabIndex = 25;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(577, 74);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(21, 13);
+            this.label27.TabIndex = 26;
+            this.label27.Text = "cm";
+            // 
+            // txtSuperficieCorporal
+            // 
+            this.txtSuperficieCorporal.Location = new System.Drawing.Point(698, 70);
+            this.txtSuperficieCorporal.Name = "txtSuperficieCorporal";
+            this.txtSuperficieCorporal.Size = new System.Drawing.Size(48, 20);
+            this.txtSuperficieCorporal.TabIndex = 27;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(749, 74);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(21, 13);
+            this.label28.TabIndex = 28;
+            this.label28.Text = "m2";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(480, 48);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(36, 13);
+            this.label29.TabIndex = 41;
+            this.label29.Text = "ml/m2";
+            // 
+            // txtVEvolume
+            // 
+            this.txtVEvolume.Location = new System.Drawing.Point(422, 45);
+            this.txtVEvolume.Name = "txtVEvolume";
+            this.txtVEvolume.Size = new System.Drawing.Size(52, 20);
+            this.txtVEvolume.TabIndex = 39;
+            // 
+            // lblVEvolume
+            // 
+            this.lblVEvolume.AutoSize = true;
+            this.lblVEvolume.Location = new System.Drawing.Point(323, 48);
+            this.lblVEvolume.Name = "lblVEvolume";
+            this.lblVEvolume.Size = new System.Drawing.Size(91, 13);
+            this.lblVEvolume.TabIndex = 40;
+            this.lblVEvolume.Text = "VE volume (N<X):";
             // 
             // UscExameEdit
             // 
@@ -1325,5 +1450,17 @@
         private System.Windows.Forms.TextBox txtMassaVE;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Button btnSavePrint;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox txtSuperficieCorporal;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox txtAltura;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox txtPeso;
+        private System.Windows.Forms.Label lblSuperficieCorporal;
+        private System.Windows.Forms.Label lblAltura;
+        private System.Windows.Forms.Label lblPeso;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox txtVEvolume;
+        private System.Windows.Forms.Label lblVEvolume;
     }
 }

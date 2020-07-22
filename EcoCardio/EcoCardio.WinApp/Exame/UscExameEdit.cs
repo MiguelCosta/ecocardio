@@ -42,6 +42,13 @@ namespace EcoCardio.WinApp.Exame
             return age;
         }
 
+        private double CalculateBodySurface(int height, int weight)
+        {
+            var bodySurface = Math.Round(Math.Sqrt((height * weight) / 3600),1);
+
+            return bodySurface;
+        }
+
         private void FillDropdows()
         {
             servicoBindingSourceRequisitado.DataSource = GerallApp.AppRepository.Servicos.GetByType(Domain.Enums.ServicoType.Requisitado);
