@@ -125,6 +125,10 @@
     <Compile Include="Migrations\201705131104492_AddFieldExameMassaVE.Designer.cs">
       <DependentUpon>201705131104492_AddFieldExameMassaVE.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202007252133560_BodySurfaceFields.cs" />
+    <Compile Include="Migrations\202007252133560_BodySurfaceFields.Designer.cs">
+      <DependentUpon>202007252133560_BodySurfaceFields.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -155,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705131104492_AddFieldExameMassaVE.resx">
       <DependentUpon>201705131104492_AddFieldExameMassaVE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202007252133560_BodySurfaceFields.resx">
+      <DependentUpon>202007252133560_BodySurfaceFields.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

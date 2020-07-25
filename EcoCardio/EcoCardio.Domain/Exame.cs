@@ -1,10 +1,15 @@
-﻿using EcoCardio.Domain.Enums;
-using System;
+﻿using System;
+using EcoCardio.Domain.Enums;
 
 namespace EcoCardio.Domain
 {
     public class Exame
     {
+        /// <summary>
+        /// Valor calculado <see cref="CalculateBodySurface"/>
+        /// </summary>
+        public double? BodySurface { get; set; }
+
         public string CavidadesCardiacas { get; set; }
 
         public string Conclusao { get; set; }
@@ -33,6 +38,11 @@ namespace EcoCardio.Domain
 
         public int? DiametroVETelessistole { get; set; }
 
+        /// <summary>
+        /// Volume diastólico
+        /// </summary>
+        public int? VolumeDiastolico { get; set; }
+
         public string Email { get; set; }
 
         public string EspessuraParedesVentriculares { get; set; }
@@ -49,6 +59,11 @@ namespace EcoCardio.Domain
 
         public Genre Genre { get; set; }
 
+        /// <summary>
+        /// Altura do utente em centimetros
+        /// </summary>
+        public int? Height { get; set; }
+
         public int Id { get; set; }
 
         public int? Idade { get; set; }
@@ -60,8 +75,7 @@ namespace EcoCardio.Domain
         public string MassasIntracavitarias { get; set; }
 
         /// <summary>
-        /// Valor calculado
-        /// <see cref="CalcMassaVE"/>
+        /// Valor calculado <see cref="CalcMassaVE"/>
         /// </summary>
         public double? MassaVE { get; set; }
 
@@ -92,10 +106,12 @@ namespace EcoCardio.Domain
         public string TransmissaoAcustica { get; set; }
 
         /// <summary>
-        /// http://csecho.ca/mdmath/?tag=lvmlvmi
-        ///     LVEDD - VE DIASTOLE
-        ///     IVSd - SEPTO IV
-        ///     PWd - PAREDE POSTERIOR
+        /// Peso do utente em kilogramas
+        /// </summary>
+        public int? Weight { get; set; }
+
+        /// <summary>
+        /// http://csecho.ca/mdmath/?tag=lvmlvmi LVEDD - VE DIASTOLE IVSd - SEPTO IV PWd - PAREDE POSTERIOR
         /// </summary>
         /// <returns></returns>
         public double? CalcMassaVE()
@@ -116,6 +132,18 @@ namespace EcoCardio.Domain
             result = Math.Round(result, 1);
 
             return result;
+        }
+
+        public double? CalculateBodySurface()
+        {
+            if (!Height.HasValue || !Weight.HasValue)
+            {
+                return null;
+            }
+
+            var bodySurface = Math.Round(Math.Sqrt((double)Height.Value * Weight.Value / 3600), 1);
+
+            return bodySurface;
         }
     }
 }

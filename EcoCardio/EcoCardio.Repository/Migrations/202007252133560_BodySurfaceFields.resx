@@ -117,64 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="transmissaoAcusticaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>712, 56</value>
-  </metadata>
-  <metadata name="servicoBindingSourceRequisitado.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>544, 41</value>
-  </metadata>
-  <metadata name="servicoBindingSourceMedico2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 41</value>
-  </metadata>
-  <metadata name="servicoBindingSourceMedico2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 41</value>
-  </metadata>
-  <metadata name="servicoBindingSourceMedico1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 41</value>
-  </metadata>
-  <metadata name="servicoBindingSourceMedico1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 41</value>
-  </metadata>
-  <metadata name="templateBindingSourceConclusao.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>544, 41</value>
-  </metadata>
-  <metadata name="templateBindingSourceConclusao.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>544, 41</value>
-  </metadata>
-  <metadata name="templateBindingSourcePericardio.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>311, 56</value>
-  </metadata>
-  <metadata name="templateBindingSourcePericardio.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>311, 56</value>
-  </metadata>
-  <metadata name="templateBindingSourceMassasIntracavitarias.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
-  <metadata name="templateBindingSourceMassasIntracavitarias.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
-  <metadata name="templateBindingSourceFuncaoVentricular.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>866, 17</value>
-  </metadata>
-  <metadata name="templateBindingSourceFuncaoVentricular.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>866, 17</value>
-  </metadata>
-  <metadata name="templateBindingSourceEspessuraParedes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>591, 17</value>
-  </metadata>
-  <metadata name="templateBindingSourceEspessuraParedes.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>591, 17</value>
-  </metadata>
-  <metadata name="templateBindingSourceCavidadesCardiacas.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>305, 17</value>
-  </metadata>
-  <metadata name="templateBindingSourceCavidadesCardiacas.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>305, 17</value>
-  </metadata>
-  <metadata name="templateBindingSourceEstruturasValvulares.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="templateBindingSourceEstruturasValvulares.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="Target" xml:space="preserve">
+    <value>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</value>
+  </data>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
+  </data>
 </root>
