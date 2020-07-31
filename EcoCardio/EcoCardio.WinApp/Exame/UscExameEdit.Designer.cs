@@ -335,7 +335,7 @@
             this.groupBox8.Size = new System.Drawing.Size(772, 115);
             this.groupBox8.TabIndex = 8;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Pericárdico";
+            this.groupBox8.Text = "Pericárdico/outros achados ecocardiográficos";
             // 
             // btnAddPericardico
             // 
@@ -429,7 +429,7 @@
             this.groupBox6.Size = new System.Drawing.Size(772, 115);
             this.groupBox6.TabIndex = 6;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Função ventricular";
+            this.groupBox6.Text = "Função ventricular esquerda";
             // 
             // btnAddFuncaoVentricular
             // 
@@ -896,7 +896,7 @@
             // lblParedePosterior
             // 
             this.lblParedePosterior.AutoSize = true;
-            this.lblParedePosterior.Location = new System.Drawing.Point(299, 126);
+            this.lblParedePosterior.Location = new System.Drawing.Point(301, 126);
             this.lblParedePosterior.Name = "lblParedePosterior";
             this.lblParedePosterior.Size = new System.Drawing.Size(118, 13);
             this.lblParedePosterior.TabIndex = 14;
@@ -912,7 +912,7 @@
             // lblSepto
             // 
             this.lblSepto.AutoSize = true;
-            this.lblSepto.Location = new System.Drawing.Point(335, 100);
+            this.lblSepto.Location = new System.Drawing.Point(338, 100);
             this.lblSepto.Name = "lblSepto";
             this.lblSepto.Size = new System.Drawing.Size(81, 13);
             this.lblSepto.TabIndex = 12;
@@ -928,11 +928,11 @@
             // lblVEtelessistole
             // 
             this.lblVEtelessistole.AutoSize = true;
-            this.lblVEtelessistole.Location = new System.Drawing.Point(306, 74);
+            this.lblVEtelessistole.Location = new System.Drawing.Point(305, 74);
             this.lblVEtelessistole.Name = "lblVEtelessistole";
-            this.lblVEtelessistole.Size = new System.Drawing.Size(110, 13);
+            this.lblVEtelessistole.Size = new System.Drawing.Size(114, 13);
             this.lblVEtelessistole.TabIndex = 8;
-            this.lblVEtelessistole.Text = "VE telessístole (N<X):";
+            this.lblVEtelessistole.Text = "VE Telessístole (N<X):";
             // 
             // txtVEtelediastole
             // 
@@ -944,11 +944,11 @@
             // lblVEteledisatole
             // 
             this.lblVEteledisatole.AutoSize = true;
-            this.lblVEteledisatole.Location = new System.Drawing.Point(306, 22);
+            this.lblVEteledisatole.Location = new System.Drawing.Point(305, 22);
             this.lblVEteledisatole.Name = "lblVEteledisatole";
-            this.lblVEteledisatole.Size = new System.Drawing.Size(110, 13);
+            this.lblVEteledisatole.Size = new System.Drawing.Size(114, 13);
             this.lblVEteledisatole.TabIndex = 6;
-            this.lblVEteledisatole.Text = "VE telediástole (N<X):";
+            this.lblVEteledisatole.Text = "VE Telediástole (N<X):";
             // 
             // txtAuriculaEsquerda
             // 
