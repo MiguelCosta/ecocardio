@@ -5,7 +5,7 @@ namespace EcoCardio.Repository.Implementation
 {
     internal class UtilizadorRespository : GenericRepository<Domain.Utilizador>, Abstract.IUtilizadorRespository
     {
-        private EcoCardioContext _context;
+        private readonly EcoCardioContext _context;
 
         public UtilizadorRespository(EcoCardioContext context)
             : base(context)

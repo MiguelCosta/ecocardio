@@ -92,6 +92,9 @@ namespace EcoCardio.WinApp.Exame
             cmbRequisitadoPor.SelectedValue = Exame.RequisitadoPor;
             cmbTransmissaoAcustica.SelectedValue = Exame.TransmissaoAcustica;
             txtInfoClinica.Text = Exame.InfoClinica;
+            txtHeight.Text = Exame.Height.ToString();
+            txtWeight.Text = Exame.Weight.ToString();
+            txtSuperficieCorporal.Text = Exame.BodySurface?.ToString();
 
             // Dimensoes
             txtRaizAorta.Text = Exame.DiametroAorta.ToString();
@@ -106,6 +109,7 @@ namespace EcoCardio.WinApp.Exame
             txtMassaVE.Text = Exame.MassaVE.ToString();
             txtFracaoEjecao.Text = Exame.FracaoEjecao.ToString();
             txtFuncaoVD.Text = Exame.DiametroFuncaoVd.ToString();
+            txtVEDiastolico.Text = Exame.VolumeDiastolico?.ToString();
 
             // Text info
             txtEstruturasValvulares.Text = Exame.EstruturasValvulares;
@@ -139,6 +143,9 @@ namespace EcoCardio.WinApp.Exame
             result.RequisitadoPor = cmbRequisitadoPor.Text;
             result.TransmissaoAcustica = cmbTransmissaoAcustica.Text;
             result.InfoClinica = txtInfoClinica.Text;
+            result.Height = GetIntFromTextBox(txtHeight);
+            result.Weight = GetIntFromTextBox(txtWeight);
+            result.BodySurface = result.CalculateBodySurface();
 
             // Dimensoes
             result.DiametroAorta = GetIntFromTextBox(txtRaizAorta);
@@ -153,6 +160,7 @@ namespace EcoCardio.WinApp.Exame
             result.FracaoEjecao = GetIntFromTextBox(txtFracaoEjecao);
             result.DiametroFuncaoVd = GetIntFromTextBox(txtFuncaoVD);
             result.MassaVE = result.CalcMassaVE();
+            result.VolumeDiastolico = GetIntFromTextBox(txtVEDiastolico);
 
             // Text info
             result.EstruturasValvulares = txtEstruturasValvulares.Text;
